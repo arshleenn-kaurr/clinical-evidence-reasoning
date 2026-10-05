@@ -1,0 +1,127 @@
+# RELEASE TOOLING (CI), not historical execution code.
+#
+# Two explicitly separate reproducibility levels (see
+# docs/public_dependency_audit.md):
+#
+#   public-integrity         — validates ONLY files that a public release
+#                               actually ships (no LICENSE_REVIEW input).
+#                               Always runs; always expected to pass on any
+#                               checkout of this repository, including a
+#                               future stripped-down public one.
+#
+#   full-archive-reproduction — the full accepted-paper scientific
+#                               reproduction (scripts/validate_accepted_papers.py).
+#                               Requires the complete local archive, i.e. the
+#                               LICENSE_REVIEW frozen cohorts/prompts/raw
+#                               results to actually be present in the
+#                               checkout. It self-detects this (checking for
+#                               one known LICENSE_REVIEW file) and SKIPS
+#                               cleanly, rather than failing, when they are
+#                               absent — e.g. on a checkout of a future
+#                               stripped public repo that correctly does not
+#                               ship them. It never fails merely because
+#                               restricted archival files are intentionally
+#                               absent.
+#
+# No secrets required. No external model API is ever called (Gemini/Groq/
+# etc.). The Groq GPT-OSS persistent-context extension is never built or
+# analyzed by either job.
+#
+# Expected runtime (measured locally 2026-10-04): public-integrity ~10-20s;
+# full-archive-reproduction (when it runs) ~20-40s.
+name: reproducibility
+
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  public-integrity:
+    name: Public release validation (always runs, no restricted inputs required)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v3
+        with:
+          version: "0.12.23"
+
+      - run: uv python install 3.12
+
+      - name: Install pinned dependencies
+        run: |
+          uv venv --python 3.12 .venv
+          VIRTUAL_ENV=.venv uv pip install -r requirements-reproduction.lock.txt
+
+      - name: Public release manifest + artifact validation
+        run: .venv/bin/python scripts/validate_public_release.py
+
+      - name: Public-safe pytest suite
+        run: .venv/bin/python -m pytest -m public -v
+
+  full-archive-reproduction:
+    name: Full accepted-paper scientific reproduction (requires the complete local archive)
+    runs-on: ubuntu-latest
+    needs: public-integrity
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check whether the complete archive (LICENSE_REVIEW inputs) is present
+        id: archive_check
+        run: |
+          MARKER="experiments/static_conflict/historical_package/evidence_not_vote_starter/data/replication_cases.jsonl"
+          if [ -f "$MARKER" ]; then
+            echo "present=true" >> "$GITHUB_OUTPUT"
+            echo "Full archive detected ($MARKER exists) — running full reproduction."
+          else
+            echo "present=false" >> "$GITHUB_OUTPUT"
+            echo "::notice::Full archive not present in this checkout ($MARKER missing)."
+            echo "::notice::This is expected on a stripped public checkout (see docs/public_dependency_audit.md)."
+            echo "::notice::Skipping full-archive-reproduction, not failing it."
+          fi
+
+      - uses: astral-sh/setup-uv@v3
+        if: steps.archive_check.outputs.present == 'true'
+        with:
+          version: "0.12.23"
+
+      - run: uv python install 3.12
+        if: steps.archive_check.outputs.present == 'true'
+
+      - name: Install pinned dependencies
+        if: steps.archive_check.outputs.present == 'true'
+        run: |
+          uv venv --python 3.12 .venv
+          VIRTUAL_ENV=.venv uv pip install -r requirements-reproduction.lock.txt
+
+      - name: Repo-level hash verification
+        if: steps.archive_check.outputs.present == 'true'
+        run: .venv/bin/python scripts/verify_hashes.py
+
+      - name: Single accepted-paper validation command
+        if: steps.archive_check.outputs.present == 'true'
+        run: .venv/bin/python scripts/validate_accepted_papers.py
+
+      # Archive-marked tests only. The @public tests are the public-integrity job's responsibility: on a
+      # full archive checkout they legitimately fail (restricted files and a local-path-bearing nohup.out are
+      # present, and validate_accepted_papers.py regenerates validation/*.json so the release-manifest hashes
+      # drift). Found by the Phase 5B local pre-flight (docs/github_actions_preflight.md).
+      - name: Archive pytest suite
+        if: steps.archive_check.outputs.present == 'true'
+        run: .venv/bin/python -m pytest -m archive -v
+
+      - name: Confirm no historical_package/ file was modified
+        if: steps.archive_check.outputs.present == 'true'
+        run: |
+          if [ -n "$(git status --porcelain -- '**/historical_package/**')" ]; then
+            echo "::error::historical_package/ was modified during CI"
+            git status --porcelain -- '**/historical_package/**'
+            exit 1
+          fi

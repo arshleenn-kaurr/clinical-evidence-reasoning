@@ -1,0 +1,7 @@
+model,condition,n,accuracy,ci_lo,ci_hi
+gemini-3.6-flash,H,15,1.0,1.0,1.0
+gemini-3.6-flash,H_L1,15,1.0,1.0,1.0
+gemini-3.6-flash,H_L2,15,1.0,1.0,1.0
+gemini-3.6-flash,H_L4,15,1.0,1.0,1.0
+gemini-3.6-flash,H_L4_ALIGNED,15,1.0,1.0,1.0
+gemini-3.6-flash,L4_H,15,1.0,1.0,1.0

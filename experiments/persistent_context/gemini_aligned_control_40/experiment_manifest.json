@@ -1,0 +1,84 @@
+{
+  "_status": "DRAFT manifest generated during migration 2026-10-04 from recovered files; null = not recoverable from files",
+  "experiment_id": "agenticls_gemini_aligned_control_40",
+  "paper_relationship": "AgenticLS (accepted)",
+  "prespecification": "POST_HOC (frozen 2026-09-23 before aligned results)",
+  "analysis_status": "archived analysis output present (results/aligned_control_analysis.json); NOT re-run during migration",
+  "model": "gemini-3.6-flash",
+  "provider": "Google Gemini API (generateContent)",
+  "temperature": "not sent",
+  "reasoning_setting": "provider default; no explicit reasoning parameter",
+  "cohort_file": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/aligned_control_cases_40.jsonl",
+  "cohort_sha256": "6d0fbdf6085d4373779bb5755bf3575ef812eecea98529656d3c58a30a3ff540",
+  "n_cases": 40,
+  "conditions": {
+    "aligned_sequential": [
+      "(reused sequential H from gemini_persistent_260)",
+      "H_L1_ALIGNED",
+      "H_L2_ALIGNED",
+      "H_L3_ALIGNED",
+      "H_L4_ALIGNED"
+    ],
+    "fresh_aligned": [
+      "H_L4_ALIGNED"
+    ]
+  },
+  "expected_successful_calls": 200,
+  "raw_attempt_file": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/results/aligned_control_attempts.jsonl",
+  "canonical_result_file": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/results/aligned_control_results.jsonl",
+  "runner_file": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/run_aligned_control_gemini.py",
+  "runner_sha256": "18963b18ef2b281878d3971c22658a77a673c357ea667d142694ab9330c2c1e3",
+  "protocol_file": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/PROTOCOL_FREEZE_ALIGNED_CONTROL.md",
+  "prompt_file": null,
+  "analysis_files": [
+    "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/analyze_aligned_control.py",
+    "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/results/aligned_control_analysis.json"
+  ],
+  "freeze_manifests": [
+    "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/SHA256SUMS.txt",
+    "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/CONTROL_FREEZE_MANIFEST.json"
+  ],
+  "depends_on": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/results/gemini_260_results.jsonl (runner expects it at ../agenticls_gemini_sequential/results/ relative to the package)",
+  "execution_date_if_known": "2026-09-23 (row timestamps 18:52:00Z to 19:06:13Z)",
+  "notes": "Cohort sha256 matches manuscript anchor 6d0fbdf6...; 10 per stratum; each line byte-identical to a 260-cohort line. Verified: 200 ok, 200 attempts all HTTP 200; arm-first 5/5 per stratum; all 160 aligned persistent rows link to exact gemini_260 sequential::H rows.",
+  "historical_hashes": {
+    "frozen_inputs": {
+      "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/aligned_control_cases_40.jsonl": "6d0fbdf6085d4373779bb5755bf3575ef812eecea98529656d3c58a30a3ff540"
+    },
+    "runner": {
+      "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/run_aligned_control_gemini.py": "18963b18ef2b281878d3971c22658a77a673c357ea667d142694ab9330c2c1e3"
+    },
+    "protocol": {
+      "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/PROTOCOL_FREEZE_ALIGNED_CONTROL.md": "53f27cd9b1a2311ef08e88c12a56626350d3d5a0fca8052fe95759b9b4c4521a"
+    },
+    "canonical_results": {
+      "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/results/aligned_control_results.jsonl": "21f2f2746e2f4c3f7f1b9d37db111e497bcbc7a2c3a2625ed8a8c0ec5a92485b",
+      "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/results/gemini_260_results.jsonl": "614e32cf5d5f29831aea14b208d5414fb4bd5097c0c29bc06fd2b8612c8af816"
+    },
+    "raw_attempts": {
+      "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/results/aligned_control_attempts.jsonl": "9b46a1e098ec7a498349e29518509512d61553ebf5d64f32151ce44d9e5c35e4"
+    },
+    "analysis_scripts": {
+      "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/analyze_aligned_control.py": "a1a26d0496557d0b32d0b318d8c2eee4e7db765772ed36710c4ec358510dce99"
+    },
+    "archived_analysis_outputs": {
+      "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/results/aligned_control_analysis.json": "394b35b9f6b02727d8f7b553ff9c690cfca2c9cf0ba3138c99220857d0ec07a4"
+    }
+  },
+  "phase3_reproduction": {
+    "environment": {
+      "python": "3.14.8 (CPython, macOS 27.0.1 arm64)",
+      "main_env": "numpy 2.5.3, pandas 3.0.6, scipy 1.18.1",
+      "posthoc_sensitivity_env": "numpy 2.5.3, pandas 3.0.6, scipy 1.16.3",
+      "agenticls_env": "standard library only",
+      "date_utc": "2026-10-04",
+      "note": "Current reproduction environment; NOT the historical execution environment (see docs/environment_validation.md)."
+    },
+    "commands_log": "validation/logs/step6_7_agenticls.log",
+    "reproduced_outputs": {
+      "validation/agenticls/aligned_control_analysis.json": "394b35b9f6b02727d8f7b553ff9c690cfca2c9cf0ba3138c99220857d0ec07a4"
+    },
+    "comparison": "EXACT_MATCH (46/46 fields)",
+    "status": "ANALYSIS_REPRODUCED"
+  }
+}

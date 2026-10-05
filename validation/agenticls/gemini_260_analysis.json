@@ -1,0 +1,249 @@
+{
+  "analysis_status": "complete",
+  "n_complete_cases": 260,
+  "n_success_rows": 1560,
+  "expected_success_rows": 1560,
+  "terminal": {
+    "decision_agreement_n": 260,
+    "decision_agreement_rate": 1.0,
+    "decision_disagreement_n": 0,
+    "decision_disagreement_rate": 0.0,
+    "disagreement_95ci_clopper_pearson": [
+      0.0,
+      0.014087822580252152
+    ],
+    "confidence_seq_minus_fresh_mean": -12.315384615384616,
+    "confidence_median": -13.0,
+    "confidence_95ci_paired_bootstrap": [
+      -13.01923076923077,
+      -11.61923076923077
+    ],
+    "confidence_lower_equal_higher": [
+      249,
+      9,
+      2
+    ],
+    "E0_transitions_fresh_to_sequential": {
+      "True->True": 260
+    },
+    "accuracy_mcnemar": {
+      "b": 0,
+      "c": 0,
+      "p": 1.0
+    }
+  },
+  "sequential_trajectory": {
+    "conditions": [
+      "H",
+      "H_L1",
+      "H_L2",
+      "H_L3",
+      "H_L4"
+    ],
+    "turn_means": [
+      90.26923076923077,
+      85.18461538461538,
+      80.73461538461538,
+      77.13076923076923,
+      73.86538461538461
+    ],
+    "mean_change_from_initial": [
+      0.0,
+      -5.08461538461539,
+      -9.534615384615392,
+      -13.138461538461542,
+      -16.40384615384616
+    ],
+    "fully_nonincreasing_n": 257,
+    "fully_nonincreasing_rate": 0.9884615384615385,
+    "terminal_le_initial_n": 258,
+    "terminal_le_initial_rate": 0.9923076923076923,
+    "first_confidence_decline": {
+      "H_L1": 248,
+      "none": 11,
+      "H_L2": 1
+    },
+    "first_categorical_deviation": {
+      "none": 260
+    },
+    "E0_inclusion_rate_by_turn": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ]
+  },
+  "exploratory_threshold_sensitivity": {
+    "70": {
+      "disagreement_n": 83,
+      "disagreement_rate": 0.3192307692307692,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 83
+    },
+    "71": {
+      "disagreement_n": 111,
+      "disagreement_rate": 0.4269230769230769,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 111
+    },
+    "72": {
+      "disagreement_n": 111,
+      "disagreement_rate": 0.4269230769230769,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 111
+    },
+    "73": {
+      "disagreement_n": 112,
+      "disagreement_rate": 0.4307692307692308,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 112
+    },
+    "74": {
+      "disagreement_n": 112,
+      "disagreement_rate": 0.4307692307692308,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 112
+    },
+    "75": {
+      "disagreement_n": 112,
+      "disagreement_rate": 0.4307692307692308,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 112
+    },
+    "76": {
+      "disagreement_n": 154,
+      "disagreement_rate": 0.5923076923076923,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 154
+    },
+    "77": {
+      "disagreement_n": 154,
+      "disagreement_rate": 0.5923076923076923,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 154
+    },
+    "78": {
+      "disagreement_n": 154,
+      "disagreement_rate": 0.5923076923076923,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 154
+    },
+    "79": {
+      "disagreement_n": 159,
+      "disagreement_rate": 0.6115384615384616,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 159
+    },
+    "80": {
+      "disagreement_n": 159,
+      "disagreement_rate": 0.6115384615384616,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 159
+    },
+    "81": {
+      "disagreement_n": 151,
+      "disagreement_rate": 0.5807692307692308,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 151
+    },
+    "82": {
+      "disagreement_n": 151,
+      "disagreement_rate": 0.5807692307692308,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 151
+    },
+    "83": {
+      "disagreement_n": 152,
+      "disagreement_rate": 0.5846153846153846,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 152
+    },
+    "84": {
+      "disagreement_n": 154,
+      "disagreement_rate": 0.5923076923076923,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 154
+    },
+    "85": {
+      "disagreement_n": 154,
+      "disagreement_rate": 0.5923076923076923,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 154
+    },
+    "86": {
+      "disagreement_n": 100,
+      "disagreement_rate": 0.38461538461538464,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 100
+    },
+    "87": {
+      "disagreement_n": 100,
+      "disagreement_rate": 0.38461538461538464,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 100
+    },
+    "88": {
+      "disagreement_n": 100,
+      "disagreement_rate": 0.38461538461538464,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 100
+    },
+    "89": {
+      "disagreement_n": 97,
+      "disagreement_rate": 0.3730769230769231,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 97
+    },
+    "90": {
+      "disagreement_n": 97,
+      "disagreement_rate": 0.3730769230769231,
+      "sequential_ge_fresh_lt_n": 0,
+      "fresh_ge_sequential_lt_n": 97
+    },
+    "91": {
+      "disagreement_n": 26,
+      "disagreement_rate": 0.1,
+      "sequential_ge_fresh_lt_n": 1,
+      "fresh_ge_sequential_lt_n": 25
+    },
+    "92": {
+      "disagreement_n": 26,
+      "disagreement_rate": 0.1,
+      "sequential_ge_fresh_lt_n": 1,
+      "fresh_ge_sequential_lt_n": 25
+    },
+    "93": {
+      "disagreement_n": 23,
+      "disagreement_rate": 0.08846153846153847,
+      "sequential_ge_fresh_lt_n": 2,
+      "fresh_ge_sequential_lt_n": 21
+    },
+    "94": {
+      "disagreement_n": 23,
+      "disagreement_rate": 0.08846153846153847,
+      "sequential_ge_fresh_lt_n": 2,
+      "fresh_ge_sequential_lt_n": 21
+    },
+    "95": {
+      "disagreement_n": 23,
+      "disagreement_rate": 0.08846153846153847,
+      "sequential_ge_fresh_lt_n": 2,
+      "fresh_ge_sequential_lt_n": 21
+    }
+  },
+  "secondary_stratified": {
+    "reference_decision": {
+      "support": {
+        "n": 130,
+        "mean_seq_minus_fresh": -12.384615384615385,
+        "median": -15.0
+      },
+      "do_not_support": {
+        "n": 130,
+        "mean_seq_minus_fresh": -12.246153846153845,
+        "median": -10.0
+      }
+    }
+  }
+}

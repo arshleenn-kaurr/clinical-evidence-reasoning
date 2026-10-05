@@ -1,0 +1,2 @@
+model,n,mean_confidence_H,mean_confidence_H_L4,confidence_shift_H_to_H_L4,ci_lo,ci_hi
+gemini-3.6-flash,260,90.12307692307692,85.48461538461538,-4.638461538461539,-5.126923076923077,-4.1461538461538465

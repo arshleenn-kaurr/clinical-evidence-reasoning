@@ -1,0 +1,7 @@
+cohort,model,contrast,H_correct_denominator,unchanged_correct,categorical_degradation_total,to_insufficient,wrong_direction_reversal,other_change,prespecification_status
+replication,gemini-3.6-flash,H->H_L1,259,257,2,2,0,0,post_hoc_descriptive
+replication,gemini-3.6-flash,H->H_L2,259,258,1,1,0,0,post_hoc_descriptive
+replication,gemini-3.6-flash,H->H_L4,259,258,1,1,0,0,post_hoc_descriptive
+gpt_oss_primary,openai/gpt-oss-120b,H->H_L1,40,40,0,0,0,0,post_hoc_descriptive
+gpt_oss_primary,openai/gpt-oss-120b,H->H_L2,40,40,0,0,0,0,post_hoc_descriptive
+gpt_oss_primary,openai/gpt-oss-120b,H->H_L4,40,40,0,0,0,0,post_hoc_descriptive

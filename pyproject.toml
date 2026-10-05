@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clinical-evidence-reasoning"
+version = "0.0.0"
+description = "Research code and artifacts for clinical-evidence LLM experiments (static conflict and persistent context)."
+readme = "README.md"
+# The frozen Groq runner documents Python 3.10+ and uses only the standard
+# library; the pinned reproduction environment (see .python-version,
+# requirements-reproduction.txt, docs/reproduction_environment.md) uses 3.12.
+requires-python = ">=3.10"
+dependencies = []
+# TODO: license
+
+[project.optional-dependencies]
+# Loose bounds for general use. For an EXACT byte-for-byte reproduction of
+# archived post-hoc outputs, install requirements-reproduction.txt instead
+# (pins scipy==1.16.3; see docs/reproduction_environment.md).
+analysis = ["numpy", "scipy", "pandas"]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.uv]
+# RELEASE TOOLING: used only to install requirements-reproduction.txt into a
+# pinned venv (validation/.venv312) and to generate uv.lock. Not required to
+# read or audit the repository.
+
+[tool.pytest.ini_options]
+# Two reproducibility levels (see docs/public_dependency_audit.md):
+#   public  — passes using ONLY files present in a stripped public release
+#             (dist/public_release_preview/); no LICENSE_REVIEW input needed.
+#             Run: python -m pytest -m public
+#   archive — requires the complete local archive, including LICENSE_REVIEW
+#             frozen cohorts/prompts/raw-canonical results.
+#             Run: python -m pytest -m archive
+# A test with neither marker is treated as archive-only by convention (it was
+# written before this split and has not been re-audited); see each file.
+markers = [
+    "public: passes using only files shipped in the public release",
+    "archive: requires the complete local archive (LICENSE_REVIEW inputs)",
+]

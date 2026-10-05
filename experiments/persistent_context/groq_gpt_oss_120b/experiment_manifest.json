@@ -1,0 +1,45 @@
+{
+  "_status": "DRAFT manifest generated during migration 2026-10-04 from recovered files; null = not recoverable from files",
+  "experiment_id": "groq_gpt_oss_120b_persistent_260",
+  "paper_relationship": "NONE: post-acceptance cross-model extension; NOT the accepted AgenticLS experiment and not a substitute for it",
+  "prespecification": "PRESPECIFIED (protocol file named DRAFT; formal freeze acceptance not recorded)",
+  "analysis_status": "run IN PROGRESS at migration; no analysis output",
+  "model": "openai/gpt-oss-120b",
+  "provider": "Groq",
+  "temperature": 0,
+  "reasoning_setting": "reasoning_effort=medium; include_reasoning=false",
+  "cohort_file": "experiments/persistent_context/groq_gpt_oss_120b/historical_package/agenticls_groq_full_ready/replication_cases_verified.jsonl",
+  "cohort_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+  "n_cases": 260,
+  "conditions": {
+    "batch": [
+      "H",
+      "H_L1",
+      "H_L2",
+      "H_L3",
+      "H_L4"
+    ],
+    "sequential": [
+      "H",
+      "H_L1",
+      "H_L2",
+      "H_L3",
+      "H_L4"
+    ]
+  },
+  "expected_successful_calls": 2600,
+  "raw_attempt_file": "experiments/persistent_context/groq_gpt_oss_120b/historical_package/agenticls_groq_full_ready/results/groq_260_attempts.jsonl (NOT YET COPIED: live)",
+  "canonical_result_file": null,
+  "runner_file": "experiments/persistent_context/groq_gpt_oss_120b/historical_package/agenticls_groq_full_ready/run_sequential_groq.py",
+  "runner_sha256": "e52424850a3f6be1c16acd67c9e936108e4dfb0fb708906a05e3e6bda513c8c3",
+  "protocol_file": "experiments/persistent_context/groq_gpt_oss_120b/historical_package/agenticls_groq_full_ready/PROTOCOL_FREEZE_DRAFT_GROQ.md",
+  "prompt_file": null,
+  "analysis_files": [
+    "experiments/persistent_context/groq_gpt_oss_120b/historical_package/agenticls_groq_full_ready/analyze_sequential.py"
+  ],
+  "freeze_manifests": [
+    "experiments/persistent_context/groq_gpt_oss_120b/historical_package/agenticls_groq_full_ready/SHA256SUMS.txt"
+  ],
+  "execution_date_if_known": null,
+  "notes": "Design differs from the accepted Gemini experiment (5-state batch arm vs single fresh H_L4). Raw results contain duplicate successful run_ids (see docs/migration_plan.md); not canonicalized."
+}

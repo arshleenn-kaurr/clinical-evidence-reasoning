@@ -1,0 +1,88 @@
+{
+  "_status": "PROPOSAL ONLY. No tag has been created; no git repository exists. Commit hash is null until tagging.",
+  "generated_by": "scripts/build_tag_freeze_manifest.py (--check re-verifies every hash)",
+  "tags": {
+    "agenticls-2026-camera-ready": {
+      "status": "INPUTS_FROZEN_LOCALLY (revised PDF; number-audit status PASS); tag DEFERRED by author policy until the GenAI4Health camera-ready is complete (no tags before then unless the authors decide otherwise)",
+      "commit": null,
+      "superseded_pdf_sha256": [
+        "30e8f4e65cd3a095c787f34caa3bc24963ba9413c6d0524a59b69a60d181285e"
+      ],
+      "camera_ready_pdf": {
+        "path": "papers/agenticls/paper/agenticls-camera-ready.pdf",
+        "sha256": "1b7311a7f7c563b50dbbd10c59d665b87881b8a3e9c2058c60ff28bcb72758e5",
+        "size_bytes": 273564,
+        "redistribution": "PUBLIC_RELEASE_PENDING_PERMISSION (not in public tree)"
+      },
+      "paper_metadata": {
+        "papers/agenticls/paper/metadata.json": "587ec931433ba768dfac93e02a4f10a4630d305485487cf1e470de26128fd52c"
+      },
+      "experiment_manifests": {
+        "experiments/static_conflict/gemini_primary_40/experiment_manifest.json": "9ee6522272cd282ee23e22c262293d2c07fff2f020ec3fbaace426d58533b1a8",
+        "experiments/static_conflict/gemini_replication_260/experiment_manifest.json": "c4f5450027e43d277c3715fecd715335a74a993ccd7a651eec4c726c88cd9f75",
+        "experiments/static_conflict/gpt_oss_sensitivity/experiment_manifest.json": "ad589e972e0a216f3da143ce1957cc7ef2ae17be5b0394be56742bab7ed0241a",
+        "experiments/static_conflict/guideline_veto/experiment_manifest.json": "768f039f704ef7dd9485b1483402dbf4399d48c881a83276910c214e9922e599",
+        "experiments/static_conflict/latent_v2/experiment_manifest.json": "c771ecd5725e1f9c7830a452b0d051a1af6d0665f6cb022efe77549ba95bbdc8",
+        "experiments/static_conflict/analysis/experiment_manifest.json": "d8a6931796de8d8f2f580b7283236572542034c9b7abf012e38c7c601404ad48",
+        "experiments/persistent_context/gemini_persistent_260/experiment_manifest.json": "aeb6f8c9ffb6d8a8a29adfc7fbb502b4896ee7b6a6c84d17b4e934b7ff232b36",
+        "experiments/persistent_context/gemini_aligned_control_40/experiment_manifest.json": "f369ffc451460abaed0fe9e123e696a5a3bebe0175ce610e4f8685fe63955afb"
+      },
+      "paper_artifacts": {
+        "docs/camera_ready_number_audit.md": "06ac61c7ed5e14436b99d90111f0316d73ff78468f2029f14026e880119035b0",
+        "validation/camera_ready_number_audit.json": "99c7df8eea41de180f447fbee57a3a7c0bd4c531a1d2137d3e0e7e83dca7dd48",
+        "docs/camera_ready_claim_scope_audit.md": "e67585dd7d98ff65233d5f0a0d256b039c5447c026019f49c22ca6f3be30f5a4",
+        "docs/result_provenance.csv": "6901fcbe2f3b56f0e7d945c27ea475318c2f6264236fd5921cc89c75cbf837ad",
+        "docs/camera_ready_provenance_mapping.csv": "727cf367c5cd1892c545a285be6622823d097f938ec70c4eee2decd95e52c05d",
+        "docs/camera_ready_unmapped_claims.csv": "bbb1c1234d3598aaf64ec98981cf453911c22e5112f993cd8a0a28ee6e3efbb5",
+        "CITATION.cff": "ff8a9761095b42af427d1e46095ef9ae0c27ade42d0cde2b4085ea79bc010b6d",
+        "requirements-reproduction.lock.txt": "38a9f65011624d1807e67e4763c3ca5a01400150e013a66d16e7142d45dd5e2a"
+      },
+      "shared_cohort_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "aligned_subset_sha256": "6d0fbdf6085d4373779bb5755bf3575ef812eecea98529656d3c58a30a3ff540"
+    },
+    "genai4health-2026-camera-ready": {
+      "status": "WAITING_FOR_CAMERA_READY_PDF (only the anonymized submission has been seen; not ingested)",
+      "commit": null,
+      "camera_ready_pdf": null,
+      "paper_metadata": null,
+      "experiment_manifests": {
+        "experiments/static_conflict/gemini_primary_40/experiment_manifest.json": "9ee6522272cd282ee23e22c262293d2c07fff2f020ec3fbaace426d58533b1a8",
+        "experiments/static_conflict/gemini_replication_260/experiment_manifest.json": "c4f5450027e43d277c3715fecd715335a74a993ccd7a651eec4c726c88cd9f75",
+        "experiments/static_conflict/gpt_oss_sensitivity/experiment_manifest.json": "ad589e972e0a216f3da143ce1957cc7ef2ae17be5b0394be56742bab7ed0241a",
+        "experiments/static_conflict/guideline_veto/experiment_manifest.json": "768f039f704ef7dd9485b1483402dbf4399d48c881a83276910c214e9922e599",
+        "experiments/static_conflict/latent_v2/experiment_manifest.json": "c771ecd5725e1f9c7830a452b0d051a1af6d0665f6cb022efe77549ba95bbdc8",
+        "experiments/static_conflict/analysis/experiment_manifest.json": "d8a6931796de8d8f2f580b7283236572542034c9b7abf012e38c7c601404ad48"
+      },
+      "paper_artifacts": {
+        "docs/result_provenance.csv": "6901fcbe2f3b56f0e7d945c27ea475318c2f6264236fd5921cc89c75cbf837ad",
+        "docs/camera_ready_provenance_mapping.csv": "727cf367c5cd1892c545a285be6622823d097f938ec70c4eee2decd95e52c05d",
+        "CITATION.cff": "ff8a9761095b42af427d1e46095ef9ae0c27ade42d0cde2b4085ea79bc010b6d"
+      }
+    },
+    "v1.0.0": {
+      "status": "DEFERRED: MIT license selected; waiting for the GenAI4Health camera-ready (author policy: no v1.0.0, paper tags or GitHub Release before then unless the authors decide otherwise)",
+      "commit": null,
+      "contains": "V1_CORE + V1_SUPPORTING per docs/public_v1_scope.csv at the tagged commit; PDFs excluded",
+      "experiment_manifests": {
+        "experiments/static_conflict/gemini_primary_40/experiment_manifest.json": "9ee6522272cd282ee23e22c262293d2c07fff2f020ec3fbaace426d58533b1a8",
+        "experiments/static_conflict/gemini_replication_260/experiment_manifest.json": "c4f5450027e43d277c3715fecd715335a74a993ccd7a651eec4c726c88cd9f75",
+        "experiments/static_conflict/gpt_oss_sensitivity/experiment_manifest.json": "ad589e972e0a216f3da143ce1957cc7ef2ae17be5b0394be56742bab7ed0241a",
+        "experiments/static_conflict/guideline_veto/experiment_manifest.json": "768f039f704ef7dd9485b1483402dbf4399d48c881a83276910c214e9922e599",
+        "experiments/static_conflict/latent_v2/experiment_manifest.json": "c771ecd5725e1f9c7830a452b0d051a1af6d0665f6cb022efe77549ba95bbdc8",
+        "experiments/static_conflict/analysis/experiment_manifest.json": "d8a6931796de8d8f2f580b7283236572542034c9b7abf012e38c7c601404ad48",
+        "experiments/persistent_context/gemini_persistent_260/experiment_manifest.json": "aeb6f8c9ffb6d8a8a29adfc7fbb502b4896ee7b6a6c84d17b4e934b7ff232b36",
+        "experiments/persistent_context/gemini_aligned_control_40/experiment_manifest.json": "f369ffc451460abaed0fe9e123e696a5a3bebe0175ce610e4f8685fe63955afb"
+      },
+      "paper_artifacts": {
+        "docs/result_provenance.csv": "6901fcbe2f3b56f0e7d945c27ea475318c2f6264236fd5921cc89c75cbf837ad",
+        "docs/camera_ready_provenance_mapping.csv": "727cf367c5cd1892c545a285be6622823d097f938ec70c4eee2decd95e52c05d",
+        "docs/camera_ready_unmapped_claims.csv": "bbb1c1234d3598aaf64ec98981cf453911c22e5112f993cd8a0a28ee6e3efbb5",
+        "CITATION.cff": "ff8a9761095b42af427d1e46095ef9ae0c27ade42d0cde2b4085ea79bc010b6d",
+        "requirements-reproduction.lock.txt": "38a9f65011624d1807e67e4763c3ca5a01400150e013a66d16e7142d45dd5e2a"
+      },
+      "excluded_from_freeze": [
+        "experiments/persistent_context/groq_gpt_oss_120b (in-progress extension; its navigational docs ship for boundary clarity only)"
+      ]
+    }
+  }
+}

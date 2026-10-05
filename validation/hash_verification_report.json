@@ -1,0 +1,754 @@
+{
+  "generated_utc": "2026-10-05T02:36:10+00:00",
+  "scope": "accepted-paper packages only (Groq extension out of scope)",
+  "n_manifest_entries": 89,
+  "n_match": 88,
+  "n_mismatch": 1,
+  "mismatches": [
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/posthoc_contrasts.py",
+      "expected_sha256": "f388eb835b2444b1a93abd20d868f62be95c1033c2bc6dccd2da0a0c60ce4f8c",
+      "actual_sha256": "c4fd856bd56fe0ed28209cfd692f4dc05f0ba3a2f1a3a4266dd8441f37b1f0cf",
+      "match": false
+    }
+  ],
+  "anchors": [
+    {
+      "anchor": "replication_260",
+      "expected_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "path": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/replication_cases.jsonl",
+      "actual_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "match": true
+    },
+    {
+      "anchor": "replication_260",
+      "expected_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "path": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/replication_cases_verified.jsonl",
+      "actual_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "match": true
+    },
+    {
+      "anchor": "aligned_control_40",
+      "expected_sha256": "6d0fbdf6085d4373779bb5755bf3575ef812eecea98529656d3c58a30a3ff540",
+      "path": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/aligned_control_cases_40.jsonl",
+      "actual_sha256": "6d0fbdf6085d4373779bb5755bf3575ef812eecea98529656d3c58a30a3ff540",
+      "match": true
+    }
+  ],
+  "entries": [
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/dev_cases.jsonl.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/dev_cases.jsonl",
+      "expected_sha256": "f8a1b605632294c2d76891bd89842d2e9ffa816997cedbace69f3b329031312b",
+      "actual_sha256": "f8a1b605632294c2d76891bd89842d2e9ffa816997cedbace69f3b329031312b",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/make_conditions.py",
+      "expected_sha256": "7934da14a09fbaf27a51224e93c644729dc8942364fb390f250dd432923f8658",
+      "actual_sha256": "7934da14a09fbaf27a51224e93c644729dc8942364fb390f250dd432923f8658",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/score_results.py",
+      "expected_sha256": "630c193dd261e10ce04363854693b74b757792f52ccb31cc061cff07bf865d6f",
+      "actual_sha256": "630c193dd261e10ce04363854693b74b757792f52ccb31cc061cff07bf865d6f",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/run_groq.py",
+      "expected_sha256": "a23206a042e1908538ec495213aacaf6709e047969a960328bca44ed7d8ec5a0",
+      "actual_sha256": "a23206a042e1908538ec495213aacaf6709e047969a960328bca44ed7d8ec5a0",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_cases.jsonl",
+      "expected_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "actual_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_veto_cases.jsonl",
+      "expected_sha256": "e6f02e2db4e90765d5c7b08d5d2776f9c123465504a7f895e7b0c7546d190ac1",
+      "actual_sha256": "e6f02e2db4e90765d5c7b08d5d2776f9c123465504a7f895e7b0c7546d190ac1",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_prompts.jsonl",
+      "expected_sha256": "055484c9c92ddc081692b90f86e7956b477455b1af9954fb7e12dbf1b577e091",
+      "actual_sha256": "055484c9c92ddc081692b90f86e7956b477455b1af9954fb7e12dbf1b577e091",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_veto_prompts.jsonl",
+      "expected_sha256": "1501c8341fa6a4f3b684a90b0cca8a7f4925b9f09b51c6c1ab5e1aec23cf46a6",
+      "actual_sha256": "1501c8341fa6a4f3b684a90b0cca8a7f4925b9f09b51c6c1ab5e1aec23cf46a6",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/final_main_cases.jsonl.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_cases.jsonl",
+      "expected_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "actual_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/final_veto_cases.jsonl.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_veto_cases.jsonl",
+      "expected_sha256": "e6f02e2db4e90765d5c7b08d5d2776f9c123465504a7f895e7b0c7546d190ac1",
+      "actual_sha256": "e6f02e2db4e90765d5c7b08d5d2776f9c123465504a7f895e7b0c7546d190ac1",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/latent_ablation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/make_latent_ablation.py",
+      "expected_sha256": "c724be7460bff6f8c42b86cbf4838fd94a1f3ed4cd8f2f456248fef7e1f3a50c",
+      "actual_sha256": "c724be7460bff6f8c42b86cbf4838fd94a1f3ed4cd8f2f456248fef7e1f3a50c",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/latent_ablation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_cases.jsonl",
+      "expected_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "actual_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/latent_ablation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_prompts.jsonl",
+      "expected_sha256": "055484c9c92ddc081692b90f86e7956b477455b1af9954fb7e12dbf1b577e091",
+      "actual_sha256": "055484c9c92ddc081692b90f86e7956b477455b1af9954fb7e12dbf1b577e091",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/latent_ablation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/cochrane_candidates_audited.csv",
+      "expected_sha256": "1423f5bea111abe81a10e79dadde3c865228263da50f220a4abbfc71f827b719",
+      "actual_sha256": "1423f5bea111abe81a10e79dadde3c865228263da50f220a4abbfc71f827b719",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/latent_ablation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/latent_main_prompts.jsonl",
+      "expected_sha256": "66c529e5e3218b59c8e47a9c7a6bf4a38080d03f05c66dd79ffdb57484068e93",
+      "actual_sha256": "66c529e5e3218b59c8e47a9c7a6bf4a38080d03f05c66dd79ffdb57484068e93",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/latent_ablation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/latent_anchor_audit.csv",
+      "expected_sha256": "29aea2e7b413726508069d4ebbaea88ce1cf3d8d6f68e5d78c0bf8a04d9e91de",
+      "actual_sha256": "29aea2e7b413726508069d4ebbaea88ce1cf3d8d6f68e5d78c0bf8a04d9e91de",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/latent_ablation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/run_gemini.py",
+      "expected_sha256": "69a8cd98115738e05048583fc122171a645e8a47e01463caddfdffa509f9b40d",
+      "actual_sha256": "69a8cd98115738e05048583fc122171a645e8a47e01463caddfdffa509f9b40d",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/latent_v2_evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/make_latent_v2.py",
+      "expected_sha256": "7faddfd804277f706ac42b5d620932f8ccf17b44528cb9ee29e02a138c7d1578",
+      "actual_sha256": "7faddfd804277f706ac42b5d620932f8ccf17b44528cb9ee29e02a138c7d1578",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/latent_v2_evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_cases.jsonl",
+      "expected_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "actual_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/latent_v2_evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/cochrane_candidates_audited.csv",
+      "expected_sha256": "1423f5bea111abe81a10e79dadde3c865228263da50f220a4abbfc71f827b719",
+      "actual_sha256": "1423f5bea111abe81a10e79dadde3c865228263da50f220a4abbfc71f827b719",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/latent_v2_evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/latent_v2_main_prompts.jsonl",
+      "expected_sha256": "5a45882e35649bfef8da7673f3f265aab49521489c707f6db18d7d0acf6cf287",
+      "actual_sha256": "5a45882e35649bfef8da7673f3f265aab49521489c707f6db18d7d0acf6cf287",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/latent_v2_evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/latent_v2_anchor_audit.csv",
+      "expected_sha256": "7996b427f17a9c29fdf8e26022d2769614114e0d8a06b6719886af6f6c1269a5",
+      "actual_sha256": "7996b427f17a9c29fdf8e26022d2769614114e0d8a06b6719886af6f6c1269a5",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/latent_v2_evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/run_gemini.py",
+      "expected_sha256": "69a8cd98115738e05048583fc122171a645e8a47e01463caddfdffa509f9b40d",
+      "actual_sha256": "69a8cd98115738e05048583fc122171a645e8a47e01463caddfdffa509f9b40d",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/replication_candidates.csv.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/replication_candidates.csv",
+      "expected_sha256": "cfa0957d68bee5879e60e173b1721d8b577f1393bc2309bea96b8cecaba79779",
+      "actual_sha256": "cfa0957d68bee5879e60e173b1721d8b577f1393bc2309bea96b8cecaba79779",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/replication_cases.jsonl.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/replication_cases.jsonl",
+      "expected_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "actual_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/replication_evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/freeze_replication.py",
+      "expected_sha256": "f1352f32421004069ec16d5256c73efb0666f2f819da2caf6e9b0b2938d6a193",
+      "actual_sha256": "f1352f32421004069ec16d5256c73efb0666f2f819da2caf6e9b0b2938d6a193",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/replication_evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/make_conditions.py",
+      "expected_sha256": "7934da14a09fbaf27a51224e93c644729dc8942364fb390f250dd432923f8658",
+      "actual_sha256": "7934da14a09fbaf27a51224e93c644729dc8942364fb390f250dd432923f8658",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/replication_evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/run_gemini.py",
+      "expected_sha256": "69a8cd98115738e05048583fc122171a645e8a47e01463caddfdffa509f9b40d",
+      "actual_sha256": "69a8cd98115738e05048583fc122171a645e8a47e01463caddfdffa509f9b40d",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/replication_evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/score_results.py",
+      "expected_sha256": "630c193dd261e10ce04363854693b74b757792f52ccb31cc061cff07bf865d6f",
+      "actual_sha256": "630c193dd261e10ce04363854693b74b757792f52ccb31cc061cff07bf865d6f",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/replication_evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/replication_cases.jsonl",
+      "expected_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "actual_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/replication_evaluation_lock.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/replication_prompts.jsonl",
+      "expected_sha256": "644227536edd6b189018072bacb84af91ff0537d811fd33d5542aa7a92308a88",
+      "actual_sha256": "644227536edd6b189018072bacb84af91ff0537d811fd33d5542aa7a92308a88",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "results/gpt_oss_primary_results.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_main_gpt_oss_120b_RAW.jsonl",
+      "expected_sha256": "481ffd95dd3fe298ae54f18fa07ae8f612b0af630e00a736092b746eca543ce7",
+      "actual_sha256": "481ffd95dd3fe298ae54f18fa07ae8f612b0af630e00a736092b746eca543ce7",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "results/gpt_oss_primary_results.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_main_gpt_oss_120b_CLEAN.jsonl",
+      "expected_sha256": "481ffd95dd3fe298ae54f18fa07ae8f612b0af630e00a736092b746eca543ce7",
+      "actual_sha256": "481ffd95dd3fe298ae54f18fa07ae8f612b0af630e00a736092b746eca543ce7",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "results/gpt_oss_veto_results.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_veto_gpt_oss_120b_RAW.jsonl",
+      "expected_sha256": "387453c4681df1ec07dd3f04c5e4a403ca8f10ac895594ac128ec560c9719f02",
+      "actual_sha256": "387453c4681df1ec07dd3f04c5e4a403ca8f10ac895594ac128ec560c9719f02",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "results/gpt_oss_veto_results.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_veto_gpt_oss_120b_CLEAN.jsonl",
+      "expected_sha256": "387453c4681df1ec07dd3f04c5e4a403ca8f10ac895594ac128ec560c9719f02",
+      "actual_sha256": "387453c4681df1ec07dd3f04c5e4a403ca8f10ac895594ac128ec560c9719f02",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "results/latent_main_results.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/latent_main_gemini_3_6_flash_RAW.jsonl",
+      "expected_sha256": "cfb60dd1d0fea580c79b632315886b365c1888af92e7f742e80356e3828b2b71",
+      "actual_sha256": "cfb60dd1d0fea580c79b632315886b365c1888af92e7f742e80356e3828b2b71",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "results/latent_v2_results.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/latent_v2_main_gemini_3_6_flash_RAW.jsonl",
+      "expected_sha256": "b49c2a15b7b36f13d4eb2982137943451d69428910544bcff650b5c5ff75f3c7",
+      "actual_sha256": "b49c2a15b7b36f13d4eb2982137943451d69428910544bcff650b5c5ff75f3c7",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "results/latent_v2_results.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/latent_v2_main_gemini_3_6_flash_CLEAN.jsonl",
+      "expected_sha256": "b49c2a15b7b36f13d4eb2982137943451d69428910544bcff650b5c5ff75f3c7",
+      "actual_sha256": "b49c2a15b7b36f13d4eb2982137943451d69428910544bcff650b5c5ff75f3c7",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "results/replication_results.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/replication_gemini_3_6_flash_RAW.jsonl",
+      "expected_sha256": "fbc706b2a11b50aec8cfd5ae7e7cd9357b15c042deb7a4b2f15a2f7f7ebe4f1c",
+      "actual_sha256": "fbc706b2a11b50aec8cfd5ae7e7cd9357b15c042deb7a4b2f15a2f7f7ebe4f1c",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "results/replication_results.sha256",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/replication_gemini_3_6_flash_CLEAN.jsonl",
+      "expected_sha256": "dedd0d56ba0b9970d3cdfa4e4d2485506580af3b506984ef78c5fb7c93708a40",
+      "actual_sha256": "dedd0d56ba0b9970d3cdfa4e4d2485506580af3b506984ef78c5fb7c93708a40",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/freeze_manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/dev_cases.jsonl",
+      "expected_sha256": "f8a1b605632294c2d76891bd89842d2e9ffa816997cedbace69f3b329031312b",
+      "actual_sha256": "f8a1b605632294c2d76891bd89842d2e9ffa816997cedbace69f3b329031312b",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/freeze_manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_cases.jsonl",
+      "expected_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "actual_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/freeze_manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_veto_cases.jsonl",
+      "expected_sha256": "e6f02e2db4e90765d5c7b08d5d2776f9c123465504a7f895e7b0c7546d190ac1",
+      "actual_sha256": "e6f02e2db4e90765d5c7b08d5d2776f9c123465504a7f895e7b0c7546d190ac1",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/freeze_manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/cochrane_candidates.csv",
+      "expected_sha256": "1423f5bea111abe81a10e79dadde3c865228263da50f220a4abbfc71f827b719",
+      "actual_sha256": "1423f5bea111abe81a10e79dadde3c865228263da50f220a4abbfc71f827b719",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/freeze_manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/aha_veto_candidates.csv",
+      "expected_sha256": "4885ed9c73b1f06aea0cf06b78a5c2067dcdbe79f22bf2ce3e4be7133624f181",
+      "actual_sha256": "4885ed9c73b1f06aea0cf06b78a5c2067dcdbe79f22bf2ce3e4be7133624f181",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/replication_freeze_manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/replication_cases.jsonl",
+      "expected_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "actual_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/replication_freeze_manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/replication_candidates_audited.csv",
+      "expected_sha256": "b6db58e072a57aca07cfefb6c9bf6db162a7f12105fa2f4ace0c9ed55e966e4f",
+      "actual_sha256": "b6db58e072a57aca07cfefb6c9bf6db162a7f12105fa2f4ace0c9ed55e966e4f",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/replication_candidate_manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/replication_candidates.csv",
+      "expected_sha256": "cfa0957d68bee5879e60e173b1721d8b577f1393bc2309bea96b8cecaba79779",
+      "actual_sha256": "cfa0957d68bee5879e60e173b1721d8b577f1393bc2309bea96b8cecaba79779",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/replication_candidate_manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/QA-systematic-review.jsonl",
+      "expected_sha256": "983ba600ba1b4bfea382d2f6ba33f588905fd7de73489511f464f903c67e25fc",
+      "actual_sha256": "983ba600ba1b4bfea382d2f6ba33f588905fd7de73489511f464f903c67e25fc",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "data/replication_candidate_manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/cochrane_candidates.csv",
+      "expected_sha256": "1423f5bea111abe81a10e79dadde3c865228263da50f220a4abbfc71f827b719",
+      "actual_sha256": "1423f5bea111abe81a10e79dadde3c865228263da50f220a4abbfc71f827b719",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/posthoc_contrasts.py",
+      "expected_sha256": "f388eb835b2444b1a93abd20d868f62be95c1033c2bc6dccd2da0a0c60ce4f8c",
+      "actual_sha256": "c4fd856bd56fe0ed28209cfd692f4dc05f0ba3a2f1a3a4266dd8441f37b1f0cf",
+      "match": false
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_cases.jsonl",
+      "expected_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "actual_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_veto_cases.jsonl",
+      "expected_sha256": "e6f02e2db4e90765d5c7b08d5d2776f9c123465504a7f895e7b0c7546d190ac1",
+      "actual_sha256": "e6f02e2db4e90765d5c7b08d5d2776f9c123465504a7f895e7b0c7546d190ac1",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/replication_cases.jsonl",
+      "expected_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "actual_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_main_gemini_3_6_flash.jsonl",
+      "expected_sha256": "6390567553c5d7a2f90acf7a54f732378d2f97af5307de080ec2a64edd025a56",
+      "actual_sha256": "6390567553c5d7a2f90acf7a54f732378d2f97af5307de080ec2a64edd025a56",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_main_gpt_oss_120b_CLEAN.jsonl",
+      "expected_sha256": "481ffd95dd3fe298ae54f18fa07ae8f612b0af630e00a736092b746eca543ce7",
+      "actual_sha256": "481ffd95dd3fe298ae54f18fa07ae8f612b0af630e00a736092b746eca543ce7",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_veto_gemini_3_6_flash.jsonl",
+      "expected_sha256": "50d69fef4c615831660639ce1a8d577db9b6a496c1b22e61ee76da6a3e81b8c8",
+      "actual_sha256": "50d69fef4c615831660639ce1a8d577db9b6a496c1b22e61ee76da6a3e81b8c8",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_veto_gpt_oss_120b_CLEAN.jsonl",
+      "expected_sha256": "387453c4681df1ec07dd3f04c5e4a403ca8f10ac895594ac128ec560c9719f02",
+      "actual_sha256": "387453c4681df1ec07dd3f04c5e4a403ca8f10ac895594ac128ec560c9719f02",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/latent_v2_main_gemini_3_6_flash_CLEAN.jsonl",
+      "expected_sha256": "b49c2a15b7b36f13d4eb2982137943451d69428910544bcff650b5c5ff75f3c7",
+      "actual_sha256": "b49c2a15b7b36f13d4eb2982137943451d69428910544bcff650b5c5ff75f3c7",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/replication_gemini_3_6_flash_CLEAN.jsonl",
+      "expected_sha256": "dedd0d56ba0b9970d3cdfa4e4d2485506580af3b506984ef78c5fb7c93708a40",
+      "actual_sha256": "dedd0d56ba0b9970d3cdfa4e4d2485506580af3b506984ef78c5fb7c93708a40",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/anonymization_sensitivity.csv",
+      "expected_sha256": "8909e91b150be344e097ec17c8a36ae52866721bf7e13fa6f573ac835f165ca6",
+      "actual_sha256": "8909e91b150be344e097ec17c8a36ae52866721bf7e13fa6f573ac835f165ca6",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/binomial_proportions_exact.csv",
+      "expected_sha256": "2a451fcd47a4dea134a254329370602b061766b13782e4c52d5f0afc956d051a",
+      "actual_sha256": "2a451fcd47a4dea134a254329370602b061766b13782e4c52d5f0afc956d051a",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/categorical_degradation_summary.csv",
+      "expected_sha256": "18014ebeca6bc5e50a34d0d3d18f9d5a5a1f51fcfe66744dabc060e60a33ac3e",
+      "actual_sha256": "18014ebeca6bc5e50a34d0d3d18f9d5a5a1f51fcfe66744dabc060e60a33ac3e",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/categorical_transition_matrix.csv",
+      "expected_sha256": "d7032c3086f06f7ba17d317dd64d0edd19120b3bf2bc6f9ae07c5072add5a2e0",
+      "actual_sha256": "d7032c3086f06f7ba17d317dd64d0edd19120b3bf2bc6f9ae07c5072add5a2e0",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/confidence_contrasts_bootstrap.csv",
+      "expected_sha256": "8ef17aad2520d1d4fbc66947446165a5d7cf4514976542a675331749ea31b526",
+      "actual_sha256": "8ef17aad2520d1d4fbc66947446165a5d7cf4514976542a675331749ea31b526",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/confidence_direction_counts.csv",
+      "expected_sha256": "bf4a94cde4eab06d3514f4fe8feb89d837ec3f306b38315817478142f59b2cd2",
+      "actual_sha256": "bf4a94cde4eab06d3514f4fe8feb89d837ec3f306b38315817478142f59b2cd2",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/paired_accuracy_mcnemar.csv",
+      "expected_sha256": "d607d557b81716a7cdbcbe3d194085a36eca8227646c5eeddb7939bebc360fa9",
+      "actual_sha256": "d607d557b81716a7cdbcbe3d194085a36eca8227646c5eeddb7939bebc360fa9",
+      "match": true
+    },
+    {
+      "package": "evidence_not_vote_starter",
+      "manifest": "analysis/posthoc_contrasts/manifest.json",
+      "target": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/replication_conflict_aligned_by_stratum.csv",
+      "expected_sha256": "8fdd3bc0e77685c65efaccccd0baff182dfc4eb84f4a0ce99a9f2945bb026c67",
+      "actual_sha256": "8fdd3bc0e77685c65efaccccd0baff182dfc4eb84f4a0ce99a9f2945bb026c67",
+      "match": true
+    },
+    {
+      "package": "agenticls_gemini_sequential",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/replication_cases_verified.jsonl",
+      "expected_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "actual_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "match": true
+    },
+    {
+      "package": "agenticls_gemini_sequential",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/dev_cases.jsonl",
+      "expected_sha256": "f8a1b605632294c2d76891bd89842d2e9ffa816997cedbace69f3b329031312b",
+      "actual_sha256": "f8a1b605632294c2d76891bd89842d2e9ffa816997cedbace69f3b329031312b",
+      "match": true
+    },
+    {
+      "package": "agenticls_gemini_sequential",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/run_sequential_gemini.py",
+      "expected_sha256": "320d1a8b3690e119ea80748cb026499213fa881cecc1f27c842b9821450800e4",
+      "actual_sha256": "320d1a8b3690e119ea80748cb026499213fa881cecc1f27c842b9821450800e4",
+      "match": true
+    },
+    {
+      "package": "agenticls_gemini_sequential",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/validate_smoke.py",
+      "expected_sha256": "c157742cef01b7ad4ec4fcd6ce05d4a2b7b7d37b3344584cf12099e83943ad0b",
+      "actual_sha256": "c157742cef01b7ad4ec4fcd6ce05d4a2b7b7d37b3344584cf12099e83943ad0b",
+      "match": true
+    },
+    {
+      "package": "agenticls_gemini_sequential",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/analyze_sequential_gemini.py",
+      "expected_sha256": "d4292c13f8165b7756261541b84ddfe105282843fb4820c9ecf94e8ef093e90e",
+      "actual_sha256": "d4292c13f8165b7756261541b84ddfe105282843fb4820c9ecf94e8ef093e90e",
+      "match": true
+    },
+    {
+      "package": "agenticls_gemini_sequential",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/PROTOCOL_FREEZE_GEMINI.md",
+      "expected_sha256": "2bf08a3d6975face4499b4da0538cba36887c2d13db70d3d6eaf246ab500e3df",
+      "actual_sha256": "2bf08a3d6975face4499b4da0538cba36887c2d13db70d3d6eaf246ab500e3df",
+      "match": true
+    },
+    {
+      "package": "agenticls_gemini_sequential",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/README.md",
+      "expected_sha256": "b0fd198fd69ab64c62807bd6f36e38eb91fb6a3e15d4626b00f9c1ab4f5fb09a",
+      "actual_sha256": "b0fd198fd69ab64c62807bd6f36e38eb91fb6a3e15d4626b00f9c1ab4f5fb09a",
+      "match": true
+    },
+    {
+      "package": "agenticls_gemini_sequential",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/run_smoke_mac.sh",
+      "expected_sha256": "2e5e0150786a7c03dab3dc6d11d8a0f8415e88659558913a4a39595081482ecc",
+      "actual_sha256": "2e5e0150786a7c03dab3dc6d11d8a0f8415e88659558913a4a39595081482ecc",
+      "match": true
+    },
+    {
+      "package": "agenticls_gemini_sequential",
+      "manifest": "results/GEMINI_260_RAW_SHA256.txt",
+      "target": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/results/gemini_260_results.jsonl",
+      "expected_sha256": "614e32cf5d5f29831aea14b208d5414fb4bd5097c0c29bc06fd2b8612c8af816",
+      "actual_sha256": "614e32cf5d5f29831aea14b208d5414fb4bd5097c0c29bc06fd2b8612c8af816",
+      "match": true
+    },
+    {
+      "package": "agenticls_gemini_sequential",
+      "manifest": "results/GEMINI_260_RAW_SHA256.txt",
+      "target": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/results/gemini_260_attempts.jsonl",
+      "expected_sha256": "956e1eaf1810d0a26d21f3b6f14633a111a41e07fd1944ba299eb711775c033f",
+      "actual_sha256": "956e1eaf1810d0a26d21f3b6f14633a111a41e07fd1944ba299eb711775c033f",
+      "match": true
+    },
+    {
+      "package": "agenticls_gemini_sequential",
+      "manifest": "results/GEMINI_260_RAW_SHA256.txt",
+      "target": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/results/gemini_260_analysis.json",
+      "expected_sha256": "5382aa697856174769651e127155af71923903d4e0bef1fc5ad53d479619367a",
+      "actual_sha256": "5382aa697856174769651e127155af71923903d4e0bef1fc5ad53d479619367a",
+      "match": true
+    },
+    {
+      "package": "agenticls_aligned_persistent_control",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/aligned_control_cases_40.jsonl",
+      "expected_sha256": "6d0fbdf6085d4373779bb5755bf3575ef812eecea98529656d3c58a30a3ff540",
+      "actual_sha256": "6d0fbdf6085d4373779bb5755bf3575ef812eecea98529656d3c58a30a3ff540",
+      "match": true
+    },
+    {
+      "package": "agenticls_aligned_persistent_control",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/run_aligned_control_gemini.py",
+      "expected_sha256": "18963b18ef2b281878d3971c22658a77a673c357ea667d142694ab9330c2c1e3",
+      "actual_sha256": "18963b18ef2b281878d3971c22658a77a673c357ea667d142694ab9330c2c1e3",
+      "match": true
+    },
+    {
+      "package": "agenticls_aligned_persistent_control",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/validate_aligned_control.py",
+      "expected_sha256": "e12932c87638e0a064a3e6c8f799334d2254c25c72a9097bcb156e802b46255a",
+      "actual_sha256": "e12932c87638e0a064a3e6c8f799334d2254c25c72a9097bcb156e802b46255a",
+      "match": true
+    },
+    {
+      "package": "agenticls_aligned_persistent_control",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/analyze_aligned_control.py",
+      "expected_sha256": "a1a26d0496557d0b32d0b318d8c2eee4e7db765772ed36710c4ec358510dce99",
+      "actual_sha256": "a1a26d0496557d0b32d0b318d8c2eee4e7db765772ed36710c4ec358510dce99",
+      "match": true
+    },
+    {
+      "package": "agenticls_aligned_persistent_control",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/PROTOCOL_FREEZE_ALIGNED_CONTROL.md",
+      "expected_sha256": "53f27cd9b1a2311ef08e88c12a56626350d3d5a0fca8052fe95759b9b4c4521a",
+      "actual_sha256": "53f27cd9b1a2311ef08e88c12a56626350d3d5a0fca8052fe95759b9b4c4521a",
+      "match": true
+    },
+    {
+      "package": "agenticls_aligned_persistent_control",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/CONTROL_FREEZE_MANIFEST.json",
+      "expected_sha256": "d31d29bf44b8fa1dcf251715ec3489442c05911c4a6203679eed1fa3357fcb05",
+      "actual_sha256": "d31d29bf44b8fa1dcf251715ec3489442c05911c4a6203679eed1fa3357fcb05",
+      "match": true
+    },
+    {
+      "package": "agenticls_aligned_persistent_control",
+      "manifest": "SHA256SUMS.txt",
+      "target": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/README.md",
+      "expected_sha256": "ddb255e727bf8412edefb7319eb5ca9446a6bbf9928be3344a59fffe0c3d1306",
+      "actual_sha256": "ddb255e727bf8412edefb7319eb5ca9446a6bbf9928be3344a59fffe0c3d1306",
+      "match": true
+    },
+    {
+      "package": "agenticls_aligned_persistent_control",
+      "manifest": "CONTROL_FREEZE_MANIFEST.json",
+      "target": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/aligned_control_cases_40.jsonl",
+      "expected_sha256": "6d0fbdf6085d4373779bb5755bf3575ef812eecea98529656d3c58a30a3ff540",
+      "actual_sha256": "6d0fbdf6085d4373779bb5755bf3575ef812eecea98529656d3c58a30a3ff540",
+      "match": true
+    },
+    {
+      "package": "agenticls_aligned_persistent_control",
+      "manifest": "CONTROL_FREEZE_MANIFEST.json",
+      "target": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/results/gemini_260_results.jsonl",
+      "expected_sha256": "614e32cf5d5f29831aea14b208d5414fb4bd5097c0c29bc06fd2b8612c8af816",
+      "actual_sha256": "614e32cf5d5f29831aea14b208d5414fb4bd5097c0c29bc06fd2b8612c8af816",
+      "match": true
+    },
+    {
+      "package": "agenticls_aligned_persistent_control",
+      "manifest": "CONTROL_FREEZE_MANIFEST.json",
+      "target": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/replication_cases_verified.jsonl",
+      "expected_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "actual_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+      "match": true
+    }
+  ]
+}

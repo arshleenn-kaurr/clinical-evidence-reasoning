@@ -1,0 +1,113 @@
+{
+  "_status": "DRAFT manifest generated during migration 2026-10-04 from recovered files; null = not recoverable from files",
+  "experiment_id": "static_analysis",
+  "paper_relationship": "GenAI4Health",
+  "analysis_status": "archived outputs present; NOT re-run during migration",
+  "components": [
+    {
+      "name": "prespecified scoring",
+      "prespecification": "PRESPECIFIED",
+      "code": "experiments/static_conflict/historical_package/evidence_not_vote_starter/score_results.py",
+      "code_sha256": "630c193dd261e10ce04363854693b74b757792f52ccb31cc061cff07bf865d6f",
+      "outputs": [
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/primary_gemini/",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/replication_gemini/",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_gemini/"
+      ],
+      "notes": "Hash locked in evaluation_lock and replication_evaluation_lock (verifies)."
+    },
+    {
+      "name": "post-hoc contrasts",
+      "prespecification": "POST_HOC",
+      "code": "experiments/static_conflict/historical_package/evidence_not_vote_starter/posthoc_contrasts.py",
+      "code_sha256": "c4fd856bd56fe0ed28209cfd692f4dc05f0ba3a2f1a3a4266dd8441f37b1f0cf",
+      "manifest": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/manifest.json",
+      "outputs": [
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/canonical_results_reference.md"
+      ],
+      "notes": "Inputs and outputs verify against manifest; code_sha256 does NOT match manifest script_sha256 f388eb835b2444b1a93abd20d868f62be95c1033c2bc6dccd2da0a0c60ce4f8c (script edited after outputs were written). canonical_results_reference.md is not covered by the manifest."
+    },
+    {
+      "name": "dominant-evidence analysis",
+      "prespecification": "POST_HOC",
+      "code": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/dominant_evidence/dominant_evidence.py",
+      "code_sha256": "bf37a3b4a885322b95d1f8d5c8d99c59d5e999d8d0a77237c3410eb4b3ba1921",
+      "outputs": [
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/dominant_evidence/results.txt",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/dominant_evidence/dominant_evidence_analysis.docx"
+      ],
+      "notes": "Paper inclusion unverified."
+    },
+    {
+      "name": "figure 1",
+      "prespecification": "UNKNOWN",
+      "code": null,
+      "code_sha256": null,
+      "outputs": [
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/figures/figure1_decision_confidence_dissociation.pdf",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/figures/figure1_decision_confidence_dissociation.png"
+      ],
+      "notes": "Generating script MISSING from recovered package."
+    }
+  ],
+  "historical_hashes": {
+    "posthoc_script_recovered": "c4fd856bd56fe0ed28209cfd692f4dc05f0ba3a2f1a3a4266dd8441f37b1f0cf",
+    "posthoc_script_per_archived_manifest": "f388eb835b2444b1a93abd20d868f62be95c1033c2bc6dccd2da0a0c60ce4f8c",
+    "archived_posthoc_outputs": {
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/anonymization_sensitivity.csv": "8909e91b150be344e097ec17c8a36ae52866721bf7e13fa6f573ac835f165ca6",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/binomial_proportions_exact.csv": "2a451fcd47a4dea134a254329370602b061766b13782e4c52d5f0afc956d051a",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/categorical_degradation_summary.csv": "18014ebeca6bc5e50a34d0d3d18f9d5a5a1f51fcfe66744dabc060e60a33ac3e",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/categorical_transition_matrix.csv": "d7032c3086f06f7ba17d317dd64d0edd19120b3bf2bc6f9ae07c5072add5a2e0",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/confidence_contrasts_bootstrap.csv": "8ef17aad2520d1d4fbc66947446165a5d7cf4514976542a675331749ea31b526",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/confidence_direction_counts.csv": "bf4a94cde4eab06d3514f4fe8feb89d837ec3f306b38315817478142f59b2cd2",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/manifest.json": "16cf32f425c42618231ba02129e3d03385a660d5f08d1bb7762bdc87547a2dc5",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/paired_accuracy_mcnemar.csv": "d607d557b81716a7cdbcbe3d194085a36eca8227646c5eeddb7939bebc360fa9",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/replication_conflict_aligned_by_stratum.csv": "8fdd3bc0e77685c65efaccccd0baff182dfc4eb84f4a0ce99a9f2945bb026c67"
+    },
+    "canonical_results_reference_md": "5ba79e1091fdbd4b8700c9b4eae26426d6f9066cb970a17f58bc23d235b7fc38"
+  },
+  "phase3_reproduction": {
+    "environment": {
+      "python": "3.14.8 (CPython, macOS 27.0.1 arm64)",
+      "main_env": "numpy 2.5.3, pandas 3.0.6, scipy 1.18.1",
+      "posthoc_sensitivity_env": "numpy 2.5.3, pandas 3.0.6, scipy 1.16.3",
+      "agenticls_env": "standard library only",
+      "date_utc": "2026-10-04",
+      "note": "Current reproduction environment; NOT the historical execution environment (see docs/environment_validation.md)."
+    },
+    "reproduced_outputs_scipy_1.18.1": {
+      "validation/genai4health/posthoc/anonymization_sensitivity.csv": "8909e91b150be344e097ec17c8a36ae52866721bf7e13fa6f573ac835f165ca6",
+      "validation/genai4health/posthoc/binomial_proportions_exact.csv": "97e7bf9c07fa25382aeed1ae27da45022d225cfecada8c6f75e51eeba0060b81",
+      "validation/genai4health/posthoc/categorical_degradation_summary.csv": "18014ebeca6bc5e50a34d0d3d18f9d5a5a1f51fcfe66744dabc060e60a33ac3e",
+      "validation/genai4health/posthoc/categorical_transition_matrix.csv": "d7032c3086f06f7ba17d317dd64d0edd19120b3bf2bc6f9ae07c5072add5a2e0",
+      "validation/genai4health/posthoc/confidence_contrasts_bootstrap.csv": "8ef17aad2520d1d4fbc66947446165a5d7cf4514976542a675331749ea31b526",
+      "validation/genai4health/posthoc/confidence_direction_counts.csv": "bf4a94cde4eab06d3514f4fe8feb89d837ec3f306b38315817478142f59b2cd2",
+      "validation/genai4health/posthoc/manifest.json": "f9b0207e136b90e58a7fa4522ebcf114693936d423a29c0b1466a78b899a06d2",
+      "validation/genai4health/posthoc/paired_accuracy_mcnemar.csv": "d607d557b81716a7cdbcbe3d194085a36eca8227646c5eeddb7939bebc360fa9",
+      "validation/genai4health/posthoc/replication_conflict_aligned_by_stratum.csv": "8fdd3bc0e77685c65efaccccd0baff182dfc4eb84f4a0ce99a9f2945bb026c67"
+    },
+    "reproduced_outputs_scipy_1.16.3": {
+      "validation/genai4health/posthoc_scipy1.16.3/anonymization_sensitivity.csv": "8909e91b150be344e097ec17c8a36ae52866721bf7e13fa6f573ac835f165ca6",
+      "validation/genai4health/posthoc_scipy1.16.3/binomial_proportions_exact.csv": "2a451fcd47a4dea134a254329370602b061766b13782e4c52d5f0afc956d051a",
+      "validation/genai4health/posthoc_scipy1.16.3/categorical_degradation_summary.csv": "18014ebeca6bc5e50a34d0d3d18f9d5a5a1f51fcfe66744dabc060e60a33ac3e",
+      "validation/genai4health/posthoc_scipy1.16.3/categorical_transition_matrix.csv": "d7032c3086f06f7ba17d317dd64d0edd19120b3bf2bc6f9ae07c5072add5a2e0",
+      "validation/genai4health/posthoc_scipy1.16.3/confidence_contrasts_bootstrap.csv": "8ef17aad2520d1d4fbc66947446165a5d7cf4514976542a675331749ea31b526",
+      "validation/genai4health/posthoc_scipy1.16.3/confidence_direction_counts.csv": "bf4a94cde4eab06d3514f4fe8feb89d837ec3f306b38315817478142f59b2cd2",
+      "validation/genai4health/posthoc_scipy1.16.3/manifest.json": "12c51ec65ce7726988c46180cf26f28b1ab5d3a8caf076bd4ac6a3580731e5c2",
+      "validation/genai4health/posthoc_scipy1.16.3/paired_accuracy_mcnemar.csv": "d607d557b81716a7cdbcbe3d194085a36eca8227646c5eeddb7939bebc360fa9",
+      "validation/genai4health/posthoc_scipy1.16.3/replication_conflict_aligned_by_stratum.csv": "8fdd3bc0e77685c65efaccccd0baff182dfc4eb84f4a0ce99a9f2945bb026c67"
+    },
+    "posthoc_status": {
+      "current_env_scipy_1.18.1": "NUMERIC_MATCH",
+      "sensitivity_env_scipy_1.16.3": "EXACT_MATCH"
+    },
+    "canonical_results_reference_values": "122/122 lines match",
+    "figure1": "DATA_REPRODUCED / PLOTTING_CODE_MISSING",
+    "status": "ANALYSIS_REPRODUCED with documented script-hash DISCREPANCY (see docs/posthoc_hash_investigation.md)"
+  }
+}

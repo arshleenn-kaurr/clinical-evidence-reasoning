@@ -1,0 +1,5 @@
+subset,cohort,model,n,mean_conflict_minus_aligned,ci_lo,ci_hi,conflict_lower,equal,conflict_higher,median_difference,bootstrap_resamples,bootstrap_seed,prespecification_status,case_ids
+all cases,replication,gemini-3.6-flash,260,-6.507692307692308,-7.073076923076923,-5.946153846153846,224,27,9,-5.0,10000,68020260909,post_hoc,
+excluding intervention-identifying questions,replication,gemini-3.6-flash,251,-6.442231075697211,-7.0239043824701195,-5.868525896414343,215,27,9,-5.0,10000,68020260909,post_hoc,
+intervention-identifying questions only,replication,gemini-3.6-flash,9,-8.333333333333334,-11.11111111111111,-6.111111111111111,9,0,0,-5.0,10000,68020260909,post_hoc,
+excluded case ids,replication,gemini-3.6-flash,9,,,,-1,-1,-1,,10000,68020260909,post_hoc,R0037;R0041;R0048;R0094;R0122;R0139;R0140;R0158;R0262

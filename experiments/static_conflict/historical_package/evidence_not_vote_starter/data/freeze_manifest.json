@@ -1,0 +1,42 @@
+{
+  "dev_quota": {
+    "High__do_not_support": 3,
+    "High__support": 2,
+    "Moderate__do_not_support": 2,
+    "Moderate__support": 3
+  },
+  "eligible_counts": {
+    "main": 107,
+    "veto": 39
+  },
+  "final_main_strata": {
+    "High__do_not_support": 10,
+    "High__support": 10,
+    "Moderate__do_not_support": 10,
+    "Moderate__support": 10
+  },
+  "final_veto_subtypes": {
+    "harm": 4,
+    "no_benefit": 11
+  },
+  "freeze_timestamp_utc": "2026-09-09T06:12:54.337543+00:00",
+  "frozen_counts": {
+    "dev": 10,
+    "final_main": 40,
+    "final_veto": 15
+  },
+  "output_sha256": {
+    "dev_cases.jsonl": "f8a1b605632294c2d76891bd89842d2e9ffa816997cedbace69f3b329031312b",
+    "final_main_cases.jsonl": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+    "final_veto_cases.jsonl": "e6f02e2db4e90765d5c7b08d5d2776f9c123465504a7f895e7b0c7546d190ac1"
+  },
+  "seed": 20260909,
+  "source_files": {
+    "main": "data/cochrane_candidates.csv",
+    "veto": "data/aha_veto_candidates.csv"
+  },
+  "source_sha256": {
+    "main": "1423f5bea111abe81a10e79dadde3c865228263da50f220a4abbfc71f827b719",
+    "veto": "4885ed9c73b1f06aea0cf06b78a5c2067dcdbe79f22bf2ce3e4be7133624f181"
+  }
+}

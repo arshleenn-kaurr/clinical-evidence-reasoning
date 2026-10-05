@@ -1,0 +1,2298 @@
+{
+ "generated_utc": "2026-10-05T02:12:01+00:00",
+ "papers": [
+  {
+   "paper": "agenticls",
+   "status": "PASS",
+   "approved_revisions": [
+    {
+     "revision_id": "rev1.bootstrap_resamples",
+     "supersedes_claims": [
+      "agl.method.boot_p260"
+     ],
+     "sections": [
+      "Methods (p.3)",
+      "Appendix D.4 (p.10)"
+     ],
+     "old_text": "Paired confidence intervals used 10,000 case-level bootstrap resamples.",
+     "new_text": "Paired confidence intervals used 10,000 case-level bootstrap resamples, except for the 260-case persistent-versus-fresh terminal confidence comparison, which used 100,000 resamples.",
+     "authority": "author instruction (2026-10-04); result values and CIs unchanged",
+     "verified": true,
+     "verification": "analyze_sequential_gemini.py B=100000 (persistent-260); static post-hoc n_boot=10000; aligned-control bootstrap_n=10000",
+     "applied_in_pdf": true
+    },
+    {
+     "revision_id": "rev2.estimate_direction_count",
+     "supersedes_claims": [
+      "agl.anchor.five"
+     ],
+     "sections": [
+      "Appendix B (p.7)"
+     ],
+     "old_text": "In five primary cases, the displayed point estimate favored the intervention despite a predefined do_not_support conclusion and no displayed interval; the stated systematic-review conclusion supplied the benchmark reference direction in these cases.",
+     "new_text": "Among primary anchors with a quantitative estimate but no displayed interval, four had point estimates favoring the intervention despite a predefined do_not_support conclusion; in those cases, the stated systematic-review conclusion supplied the benchmark reference direction.",
+     "authority": "author instruction (2026-10-04); author-supplied external source verification: C0006 = survival to hospital discharge, aminophylline vs placebo, RR 0.58 (95% CI 0.12-2.74), so the estimate does not favor the intervention",
+     "verified": true,
+     "verification": "5 do_not_support primary anchors with estimate and no interval: ['C0006', 'C0032', 'C0034', 'C0044', 'C0046']; C0006 RR/CI (0.58; 0.12-2.74) confirmed in cochrane_candidates_audited.csv notes; remaining four (RR<1 on adverse outcomes C0032, C0034, C0044, C0046) favor the intervention by question wording; C0006 direction per author-supplied external verification",
+     "applied_in_pdf": true
+    }
+   ],
+   "unresolved_flags": [],
+   "pdf": "papers/agenticls/paper/agenticls-camera-ready.pdf",
+   "pdf_sha256": "1b7311a7f7c563b50dbbd10c59d665b87881b8a3e9c2058c60ff28bcb72758e5",
+   "pages": 12,
+   "counts": {
+    "EXACT_MATCH": 67,
+    "ROUNDING_MATCH": 57,
+    "TEXTUAL_CLAIM_VERIFIED": 35,
+    "NOT_MACHINE_CHECKABLE": 1
+   },
+   "claims_audited": 160,
+   "claims_without_result_id": [
+    "agl.static.E0_all_outputs",
+    "agl.static.E0_sole",
+    "agl.static.order_conf.mean",
+    "agl.static.order_conf.lo",
+    "agl.static.order_conf.hi",
+    "agl.veto.split",
+    "agl.veto.harm",
+    "agl.exec.rep_attempts",
+    "agl.exec.rep_503",
+    "agl.exec.p260_att",
+    "agl.exec.p260_429",
+    "agl.exec.order",
+    "agl.exec.p260_cases",
+    "agl.exec.a40_att",
+    "agl.exec.a40_strata",
+    "agl.exec.a40_order",
+    "agl.method.gpt_oss_params",
+    "agl.method.static_no_reasoning_param",
+    "agl.hash.rep",
+    "agl.hash.a40",
+    "agl.audit.prim",
+    "agl.audit.prim_el",
+    "agl.audit.prim_excl",
+    "agl.audit.rep",
+    "agl.audit.rep_excl",
+    "agl.audit.rep_el",
+    "agl.anchor.prim",
+    "agl.anchor.prim2",
+    "agl.anchor.rep",
+    "agl.strata.prim",
+    "agl.strata.rep",
+    "agl.method.static_temp0",
+    "agl.method.pers_temp_omitted",
+    "agl.method.sel_tag",
+    "agl.seed.cand",
+    "agl.seed.freeze"
+   ],
+   "nmc_without_manual_verification": [],
+   "claims": [
+    {
+     "claim_id": "agl.static.accH.num",
+     "section": "Results",
+     "page": 3,
+     "printed": "259",
+     "ctx": "correct under H in 259/260 cases (99.62%)",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.replication.accuracy_H",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.accH.den",
+     "section": "Results",
+     "page": 3,
+     "printed": "260",
+     "ctx": "correct under H in 259/260 cases (99.62%)",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.replication.accuracy_H",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.accH.pct",
+     "section": "Results",
+     "page": 3,
+     "printed": "99.62",
+     "ctx": "correct under H in 259/260 cases (99.62%)",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 99.61538461538461; printed to 2 dp",
+     "result_id": "g4h.replication.accuracy_H",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.abs.baseline_correct",
+     "section": "Abstract",
+     "page": 1,
+     "printed": "259",
+     "ctx": "among 259 cases correct under the anchor alone",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.replication.EDR1",
+     "source": "binomial_proportions_exact.csv (EDR denominator)",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.EDR1.num",
+     "section": "Results",
+     "page": 3,
+     "printed": "2",
+     "ctx": "2/259 (0.77%) after one conflicting item",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.replication.EDR1",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.EDR1.pct",
+     "section": "Results",
+     "page": 3,
+     "printed": "0.77",
+     "ctx": "2/259 (0.77%) after one conflicting item",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 0.7722007722007722; printed to 2 dp",
+     "result_id": "g4h.replication.EDR1",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.EDR2.num",
+     "section": "Results",
+     "page": 3,
+     "printed": "1",
+     "ctx": "1/259 (0.39%) after two",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.replication.EDR2",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.EDR2.pct",
+     "section": "Results",
+     "page": 3,
+     "printed": "0.39",
+     "ctx": "1/259 (0.39%) after two",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 0.3861003861003861; printed to 2 dp",
+     "result_id": "g4h.replication.EDR2",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.EDR4.num",
+     "section": "Results",
+     "page": 3,
+     "printed": "1",
+     "ctx": "1/259 (0.39%) after four",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.replication.EDR4",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.EDR4.pct",
+     "section": "Results",
+     "page": 3,
+     "printed": "0.39",
+     "ctx": "1/259 (0.39%) after four",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 0.3861003861003861; printed to 2 dp",
+     "result_id": "g4h.replication.EDR4",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.abs.EDR_list",
+     "section": "Abstract",
+     "page": 1,
+     "printed": "0.77%",
+     "ctx": "Evidence Dilution Rates were 0.77%, 0.39%, and 0.39% after one, two, and four conflicting items",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 0.7722007722007722; printed to 2 dp",
+     "result_id": "g4h.replication.EDR1",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.abs.EDR_list2",
+     "section": "Abstract",
+     "page": 1,
+     "printed": "0.39%",
+     "ctx": "Evidence Dilution Rates were 0.77%, 0.39%, and 0.39% after one, two, and four conflicting items",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 0.3861003861003861; printed to 2 dp",
+     "result_id": "g4h.replication.EDR2",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.deviation_structure",
+     "section": "Results",
+     "page": 3,
+     "printed": "four",
+     "ctx": "The four condition-level deviations arose from two cases and were all shifts to insufficient; no opposite-direction reversals occurred",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "g4h.replication.degradation.H->H_L1;g4h.replication.degradation.H->H_L2;g4h.replication.degradation.H->H_L4",
+     "source": "categorical_degradation_summary.csv + distinct deviating cases from replication CLEAN file",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.E0_all_outputs",
+     "section": "Results",
+     "page": 3,
+     "printed": "1,560",
+     "ctx": "appeared in reported dominant-evidence attribution in all 1,560 static replication outputs",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "replication CLEAN file (E0 in dominant ids, all rows); also analysis/dominant_evidence/results.txt",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.static.E0_sole",
+     "section": "Results",
+     "page": 3,
+     "printed": "sole",
+     "ctx": "was the sole reported dominant source in every conflicting condition",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "replication CLEAN file; dominant_evidence/results.txt (anchor-only 260/260 for H_L1,H_L2,H_L4)",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.static.mean_a",
+     "section": "Results",
+     "page": 3,
+     "printed": "85.48",
+     "ctx": "85.48 with conflicting lower-tier evidence",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 85.48461538461538; printed to 2 dp",
+     "result_id": "g4h.replication.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.mean_b",
+     "section": "Results",
+     "page": 3,
+     "printed": "91.99",
+     "ctx": "91.99 with aligned evidence",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 91.99230769230769; printed to 2 dp",
+     "result_id": "g4h.replication.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.cma.mean",
+     "section": "Results",
+     "page": 3,
+     "printed": "-6.51",
+     "ctx": "difference of-6.51points(95%paired bootstrapCI,[-7.07,-5.95]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -6.507692307692308; printed to 2 dp",
+     "result_id": "g4h.replication.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.cma.lo",
+     "section": "Results",
+     "page": 3,
+     "printed": "-7.07",
+     "ctx": "[-7.07,-5.95]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -7.073076923076923; printed to 2 dp",
+     "result_id": "g4h.replication.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.cma.hi",
+     "section": "Results",
+     "page": 3,
+     "printed": "-5.95",
+     "ctx": "[-7.07,-5.95]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -5.946153846153846; printed to 2 dp",
+     "result_id": "g4h.replication.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.cma.lower",
+     "section": "Results",
+     "page": 3,
+     "printed": "224",
+     "ctx": "lower under conflict in 224/260 paired cases, unchanged in 27, and higher in nine",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.replication.conflict_minus_aligned",
+     "source": "confidence_direction_counts.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.cma.equal",
+     "section": "Results",
+     "page": 3,
+     "printed": "27",
+     "ctx": "lower under conflict in 224/260 paired cases, unchanged in 27, and higher in nine",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.replication.conflict_minus_aligned",
+     "source": "confidence_direction_counts.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.cma.higher",
+     "section": "Results",
+     "page": 3,
+     "printed": "nine",
+     "ctx": "unchanged in 27, and higher in nine",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "g4h.replication.conflict_minus_aligned",
+     "source": "confidence_direction_counts.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.H.mean",
+     "section": "Results",
+     "page": 3,
+     "printed": "90.12",
+     "ctx": "decreased from 90.12 underHto 85.48 underH+L4",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 90.12307692307692; printed to 2 dp",
+     "result_id": "g4h.replication.conflict_minus_H",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.cmH.mean",
+     "section": "Results",
+     "page": 3,
+     "printed": "-4.64",
+     "ctx": "apairedchangeof-4.64points(95%CI,[-5.13,-4.16])",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -4.638461538461539; printed to 2 dp",
+     "result_id": "g4h.replication.conflict_minus_H",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": "CI matches the post-hoc bootstrap of this contrast (seed 68020260909); the separately archived prespecified confidence_shift.csv gives [-5.1269,-4.1462] for the same contrast (differs in 2nd decimal at the upper bound). See claim-scope/author-attention list."
+    },
+    {
+     "claim_id": "agl.static.cmH.lo",
+     "section": "Results",
+     "page": 3,
+     "printed": "-5.13",
+     "ctx": "[-5.13,-4.16]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -5.134615384615385; printed to 2 dp",
+     "result_id": "g4h.replication.conflict_minus_H",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.cmH.hi",
+     "section": "Results",
+     "page": 3,
+     "printed": "-4.16",
+     "ctx": "[-5.13,-4.16]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -4.161538461538462; printed to 2 dp",
+     "result_id": "g4h.replication.conflict_minus_H",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.agree",
+     "section": "Results",
+     "page": 3,
+     "printed": "260",
+     "ctx": "agreed between persistent and fresh inference in all 260 cases",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.gemini260.terminal_categorical_agreement",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.seq_mean",
+     "section": "Results",
+     "page": 3,
+     "printed": "73.87",
+     "ctx": "Mean terminal confidence was 73.87after persistent",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 73.86538461538461; printed to 2 dp",
+     "result_id": "agl.gemini260.terminal_confidence_difference",
+     "source": "gemini_260_results.jsonl (mean of terminal sequential rows; analysis JSON stores trajectory mean 73.865...)",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.fresh_mean",
+     "section": "Results",
+     "page": 3,
+     "printed": "86.18",
+     "ctx": "versus 86.18 under fresh",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 86.18076923076923; printed to 2 dp",
+     "result_id": "agl.gemini260.terminal_confidence_difference",
+     "source": "gemini_260_results.jsonl (mean of fresh terminal rows)",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.diff",
+     "section": "Results",
+     "page": 3,
+     "printed": "-12.32",
+     "ctx": "difference of-12.32points(median-13;95%CI,[-13.02,-11.62])",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -12.315384615384616; printed to 2 dp",
+     "result_id": "agl.gemini260.terminal_confidence_difference",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.median",
+     "section": "Results",
+     "page": 3,
+     "printed": "-13",
+     "ctx": "(median-13;95%CI",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.gemini260.terminal_confidence_difference",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.ci_lo",
+     "section": "Results",
+     "page": 1,
+     "printed": "-13.02",
+     "ctx": "[-13.02,-11.62]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -13.01923076923077; printed to 2 dp",
+     "result_id": "agl.gemini260.terminal_confidence_difference",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.ci_hi",
+     "section": "Results",
+     "page": 1,
+     "printed": "-11.62",
+     "ctx": "[-13.02,-11.62]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -11.61923076923077; printed to 2 dp",
+     "result_id": "agl.gemini260.terminal_confidence_difference",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.lower",
+     "section": "Results",
+     "page": 3,
+     "printed": "249",
+     "ctx": "Persistent confidence was lower in 249/260 cases, unchanged in nine, and higher in two",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.gemini260.terminal_confidence_difference",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.eq_hi",
+     "section": "Results",
+     "page": 3,
+     "printed": "nine",
+     "ctx": "Persistent confidence was lower in 249/260 cases, unchanged in nine, and higher in two",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "agl.gemini260.terminal_confidence_difference",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.traj0",
+     "section": "Results",
+     "page": 3,
+     "printed": "90.27",
+     "ctx": "declined from 90.27 underH to 85.18, 80.73, 77.13, and73.87",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 90.26923076923077; printed to 2 dp",
+     "result_id": "agl.gemini260.sequential_trajectory",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.traj1",
+     "section": "Results",
+     "page": 3,
+     "printed": "85.18",
+     "ctx": "declined from 90.27 underH to 85.18, 80.73, 77.13, and73.87",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 85.18461538461538; printed to 2 dp",
+     "result_id": "agl.gemini260.sequential_trajectory",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.traj2",
+     "section": "Results",
+     "page": 3,
+     "printed": "80.73",
+     "ctx": "declined from 90.27 underH to 85.18, 80.73, 77.13, and73.87",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 80.73461538461538; printed to 2 dp",
+     "result_id": "agl.gemini260.sequential_trajectory",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.traj3",
+     "section": "Results",
+     "page": 3,
+     "printed": "77.13",
+     "ctx": "declined from 90.27 underH to 85.18, 80.73, 77.13, and73.87",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 77.13076923076923; printed to 2 dp",
+     "result_id": "agl.gemini260.sequential_trajectory",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.traj4",
+     "section": "Results",
+     "page": 3,
+     "printed": "73.87",
+     "ctx": "declined from 90.27 underH to 85.18, 80.73, 77.13, and73.87",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 73.86538461538461; printed to 2 dp",
+     "result_id": "agl.gemini260.sequential_trajectory",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.nonincreasing",
+     "section": "Results",
+     "page": 3,
+     "printed": "257",
+     "ctx": "fully non-increasing in 257/260 trajectories",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.gemini260.sequential_trajectory",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.no_cat_dev",
+     "section": "Results",
+     "page": 3,
+     "printed": "no case",
+     "ctx": "no case exhibited a categorical deviation at any sequential turn",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "agl.gemini260.first_decline_deviation",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.E0_terminal",
+     "section": "Results",
+     "page": 3,
+     "printed": "every terminal pair",
+     "ctx": "remained included in reported dominant evidence in every terminal pair",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "agl.gemini260.terminal_E0_transition",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.abs.p260.diff",
+     "section": "Abstract",
+     "page": 1,
+     "printed": "12.32",
+     "ctx": "persistent confidence was 12.32points lower on average(95% CI [-13.02,-11.62]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 12.315384615384616; printed to 2 dp",
+     "result_id": "agl.gemini260.terminal_confidence_difference",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.abs.cma",
+     "section": "Abstract",
+     "page": 1,
+     "printed": "6.51",
+     "ctx": "conflicting evidence produced 6.51 points lower self-reported confidence",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 6.507692307692308; printed to 2 dp",
+     "result_id": "g4h.replication.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.align_traj0",
+     "section": "Results",
+     "page": 3,
+     "printed": "89.88",
+     "ctx": "(89.88, 90.45, 90.83, 90.70, and 90.53)",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 89.875; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "agl.aligned40.trajectories",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.align_traj1",
+     "section": "Results",
+     "page": 3,
+     "printed": "90.45",
+     "ctx": "(89.88, 90.45, 90.83, 90.70, and 90.53)",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.trajectories",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.align_traj2",
+     "section": "Results",
+     "page": 3,
+     "printed": "90.83",
+     "ctx": "(89.88, 90.45, 90.83, 90.70, and 90.53)",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 90.825; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "agl.aligned40.trajectories",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.align_traj3",
+     "section": "Results",
+     "page": 3,
+     "printed": "90.70",
+     "ctx": "(89.88, 90.45, 90.83, 90.70, and 90.53)",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.trajectories",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.align_traj4",
+     "section": "Results",
+     "page": 3,
+     "printed": "90.53",
+     "ctx": "(89.88, 90.45, 90.83, 90.70, and 90.53)",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 90.525; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "agl.aligned40.trajectories",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.conf_traj0",
+     "section": "Results",
+     "page": 3,
+     "printed": "89.88",
+     "ctx": "(89.88, 85.00, 80.58, 77.28, and 74.20)",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 89.875; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "agl.aligned40.trajectories",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.conf_traj1",
+     "section": "Results",
+     "page": 3,
+     "printed": "85.00",
+     "ctx": "(89.88, 85.00, 80.58, 77.28, and 74.20)",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.trajectories",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.conf_traj2",
+     "section": "Results",
+     "page": 3,
+     "printed": "80.58",
+     "ctx": "(89.88, 85.00, 80.58, 77.28, and 74.20)",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 80.575; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "agl.aligned40.trajectories",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.conf_traj3",
+     "section": "Results",
+     "page": 3,
+     "printed": "77.28",
+     "ctx": "(89.88, 85.00, 80.58, 77.28, and 74.20)",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 77.275; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "agl.aligned40.trajectories",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.conf_traj4",
+     "section": "Results",
+     "page": 3,
+     "printed": "74.20",
+     "ctx": "(89.88, 85.00, 80.58, 77.28, and 74.20)",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.trajectories",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.al_gap",
+     "section": "Results",
+     "page": 3,
+     "printed": "-1.85",
+     "ctx": "was-1.85 points under aligned evidence (95% CI, [-3.20,-0.68]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.aligned_gap",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.al_lo",
+     "section": "Results",
+     "page": 3,
+     "printed": "-3.20",
+     "ctx": "[-3.20,-0.68]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.aligned_gap",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.al_hi",
+     "section": "Results",
+     "page": 3,
+     "printed": "-0.68",
+     "ctx": "[-3.20,-0.68]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -0.675; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "agl.aligned40.aligned_gap",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.cf_gap",
+     "section": "Results",
+     "page": 3,
+     "printed": "-11.85",
+     "ctx": "versus-11.85 under conflicting evidence (95% CI, [-13.72,-9.93]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.conflict_gap_same40",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.cf_lo",
+     "section": "Results",
+     "page": 3,
+     "printed": "-13.72",
+     "ctx": "[-13.72,-9.93]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -13.725; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "agl.aligned40.conflict_gap_same40",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.cf_hi",
+     "section": "Results",
+     "page": 3,
+     "printed": "-9.93",
+     "ctx": "[-13.72,-9.93]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -9.925; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "agl.aligned40.conflict_gap_same40",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.ix",
+     "section": "Results",
+     "page": 3,
+     "printed": "-10.00",
+     "ctx": "paired gap dif-ference of-10.00 points (95% CI, [-12.00,-7.72]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.interaction",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.ix_lo",
+     "section": "Results",
+     "page": 1,
+     "printed": "-12.00",
+     "ctx": "[-12.00,-7.72]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.interaction",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.ix_hi",
+     "section": "Results",
+     "page": 1,
+     "printed": "-7.72",
+     "ctx": "[-12.00,-7.72]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -7.725; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "agl.aligned40.interaction",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.agree",
+     "section": "Results",
+     "page": 3,
+     "printed": "40",
+     "ctx": "agreed in all 40 aligned persistent-fresh pairs",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.aligned_categorical_agreement_E0",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.E0",
+     "section": "Appendix E.1",
+     "page": 11,
+     "printed": "40",
+     "ctx": "appeared in reported dominant evidence in both terminal outputs for all 40 cases",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.aligned_categorical_agreement_E0",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.dir_al",
+     "section": "Appendix E.1",
+     "page": 11,
+     "printed": "12",
+     "ctx": "confidence in 12/40 cases, equal in 25, and higher in three",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.aligned_gap",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.dir_al2",
+     "section": "Appendix E.1",
+     "page": 11,
+     "printed": "25",
+     "ctx": "confidence in 12/40 cases, equal in 25, and higher in three",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.aligned_gap",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.dir_cf",
+     "section": "Appendix E.1",
+     "page": 11,
+     "printed": "38",
+     "ctx": "persistent confidence lower in 38/40 cases, equal in one, and higher in one",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.conflict_gap_same40",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.a40.dir_cf2",
+     "section": "Appendix E.1",
+     "page": 11,
+     "printed": "equal in one",
+     "ctx": "persistent confidence lower in 38/40 cases, equal in one, and higher in one",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "agl.aligned40.conflict_gap_same40",
+     "source": "aligned_control_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.thr80",
+     "section": "Results",
+     "page": 3,
+     "printed": "159",
+     "ctx": "opposite sides of a threshold of 80 in 159/260 pairs",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.gemini260.threshold_sensitivity",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.thr_min",
+     "section": "Appendix E.2",
+     "page": 11,
+     "printed": "23",
+     "ctx": "ranged from 23/260 cases (8.8%) to 159/260 cases (61.2%)",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.gemini260.threshold_sensitivity",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.thr_min_pct",
+     "section": "Appendix E.2",
+     "page": 11,
+     "printed": "8.8",
+     "ctx": "ranged from 23/260 cases (8.8%) to 159/260 cases (61.2%)",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 8.846153846153847; printed to 1 dp",
+     "result_id": "agl.gemini260.threshold_sensitivity",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.thr_max_pct",
+     "section": "Appendix E.2",
+     "page": 11,
+     "printed": "61.2",
+     "ctx": "ranged from 23/260 cases (8.8%) to 159/260 cases (61.2%)",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 61.15384615384615; printed to 1 dp",
+     "result_id": "agl.gemini260.threshold_sensitivity",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.order_dis",
+     "section": "Results",
+     "page": 3,
+     "printed": "260",
+     "ctx": "only two categorical disagreements among 260 cases",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.replication.order_disagreement",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.order_dis_n",
+     "section": "Appendix E.10",
+     "page": 12,
+     "printed": "2",
+     "ctx": "Categorical judgments differed in 2/260 paired cases",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.replication.order_disagreement",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.static.order_conf.mean",
+     "section": "Results",
+     "page": 3,
+     "printed": "1.20",
+     "ctx": "increased mean confidence by 1.20 points (95% CI, [0.76,1.64]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "NO archived output; read-only recompute (L4_H minus H_L4, replication CLEAN, archived paired_bootstrap seed 68020260909, 10,000)",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.static.order_conf.lo",
+     "section": "Results",
+     "page": 3,
+     "printed": "0.76",
+     "ctx": "[0.76,1.64]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 0.7576923076923077; printed to 2 dp",
+     "result_id": null,
+     "source": "NO archived output; read-only recompute (L4_H minus H_L4, replication CLEAN, archived paired_bootstrap seed 68020260909, 10,000)",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.static.order_conf.hi",
+     "section": "Results",
+     "page": 3,
+     "printed": "1.64",
+     "ctx": "[0.76,1.64]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 1.6384615384615384; printed to 2 dp",
+     "result_id": null,
+     "source": "NO archived output; read-only recompute (L4_H minus H_L4, replication CLEAN, archived paired_bootstrap seed 68020260909, 10,000)",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.p260.strat.support",
+     "section": "Appendix E.3",
+     "page": 11,
+     "printed": "-12.38",
+     "ctx": "Among the 130 support cases, the mean difference was-12.38 points. Among the 130 do_not_support cases, the mean difference was-12.25",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -12.384615384615385; printed to 2 dp",
+     "result_id": "agl.gemini260.stratified_reference_decision",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.strat.do_not_support",
+     "section": "Appendix E.3",
+     "page": 11,
+     "printed": "-12.25",
+     "ctx": "Among the 130 support cases, the mean difference was-12.38 points. Among the 130 do_not_support cases, the mean difference was-12.25",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -12.246153846153845; printed to 2 dp",
+     "result_id": "agl.gemini260.stratified_reference_decision",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.cp",
+     "section": "Appendix E.4",
+     "page": 11,
+     "printed": "1.41%",
+     "ctx": "0/260 (exact two-sided 95% Clopper-Pearson CI, 0-1.41%)",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 1.4087822580252152; printed to 2 dp",
+     "result_id": "agl.gemini260.terminal_categorical_agreement",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.p260.E0_pairs",
+     "section": "Appendix E.4",
+     "page": 11,
+     "printed": "260",
+     "ctx": "for all 260 persistent-fresh pairs",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.gemini260.terminal_E0_transition",
+     "source": "gemini_260_analysis.json",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.prim.acc",
+     "section": "Appendix E.5",
+     "page": 11,
+     "printed": "40",
+     "ctx": "All 40 Gemini primary cases were correct underH",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.primary.accuracy_H",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.prim.edr",
+     "section": "Appendix E.5",
+     "page": 11,
+     "printed": "no EDR events",
+     "ctx": "no EDR events occurred after one, two, or four conflicting items",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "g4h.primary.EDR1;g4h.primary.EDR2;g4h.primary.EDR4",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.prim.H",
+     "section": "Appendix E.5",
+     "page": 11,
+     "printed": "89.63",
+     "ctx": "decreased from 89.63 underH to 84.50 underH+L4",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 89.625; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "g4h.primary.conflict_minus_H",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.prim.HL4",
+     "section": "Appendix E.5",
+     "page": 11,
+     "printed": "84.50",
+     "ctx": "decreased from 89.63 underH to 84.50 underH+L4",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.primary.conflict_minus_H",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.prim.diff",
+     "section": "Appendix E.5",
+     "page": 11,
+     "printed": "-5.13",
+     "ctx": "a paired difference of-5.13 points (95% CI [-6.50,-3.75]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -5.125; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "g4h.primary.conflict_minus_H",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.prim.lo",
+     "section": "Appendix E.5",
+     "page": 11,
+     "printed": "-6.50",
+     "ctx": "[-6.50,-3.75]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.primary.conflict_minus_H",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.prim.hi",
+     "section": "Appendix E.5",
+     "page": 11,
+     "printed": "-3.75",
+     "ctx": "[-6.50,-3.75]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.primary.conflict_minus_H",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.prim.cma",
+     "section": "Appendix E.5",
+     "page": 11,
+     "printed": "-7.28",
+     "ctx": "confidence contrast was-7.28points(95% CI[-8.23,-6.30]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -7.275; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "g4h.primary.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.prim.cma_lo",
+     "section": "Appendix E.5",
+     "page": 11,
+     "printed": "-8.23",
+     "ctx": "[-8.23,-6.30]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -8.225; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "g4h.primary.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.prim.cma_hi",
+     "section": "Appendix E.5",
+     "page": 11,
+     "printed": "-6.30",
+     "ctx": "[-8.23,-6.30]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.primary.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.gpt.acc",
+     "section": "Appendix E.6",
+     "page": 11,
+     "printed": "40",
+     "ctx": "All 40 cases were correct under H,H+L1,H+L2,H+L4, andL4+H",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.gpt_oss_primary.accuracy_H",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.gpt.no_edr",
+     "section": "Appendix E.6",
+     "page": 11,
+     "printed": "no EDR events",
+     "ctx": "with no EDR events or categorical order disagreements",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "g4h.gpt_oss_primary.EDR1;g4h.gpt_oss_primary.EDR2;g4h.gpt_oss_primary.EDR4;g4h.gpt_oss_primary.order_disagreement",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.gpt.H_L4",
+     "section": "Appendix E.6",
+     "page": 11,
+     "printed": "-6.35",
+     "ctx": "Confidence decreased by-6.35 points fromH toH+L4 (95% CI[-7.95,-4.68]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.gpt_oss_primary.conflict_minus_H",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.gpt.H_L4_lo",
+     "section": "Appendix E.6",
+     "page": 11,
+     "printed": "-7.95",
+     "ctx": "[-7.95,-4.68]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.gpt_oss_primary.conflict_minus_H",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.gpt.H_L4_hi",
+     "section": "Appendix E.6",
+     "page": 11,
+     "printed": "-4.68",
+     "ctx": "[-7.95,-4.68]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -4.675; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "g4h.gpt_oss_primary.conflict_minus_H",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.gpt.cma",
+     "section": "Appendix E.6",
+     "page": 11,
+     "printed": "-5.75",
+     "ctx": "conflict-minus-aligned difference was-5.75 points (95% CI [-7.45,-3.60]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.gpt_oss_primary.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.gpt.cma_lo",
+     "section": "Appendix E.6",
+     "page": 11,
+     "printed": "-7.45",
+     "ctx": "[-7.45,-3.60]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.gpt_oss_primary.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.gpt.cma_hi",
+     "section": "Appendix E.6",
+     "page": 11,
+     "printed": "-3.60",
+     "ctx": "[-7.45,-3.60]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.gpt_oss_primary.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.gpt.dir",
+     "section": "Appendix E.6",
+     "page": 11,
+     "printed": "35",
+     "ctx": "lower under conflict in 35/40 cases, unchanged in four, and higher in one",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.gpt_oss_primary.conflict_minus_aligned",
+     "source": "confidence_direction_counts.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.gpt.dir2",
+     "section": "Appendix E.6",
+     "page": 11,
+     "printed": "unchanged in four",
+     "ctx": "lower under conflict in 35/40 cases, unchanged in four, and higher in one",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "g4h.gpt_oss_primary.conflict_minus_aligned",
+     "source": "confidence_direction_counts.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.lat.acc",
+     "section": "Appendix E.7",
+     "page": 12,
+     "printed": "38",
+     "ctx": "Baseline accuracy underH was 38/40",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.latent_v2.accuracy_H",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.lat.edr",
+     "section": "Appendix E.7",
+     "page": 12,
+     "printed": "1/38, 1/38, and 0/38",
+     "ctx": "EDR was 1/38, 1/38, and 0/38 after one, two, and four conflicting items",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "g4h.latent_v2.EDR1;g4h.latent_v2.EDR2;g4h.latent_v2.EDR4",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.lat.order",
+     "section": "Appendix E.7",
+     "page": 12,
+     "printed": "No categorical order disagreements",
+     "ctx": "No categorical order disagreements occurred",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "g4h.latent_v2.order_disagreement",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.lat.HL4",
+     "section": "Appendix E.7",
+     "page": 12,
+     "printed": "84.38",
+     "ctx": "Mean confidence was 84.38 under H+L4 and 90.85 under H+L4A",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 84.375; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "g4h.latent_v2.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.lat.HL4A",
+     "section": "Appendix E.7",
+     "page": 12,
+     "printed": "90.85",
+     "ctx": "Mean confidence was 84.38 under H+L4 and 90.85 under H+L4A",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.latent_v2.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.lat.cma",
+     "section": "Appendix E.7",
+     "page": 12,
+     "printed": "-6.48",
+     "ctx": "difference of-6.48 points (95% CI [-7.83,-5.10]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -6.475; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "g4h.latent_v2.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.lat.cma_lo",
+     "section": "Appendix E.7",
+     "page": 12,
+     "printed": "-7.83",
+     "ctx": "[-7.83,-5.10]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -7.825; printed to 2 dp; artifact sits exactly on a half-unit rounding boundary",
+     "result_id": "g4h.latent_v2.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.lat.cma_hi",
+     "section": "Appendix E.7",
+     "page": 12,
+     "printed": "-5.10",
+     "ctx": "[-7.83,-5.10]",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.latent_v2.conflict_minus_aligned",
+     "source": "confidence_contrasts_bootstrap.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.lat.dir",
+     "section": "Appendix E.7",
+     "page": 12,
+     "printed": "34",
+     "ctx": "lower under conflict in 34/40 cases, unchanged in five, and higher in one",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.latent_v2.conflict_minus_aligned",
+     "source": "confidence_direction_counts.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.lat.dir2",
+     "section": "Appendix E.7",
+     "page": 12,
+     "printed": "unchanged in five",
+     "ctx": "lower under conflict in 34/40 cases, unchanged in five, and higher in one",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "g4h.latent_v2.conflict_minus_aligned",
+     "source": "confidence_direction_counts.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.anon.n",
+     "section": "Appendix E.8",
+     "page": 12,
+     "printed": "Nine",
+     "ctx": "Nine replication questions retained",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "g4h.replication.anonymization.intervention-identifying questions only",
+     "source": "anonymization_sensitivity.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.anon.diff",
+     "section": "Appendix E.8",
+     "page": 12,
+     "printed": "-6.44",
+     "ctx": "confidence difference of-6.44 points (95% CI [-7.02,-5.87]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -6.442231075697211; printed to 2 dp",
+     "result_id": "g4h.replication.anonymization.excluding intervention-identifying questions",
+     "source": "anonymization_sensitivity.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.anon.lo",
+     "section": "Appendix E.8",
+     "page": 12,
+     "printed": "-7.02",
+     "ctx": "[-7.02,-5.87]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -7.0239043824701195; printed to 2 dp",
+     "result_id": "g4h.replication.anonymization.excluding intervention-identifying questions",
+     "source": "anonymization_sensitivity.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.anon.hi",
+     "section": "Appendix E.8",
+     "page": 12,
+     "printed": "-5.87",
+     "ctx": "[-7.02,-5.87]",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -5.868525896414343; printed to 2 dp",
+     "result_id": "g4h.replication.anonymization.excluding intervention-identifying questions",
+     "source": "anonymization_sensitivity.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.anon.full",
+     "section": "Appendix E.8",
+     "page": 12,
+     "printed": "-6.51",
+     "ctx": "compared with-6.51 in the full replication cohort",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact -6.507692307692308; printed to 2 dp",
+     "result_id": "g4h.replication.anonymization.all cases",
+     "source": "anonymization_sensitivity.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.veto.n",
+     "section": "Appendix E.9",
+     "page": 12,
+     "printed": "15",
+     "ctx": "A separate 15-case American Heart Association Class III boundary set contained 11 Class III No Benefit and four Class III Harm cases",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.veto.accuracy_H",
+     "source": "final_veto_cases.jsonl",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.veto.split",
+     "section": "Appendix E.9",
+     "page": 12,
+     "printed": "11",
+     "ctx": "contained 11 Class III No Benefit and four Class III Harm cases",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "final_veto_cases.jsonl (veto_subtype counts: no_benefit=11, harm=4)",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.veto.harm",
+     "section": "Appendix E.9",
+     "page": 12,
+     "printed": "four",
+     "ctx": "contained 11 Class III No Benefit and four Class III Harm cases",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "final_veto_cases.jsonl",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.veto.15of15",
+     "section": "Appendix E.9",
+     "page": 12,
+     "printed": "15/15",
+     "ctx": "each produced the reference categorical output in 15/15 cases under every tested condition",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "g4h.veto.accuracy_H;g4h.gpt_oss_veto.accuracy_H",
+     "source": "binomial_proportions_exact.csv (all 6 conditions x 2 models)",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.veto.vfr",
+     "section": "Appendix E.9",
+     "page": 12,
+     "printed": "0/15",
+     "ctx": "corresponding to VFR 0/15 (exact 95% CI 0-21.8%)",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "g4h.veto.VFR_H_L4;g4h.gpt_oss_veto.VFR_H_L4",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.veto.cp",
+     "section": "Appendix E.9",
+     "page": 12,
+     "printed": "21.8%",
+     "ctx": "(exact 95% CI 0-21.8%)",
+     "status": "ROUNDING_MATCH",
+     "detail": "artifact 21.8019360910534; printed to 1 dp",
+     "result_id": "g4h.veto.VFR_H_L4",
+     "source": "binomial_proportions_exact.csv",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.exec.rep_ok",
+     "section": "Appendix D.1",
+     "page": 9,
+     "printed": "1,560",
+     "ctx": "The 260-case replication cohort required 1,560 successful evaluations across six conditions",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "g4h.replication.accuracy_H",
+     "source": "replication_gemini_3_6_flash_CLEAN.jsonl row count",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.exec.rep_attempts",
+     "section": "Appendix D.1",
+     "page": 9,
+     "printed": "1,564",
+     "ctx": "The raw execution log contained 1,564 attempts: 1,560 successful responses and four transient HTTP 503 failures",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "replication_gemini_3_6_flash_RAW.jsonl row count; ok=1560; {'ok': 1560, 'error': 4}",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.exec.rep_503",
+     "section": "Appendix D.1",
+     "page": 9,
+     "printed": "four",
+     "ctx": "1,560 successful responses and four transient HTTP 503 failures",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "replication RAW file (4 non-ok rows, each 503)",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.exec.p260_succ",
+     "section": "Appendix D.2",
+     "page": 9,
+     "printed": "1,560",
+     "ctx": "for 1,560 successful assessments in total",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.gemini260.terminal_categorical_agreement",
+     "source": "gemini_260_attempts.jsonl (HTTP 200)",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.exec.p260_att",
+     "section": "Appendix D.2",
+     "page": 9,
+     "printed": "1,567",
+     "ctx": "The raw attempt log contained 1,567 requests: 1,560 successful responses, five HTTP 429 responses, and two HTTP 503 responses",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "gemini_260_attempts.jsonl row count; http={200: 1560, 429: 5, 503: 2}",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.exec.p260_429",
+     "section": "Appendix D.2",
+     "page": 9,
+     "printed": "five",
+     "ctx": "five HTTP 429 responses, and two HTTP 503 responses",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "gemini_260_attempts.jsonl",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.exec.order",
+     "section": "Appendix D.2",
+     "page": 9,
+     "printed": "130",
+     "ctx": "130 cases were evaluated fresh-first and 130 persistent-first",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "gemini_260_results.jsonl first-by-timestamp arm per case: {'fresh': 130, 'sequential': 130}",
+     "note": "Computed by earliest timestamp per case; provenance docs record 130/130 arm order from the run design",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.exec.p260_cases",
+     "section": "Appendix D.2",
+     "page": 9,
+     "printed": "260",
+     "ctx": "all 260 cases contained the complete six-assessment design",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "gemini_260_results.jsonl (6 rows per case)",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.exec.a40_n",
+     "section": "Appendix D.3",
+     "page": 10,
+     "printed": "200",
+     "ctx": "for 200 new assessments",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": "agl.aligned40.aligned_gap",
+     "source": "aligned_control_results.jsonl row count",
+     "note": ""
+    },
+    {
+     "claim_id": "agl.exec.a40_att",
+     "section": "Appendix D.3",
+     "page": 10,
+     "printed": "200",
+     "ctx": "the attempt log contained 200 successful requests with no failed or retried requests",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "aligned_control_attempts.jsonl (200 rows, all HTTP 200)",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.exec.a40_strata",
+     "section": "Appendix C.3",
+     "page": 8,
+     "printed": "10",
+     "ctx": "yielding 10 cases per stratum",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "CONTROL_FREEZE_MANIFEST.json strata",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.exec.a40_order",
+     "section": "Appendix D.3",
+     "page": 10,
+     "printed": "5/5",
+     "ctx": "balanced 5/5 within each 10-case stratum",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "aligned_control_results.jsonl first-by-timestamp arm per case per stratum: {('High|do_not_support', True): 5, ('High|do_not_support', False): 5, ('High|support', True): 5, ('High|support', False): 5, ('Moderate|do_not_support', True): 5, ('Moderate|do_not_support', False): 5, ('Moderate|support', True): 5, ('Moderate|support', False): 5}",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.method.gpt_oss_params",
+     "section": "Appendix E.6",
+     "page": 11,
+     "printed": "reasoning_effort=medium",
+     "ctx": "reasoning_effort=medium",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "run_groq.py request parameters (temperature 0, reasoning_effort medium)",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.method.static_no_reasoning_param",
+     "section": "Appendix D.1",
+     "page": 9,
+     "printed": "No explicit reasoning parameter was supplied",
+     "ctx": "No explicit reasoning parameter was supplied",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "run_gemini.py contains no thinking/reasoning request parameter",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.hash.rep",
+     "section": "Appendix A",
+     "page": 7,
+     "printed": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+     "ctx": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "SHA256 of data/replication_cases.jsonl",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.hash.a40",
+     "section": "Appendix C.3",
+     "page": 9,
+     "printed": "6d0fbdf6085d4373779bb5755bf3575ef812eecea98529656d3c58a30a3ff540",
+     "ctx": "6d0fbdf6085d4373779bb5755bf3575ef812eecea98529656d3c58a30a3ff540",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "SHA256 of aligned_control_cases_40.jsonl",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.audit.prim",
+     "section": "Appendix A",
+     "page": 7,
+     "printed": "120",
+     "ctx": "120 candidates were audited and 107 were eligible. Thirteen were ex-",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "cochrane_candidates_audited.csv (rows)",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.audit.prim_el",
+     "section": "Appendix A",
+     "page": 7,
+     "printed": "107",
+     "ctx": "120 candidates were audited and 107 were eligible",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "cochrane_candidates_audited.csv (eligible=1)",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.audit.prim_excl",
+     "section": "Appendix A",
+     "page": 7,
+     "printed": "seven",
+     "ctx": "seven were not therapeutic comparisons, two contained multiple clinical actions, two had ambiguous reference conclusions, one became incoherent after anonymization, and one did not support the intended hierarchy",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "cochrane_candidates_audited.csv audit_note counts",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.audit.rep",
+     "section": "Appendix A",
+     "page": 7,
+     "printed": "340",
+     "ctx": "340 candidates were sampled",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "replication_candidates_audited.csv (rows)",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.audit.rep_excl",
+     "section": "Appendix A",
+     "page": 7,
+     "printed": "Sixteen",
+     "ctx": "Sixteen were excluded during manual audit: ten were not therapeutic comparisons, five contained multiple clinical actions, and one had an ambiguous reference conclusion",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "replication_candidates_audited.csv audit_note counts",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.audit.rep_el",
+     "section": "Appendix A",
+     "page": 7,
+     "printed": "324",
+     "ctx": "The remaining 324 eligible cases formed the pool from which 260 cases were frozen, with 65 per stratum",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "replication_candidates_audited.csv (eligible=1)",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.anchor.prim",
+     "section": "Appendix B",
+     "page": 7,
+     "printed": "25",
+     "ctx": "25 of 40 primary anchors contained an estimate with a 95% confidence interval, seven contained an estimate without an interval, and eight contained no quantitative result",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "final_main_cases.jsonl anchor text classification ('95 pct CI' / 'Reported effect' only / neither): {'ci': 25, 'est': 7, 'none': 8}",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.anchor.prim2",
+     "section": "Appendix B",
+     "page": 7,
+     "printed": "seven",
+     "ctx": "seven contained an estimate without an interval, and eight contained no quantitative result",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "final_main_cases.jsonl",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.anchor.rep",
+     "section": "Appendix B",
+     "page": 7,
+     "printed": "124, 56, and 80",
+     "ctx": "Corresponding counts in replication were 124, 56, and 80",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "replication_cases.jsonl anchor text classification: {'none': 80, 'ci': 124, 'est': 56}",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.anchor.four",
+     "section": "Appendix B",
+     "page": 7,
+     "printed": "four",
+     "ctx": "Among primary anchors with a quantitative estimate but no displayed interval, four had point estimates favoring the intervention despite a",
+     "status": "NOT_MACHINE_CHECKABLE",
+     "detail": "",
+     "result_id": null,
+     "source": "final_main_cases.jsonl; cochrane_candidates_audited.csv",
+     "note": "",
+     "manual_verification": true,
+     "verifier_note": "Verified: exactly 5 primary anchors are do_not_support with an estimate and no interval (C0006, C0032, C0044, C0034, C0046). C0006 (survival to hospital discharge, aminophylline vs placebo) RR 0.58, 95% CI 0.12-2.74 - numbers confirmed in cochrane_candidates_audited.csv; it does NOT favor the intervention per author-supplied external source verification (outcome direction is not recorded in any archived artifact). The other four (C0032 postpartum haemorrhage, C0034 trabeculectomy failure, C0044 mortality, C0046 death/dependency) have RR<1 on adverse outcomes, i.e. favor the intervention. Hence four."
+    },
+    {
+     "claim_id": "agl.strata.prim",
+     "section": "Appendix A",
+     "page": 7,
+     "printed": "10",
+     "ctx": "balanced across High/support, High/do_not_support, Moderate/support, and Moderate/do_not_support strata (n=10each)",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "final_main_cases.jsonl joined to cochrane_candidates_audited.csv evidence-quality: {('High', 'support'): 10, ('High', 'do_not_support'): 10, ('Moderate', 'support'): 10, ('Moderate', 'do_not_support'): 10}",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.strata.rep",
+     "section": "Appendix A",
+     "page": 7,
+     "printed": "65",
+     "ctx": "were frozen, with 65 per stratum",
+     "status": "EXACT_MATCH",
+     "detail": "",
+     "result_id": null,
+     "source": "replication_cases.jsonl joined to replication_candidates_audited.csv: {('Moderate', 'do_not_support'): 65, ('High', 'support'): 65, ('Moderate', 'support'): 65, ('High', 'do_not_support'): 65}",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.method.static_temp0",
+     "section": "Appendix D.1",
+     "page": 9,
+     "printed": "temperature 0",
+     "ctx": "Gemini-3.6-flash, temperature 0, and a strict structured-",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "replication CLEAN rows temperature field",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.method.pers_temp_omitted",
+     "section": "Appendix D.2",
+     "page": 9,
+     "printed": "did not explicitly specify a temperature parameter",
+     "ctx": "did not explicitly specify a temperature parameter",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "gemini_260_results.jsonl and aligned_control_results.jsonl temperature_sent is null",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.method.sel_tag",
+     "section": "Appendix C.3",
+     "page": 8,
+     "printed": "agenticls-aligned-control-v1-20260923",
+     "ctx": "agenticls-aligned-control-v1-20260923|<case_id>",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "CONTROL_FREEZE_MANIFEST.json selection_tag",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.seed.cand",
+     "section": "Appendix A",
+     "page": 7,
+     "printed": "2026090902",
+     "ctx": "The replication candidate-sampling seed was 2026090902",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "replication_candidate_manifest.json",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.seed.freeze",
+     "section": "Appendix A",
+     "page": 7,
+     "printed": "2026090903",
+     "ctx": "the final freeze seed was2026090903",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": null,
+     "source": "freeze_manifest.json / freeze_replication.py",
+     "note": "",
+     "unmapped_claim": true
+    },
+    {
+     "claim_id": "agl.method.boot_resamples",
+     "section": "Methods/D.4",
+     "page": 3,
+     "printed": "10,000",
+     "ctx": "Paired confidence intervals used 10,000 case-level bootstrap resamples, except for the 260-case persistent-versus-fresh terminal confidence comparison, which used 100,000 resamples",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "agl.gemini260.terminal_confidence_difference",
+     "source": "analyze_sequential_gemini.py B=100000 (persistent-260 terminal CI); static post-hoc n_boot=10000 (confidence_contrasts_bootstrap.csv); aligned-control bootstrap_n=10000; sentence must appear in both Methods and Appendix D.4",
+     "note": "Revised wording; previously MISMATCH (10,000 stated globally).",
+     "occurrences_expected": 2,
+     "occurrences_found": 2
+    },
+    {
+     "claim_id": "agl.method.boot_resamples_100k",
+     "section": "Methods/D.4",
+     "page": 3,
+     "printed": "100,000",
+     "ctx": "Paired confidence intervals used 10,000 case-level bootstrap resamples, except for the 260-case persistent-versus-fresh terminal confidence comparison, which used 100,000 resamples",
+     "status": "TEXTUAL_CLAIM_VERIFIED",
+     "detail": "",
+     "result_id": "agl.gemini260.terminal_confidence_difference",
+     "source": "analyze_sequential_gemini.py B=100000",
+     "note": ""
+    }
+   ],
+   "repeat_of_verified_tokens": 106,
+   "uncovered_numeric_tokens": [
+    {
+     "token": "-3.6",
+     "context": "ozen260-casebenchmarkevaluatedwithGemini-3.6-flash,categoricaldecisionsremainedhighl"
+    },
+    {
+     "token": "95%",
+     "context": "ence,apairedgapdifferenceof-10.00points(95%CI[-12.00,-7.72]).Asmallresidualpersiste"
+    },
+    {
+     "token": "2026",
+     "context": "ticLS:Life-ScienceAgentsWorkshop,NeurIPS2026.needtoreconcileheterogeneousexperimenta"
+    },
+    {
+     "token": "-0",
+     "context": "encecomparisonswiththeearliertemperature-0staticexperimentaredescriptive.Alignedpe"
+    },
+    {
+     "token": "-3.6",
+     "context": "idencepolarity.Outputsandanalysis.Gemini-3.6-flashreturnedacategoricaljudgment(suppo"
+    },
+    {
+     "token": "0",
+     "context": "nsufficient),self-reportedconfidencefrom0-100,reporteddominant-evidenceidentifier"
+    },
+    {
+     "token": "-100,",
+     "context": "sufficient),self-reportedconfidencefrom0-100,reporteddominant-evidenceidentifiers,and"
+    },
+    {
+     "token": "0",
+     "context": "resamples.Staticrunsspecifiedtemperature0;thepersistentandaligned-controlrunnersd"
+    },
+    {
+     "token": "3",
+     "context": "utputratherthancalibrateduncertainty[1].3ResultsCategoricaldecisionsremainedstabl"
+    },
+    {
+     "token": "-3.6",
+     "context": "hefrozen260-casereplicationcohort,Gemini-3.6-flashwascorrectunderHin259/260cases(99."
+    },
+    {
+     "token": "-120",
+     "context": "onalstaticsensitivityanalyseswithGPT-OSS-120Bandlatent-v2arereportedinAppendixE.6-E."
+    },
+    {
+     "token": "7.4",
+     "context": "Bandlatent-v2arereportedinAppendixE.6-E.7.4DiscussionandLimitationsThecentralfindin"
+    },
+    {
+     "token": "3",
+     "context": "sameterminalclinicalevidenceundermatched3ACategoricalstabilityH+L1H+L2H+L400.510."
+    },
+    {
+     "token": "770.390",
+     "context": "ACategoricalstabilityH+L1H+L2H+L400.510.770.390.39EDR(%)Baseline-correctcases:n=259Noop"
+    },
+    {
+     "token": "39",
+     "context": "icalstabilityH+L1H+L2H+L400.510.770.390.39EDR(%)Baseline-correctcases:n=259Nooppos"
+    },
+    {
+     "token": "848688909294",
+     "context": "lsBConflictsensitivityHH+L1H+L2H+L4H+L4A848688909294MeanconfidenceMatchedfour-cardcontrastH+"
+    },
+    {
+     "token": "-6.5195%",
+     "context": "H+L4:85.48H+L4A:91.99∆Cconflict-aligned=-6.5195%CI[-7.07,-5.95]CPersistentcontrolHH+L1H+"
+    },
+    {
+     "token": "-10.0095%",
+     "context": "1.85AlignedP-F:-1.85Conflict-alignedgap:-10.0095%CI[-12.00,-7.72]Figure1:Observablerespon"
+    },
+    {
+     "token": "95%",
+     "context": "t-minus-aligneddifferencewas-6.51points(95%CI[-7.07,-5.95]).(C)Onthesamefrozenbalan"
+    },
+    {
+     "token": "95%",
+     "context": "ldingapairedgapdifferenceof-10.00points(95%CI[-12.00,-7.72]).terminalinstructionspr"
+    },
+    {
+     "token": "-120",
+     "context": "ivitywasqualitativelyreproducedinGPT-OSS-120Bandlatent-v2,theprincipalpersistent-con"
+    },
+    {
+     "token": "-3.6",
+     "context": "rsistent-contextcomparisonusedonlyGemini-3.6-flash;cross-modelgeneralitythereforerem"
+    },
+    {
+     "token": "4",
+     "context": "trieval-andtool-usinglife-scienceagents.4AuthorNoteTheauthorsareDoctorofPharmacyC"
+    },
+    {
+     "token": "256",
+     "context": "90903.ThefrozenreplicationcasefilehadSHA256:b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8"
+    },
+    {
+     "token": "7",
+     "context": "icalrelevanceoftheevidenceitrepresents.”7Therequiredstructuredresponsecontainedac"
+    },
+    {
+     "token": "0",
+     "context": "cient),aself-reportedconfidencevaluefrom0to100,identifiersforevidencereportedbyth"
+    },
+    {
+     "token": "100,",
+     "context": "nt),aself-reportedconfidencevaluefrom0to100,identifiersforevidencereportedbythemodel"
+    },
+    {
+     "token": "4",
+     "context": "r+2conflictinglower-tiercardsH+L4Anchor+4conflictinglower-tiercardsH+L4AAnchor+4m"
+    },
+    {
+     "token": "4",
+     "context": "+4conflictinglower-tiercardsH+L4AAnchor+4matchedalignedcardsL4+H4conflictinglower"
+    },
+    {
+     "token": "3",
+     "context": "priorcategoricaljudgments,oranchoring.C.3AlignedpersistentcontrolThealignedpersis"
+    },
+    {
+     "token": "256",
+     "context": "sesweredeterministi-callyorderedbytheSHA256hashofagenticls-aligned-control-v1-20260"
+    },
+    {
+     "token": "8",
+     "context": "casesperstratum.Thesubsetwasfrozenbefore8anyaligned-controloutcomesweregeneratedo"
+    },
+    {
+     "token": "256",
+     "context": "nflict.Thefrozenaligned-subsetfilehadSHA256:6d0fbdf6085d4373779bb5755bf3575ef812eec"
+    },
+    {
+     "token": "0",
+     "context": "ionpairreceivedonecompletion.Temperature0wasusedtoreducestochasticvariationbutwas"
+    },
+    {
+     "token": "-3.6",
+     "context": "hepersistent-contextexperimentusedGemini-3.6-flashandthesamestrictstructured-outputs"
+    },
+    {
+     "token": "3",
+     "context": "essfulassessmentwasselectivelyremoved.D.3Alignedpersistent-controlexecutionTheali"
+    },
+    {
+     "token": "-3.6",
+     "context": "ionThealignedpersistentcontrolusedGemini-3.6-flashandthesamestrictstructured-respons"
+    },
+    {
+     "token": "9",
+     "context": "texplicitlyspecifyatemperatureparameter.9Eachofthe40casesrequiredfournewpersisten"
+    },
+    {
+     "token": "4",
+     "context": "lybalanced5/5withineach10-casestratum.D.4StatisticalanalysisEvidenceDilutionRatea"
+    },
+    {
+     "token": "1,2,4",
+     "context": ":Di(H)=Yi,Di(H+Lk)̸=Yi}#{i:Di(H)=Yi},k∈{1,2,4},whereDi(·)denotesthecategoricaloutputf"
+    },
+    {
+     "token": "95%",
+     "context": "portionsweresummarizedwithexacttwo-sided95%Clopper-Pearsonintervalswhereapplicable."
+    },
+    {
+     "token": "95%",
+     "context": "freshconfidencedifferencewas-1.85points(95%pairedbootstrapCI,[-3.20,-0.68]).Persist"
+    },
+    {
+     "token": "95%",
+     "context": "nt-minus-freshdifferencewas-11.85points(95%CI,[-13.72,-9.93]),withpersistentconfide"
+    },
+    {
+     "token": "95%",
+     "context": "e.Thepairedgapdifferencewas-10.00points(95%CI,[-12.00,-7.72]).Terminalcategoricalju"
+    },
+    {
+     "token": "70,",
+     "context": ",weappliedintegerconfidencethresholdsτ∈{70,...,95}topairedterminalpersistentandfres"
+    },
+    {
+     "token": "80,159",
+     "context": "260cases(8.8%)to159/260cases(61.2%).Atτ=80,159/260pairedoutputsfellonoppositesidesofth"
+    },
+    {
+     "token": "3",
+     "context": "atearouting,escalation,orreviewpolicy.E.3Reference-directionsubgroupanalysisThepe"
+    },
+    {
+     "token": "4",
+     "context": "iveandwerenotusedforhypothesistesting.E.4ReporteddominantevidenceAcrossthe1,560ca"
+    },
+    {
+     "token": "5",
+     "context": "wo-sided95%Clopper-PearsonCI,0-1.41%).E.5PrimarycohortAll40Geminiprimarycaseswere"
+    },
+    {
+     "token": "6",
+     "context": "astwas-7.28points(95%CI[-8.23,-6.30]).E.6GPT-OSS-120BmodelsensitivityGPT-OSS-120B"
+    },
+    {
+     "token": "-120",
+     "context": ".28points(95%CI[-8.23,-6.30]).E.6GPT-OSS-120BmodelsensitivityGPT-OSS-120Bwasevaluate"
+    },
+    {
+     "token": "-120",
+     "context": ").E.6GPT-OSS-120BmodelsensitivityGPT-OSS-120BwasevaluatedposthocthroughtheGroqAPIont"
+    },
+    {
+     "token": "0,",
+     "context": "ozen40-caseprimarycohortusingtemperature0,thesamestructured-responseschema,andreas"
+    },
+    {
+     "token": "7",
+     "context": "yasaqualitativemodel-sensitivitycheck.E.7Latent-v2representationsensitivityLatent"
+    },
+    {
+     "token": "8",
+     "context": "0cases,unchangedinfive,andhigherinone.E.8AnonymizationsensitivityNinereplicationq"
+    },
+    {
+     "token": "9",
+     "context": "retotheunderlyingpublicsourcematerial.E.9GuidelineboundaryanalysisAseparate15-cas"
+    },
+    {
+     "token": "-3.6",
+     "context": "ththepredefinedreferencedirection.Gemini-3.6-flashandGPT-OSS-120Beachproducedtherefe"
+    },
+    {
+     "token": "-120",
+     "context": "encedirection.Gemini-3.6-flashandGPT-OSS-120Beachproducedthereferencecategoricaloutp"
+    },
+    {
+     "token": "95%",
+     "context": "20pointshigherwhentheanchorappearedlast(95%pairedbootstrapCI,[0.76,1.64]).Becauseon"
+    }
+   ]
+  },
+  {
+   "paper": "genai4health",
+   "status": "PENDING_CAMERA_READY",
+   "note": "No camera-ready PDF ingested for this paper; nothing audited."
+  }
+ ]
+}

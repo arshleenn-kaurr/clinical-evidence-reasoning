@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "required": [
+    "decision",
+    "confidence",
+    "dominant_evidence_ids",
+    "rationale"
+  ],
+  "properties": {
+    "decision": {
+      "type": "string",
+      "enum": [
+        "support",
+        "do_not_support",
+        "insufficient"
+      ]
+    },
+    "confidence": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 100
+    },
+    "dominant_evidence_ids": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "rationale": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

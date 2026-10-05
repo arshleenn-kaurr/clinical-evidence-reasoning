@@ -1,0 +1,389 @@
+{
+  "generated_utc": "2026-10-05T02:36:10+00:00",
+  "note": "Structural only; no outcome summaries computed.",
+  "genai4health": {
+    "gemini_primary_40": {
+      "canonical_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_main_gemini_3_6_flash.jsonl",
+      "canonical_sha256": "6390567553c5d7a2f90acf7a54f732378d2f97af5307de080ec2a64edd025a56",
+      "rows": 240,
+      "malformed_rows": 0,
+      "status_counts": {
+        "ok": 240
+      },
+      "successful_rows": 240,
+      "expected_successful": 240,
+      "unique_ids": 240,
+      "duplicate_ids": [],
+      "missing_ids_vs_prompts": [],
+      "unexpected_ids_vs_prompts": [],
+      "cases_in_output": 40,
+      "cases_in_cohort": 40,
+      "cases_missing": [],
+      "cases_with_incomplete_conditions": [],
+      "condition_counts": {
+        "H": 40,
+        "H_L1": 40,
+        "H_L2": 40,
+        "H_L4": 40,
+        "H_L4_ALIGNED": 40,
+        "L4_H": 40
+      },
+      "models": [
+        "gemini-3.6-flash"
+      ],
+      "schema_problem_counts": {},
+      "confidence_noninteger_values": 0,
+      "problems": [],
+      "status": "STRUCTURE_VERIFIED"
+    },
+    "gemini_replication_260": {
+      "canonical_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/replication_gemini_3_6_flash_CLEAN.jsonl",
+      "canonical_sha256": "dedd0d56ba0b9970d3cdfa4e4d2485506580af3b506984ef78c5fb7c93708a40",
+      "rows": 1560,
+      "malformed_rows": 0,
+      "status_counts": {
+        "ok": 1560
+      },
+      "successful_rows": 1560,
+      "expected_successful": 1560,
+      "unique_ids": 1560,
+      "duplicate_ids": [],
+      "missing_ids_vs_prompts": [],
+      "unexpected_ids_vs_prompts": [],
+      "cases_in_output": 260,
+      "cases_in_cohort": 260,
+      "cases_missing": [],
+      "cases_with_incomplete_conditions": [],
+      "condition_counts": {
+        "H": 260,
+        "H_L1": 260,
+        "H_L2": 260,
+        "H_L4": 260,
+        "H_L4_ALIGNED": 260,
+        "L4_H": 260
+      },
+      "models": [
+        "gemini-3.6-flash"
+      ],
+      "schema_problem_counts": {},
+      "confidence_noninteger_values": 0,
+      "raw_to_canonical": {
+        "raw_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/replication_gemini_3_6_flash_RAW.jsonl",
+        "raw_rows": 1564,
+        "raw_malformed": 0,
+        "raw_ok": 1560,
+        "raw_error_rows": 4,
+        "raw_error_http_status": {
+          "503": 4
+        },
+        "raw_identical_to_canonical_bytes": false,
+        "canonical_equals_raw_ok_rows_in_order": true,
+        "canonical_line_set_equals_raw_ok_line_set": true,
+        "every_failed_prompt_has_exactly_one_success": true
+      },
+      "problems": [],
+      "status": "STRUCTURE_VERIFIED"
+    },
+    "gemini_veto_15": {
+      "canonical_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_veto_gemini_3_6_flash.jsonl",
+      "canonical_sha256": "50d69fef4c615831660639ce1a8d577db9b6a496c1b22e61ee76da6a3e81b8c8",
+      "rows": 90,
+      "malformed_rows": 0,
+      "status_counts": {
+        "ok": 90
+      },
+      "successful_rows": 90,
+      "expected_successful": 90,
+      "unique_ids": 90,
+      "duplicate_ids": [],
+      "missing_ids_vs_prompts": [],
+      "unexpected_ids_vs_prompts": [],
+      "cases_in_output": 15,
+      "cases_in_cohort": 15,
+      "cases_missing": [],
+      "cases_with_incomplete_conditions": [],
+      "condition_counts": {
+        "H": 15,
+        "H_L1": 15,
+        "H_L2": 15,
+        "H_L4": 15,
+        "H_L4_ALIGNED": 15,
+        "L4_H": 15
+      },
+      "models": [
+        "gemini-3.6-flash"
+      ],
+      "schema_problem_counts": {},
+      "confidence_noninteger_values": 0,
+      "problems": [],
+      "status": "STRUCTURE_VERIFIED"
+    },
+    "gpt_oss_primary_40": {
+      "canonical_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_main_gpt_oss_120b_CLEAN.jsonl",
+      "canonical_sha256": "481ffd95dd3fe298ae54f18fa07ae8f612b0af630e00a736092b746eca543ce7",
+      "rows": 240,
+      "malformed_rows": 0,
+      "status_counts": {
+        "ok": 240
+      },
+      "successful_rows": 240,
+      "expected_successful": 240,
+      "unique_ids": 240,
+      "duplicate_ids": [],
+      "missing_ids_vs_prompts": [],
+      "unexpected_ids_vs_prompts": [],
+      "cases_in_output": 40,
+      "cases_in_cohort": 40,
+      "cases_missing": [],
+      "cases_with_incomplete_conditions": [],
+      "condition_counts": {
+        "H": 40,
+        "H_L1": 40,
+        "H_L2": 40,
+        "H_L4": 40,
+        "H_L4_ALIGNED": 40,
+        "L4_H": 40
+      },
+      "models": [
+        "openai/gpt-oss-120b"
+      ],
+      "schema_problem_counts": {},
+      "confidence_noninteger_values": 0,
+      "raw_to_canonical": {
+        "raw_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_main_gpt_oss_120b_RAW.jsonl",
+        "raw_rows": 240,
+        "raw_malformed": 0,
+        "raw_ok": 240,
+        "raw_error_rows": 0,
+        "raw_error_http_status": {},
+        "raw_identical_to_canonical_bytes": true,
+        "canonical_equals_raw_ok_rows_in_order": true,
+        "canonical_line_set_equals_raw_ok_line_set": true,
+        "every_failed_prompt_has_exactly_one_success": true
+      },
+      "problems": [],
+      "status": "STRUCTURE_VERIFIED"
+    },
+    "gpt_oss_veto_15": {
+      "canonical_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_veto_gpt_oss_120b_CLEAN.jsonl",
+      "canonical_sha256": "387453c4681df1ec07dd3f04c5e4a403ca8f10ac895594ac128ec560c9719f02",
+      "rows": 90,
+      "malformed_rows": 0,
+      "status_counts": {
+        "ok": 90
+      },
+      "successful_rows": 90,
+      "expected_successful": 90,
+      "unique_ids": 90,
+      "duplicate_ids": [],
+      "missing_ids_vs_prompts": [],
+      "unexpected_ids_vs_prompts": [],
+      "cases_in_output": 15,
+      "cases_in_cohort": 15,
+      "cases_missing": [],
+      "cases_with_incomplete_conditions": [],
+      "condition_counts": {
+        "H": 15,
+        "H_L1": 15,
+        "H_L2": 15,
+        "H_L4": 15,
+        "H_L4_ALIGNED": 15,
+        "L4_H": 15
+      },
+      "models": [
+        "openai/gpt-oss-120b"
+      ],
+      "schema_problem_counts": {},
+      "confidence_noninteger_values": 0,
+      "raw_to_canonical": {
+        "raw_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_veto_gpt_oss_120b_RAW.jsonl",
+        "raw_rows": 90,
+        "raw_malformed": 0,
+        "raw_ok": 90,
+        "raw_error_rows": 0,
+        "raw_error_http_status": {},
+        "raw_identical_to_canonical_bytes": true,
+        "canonical_equals_raw_ok_rows_in_order": true,
+        "canonical_line_set_equals_raw_ok_line_set": true,
+        "every_failed_prompt_has_exactly_one_success": true
+      },
+      "problems": [],
+      "status": "STRUCTURE_VERIFIED"
+    },
+    "gemini_latent_v2_40": {
+      "canonical_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/latent_v2_main_gemini_3_6_flash_CLEAN.jsonl",
+      "canonical_sha256": "b49c2a15b7b36f13d4eb2982137943451d69428910544bcff650b5c5ff75f3c7",
+      "rows": 240,
+      "malformed_rows": 0,
+      "status_counts": {
+        "ok": 240
+      },
+      "successful_rows": 240,
+      "expected_successful": 240,
+      "unique_ids": 240,
+      "duplicate_ids": [],
+      "missing_ids_vs_prompts": [],
+      "unexpected_ids_vs_prompts": [],
+      "cases_in_output": 40,
+      "cases_in_cohort": 40,
+      "cases_missing": [],
+      "cases_with_incomplete_conditions": [],
+      "condition_counts": {
+        "H": 40,
+        "H_L1": 40,
+        "H_L2": 40,
+        "H_L4": 40,
+        "H_L4_ALIGNED": 40,
+        "L4_H": 40
+      },
+      "models": [
+        "gemini-3.6-flash"
+      ],
+      "schema_problem_counts": {},
+      "confidence_noninteger_values": 0,
+      "raw_to_canonical": {
+        "raw_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/latent_v2_main_gemini_3_6_flash_RAW.jsonl",
+        "raw_rows": 240,
+        "raw_malformed": 0,
+        "raw_ok": 240,
+        "raw_error_rows": 0,
+        "raw_error_http_status": {},
+        "raw_identical_to_canonical_bytes": true,
+        "canonical_equals_raw_ok_rows_in_order": true,
+        "canonical_line_set_equals_raw_ok_line_set": true,
+        "every_failed_prompt_has_exactly_one_success": true
+      },
+      "problems": [],
+      "status": "STRUCTURE_VERIFIED"
+    }
+  },
+  "agenticls": {
+    "gemini_persistent_260": {
+      "canonical_file": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/results/gemini_260_results.jsonl",
+      "rows": 1560,
+      "malformed_rows": 0,
+      "status_counts": {
+        "ok": 1560
+      },
+      "successful_rows": 1560,
+      "expected_successful": 1560,
+      "unique_run_ids": 1560,
+      "duplicate_run_ids": [],
+      "missing_run_ids": [],
+      "unexpected_run_ids": [],
+      "cases": 260,
+      "cases_incomplete": [],
+      "arm_condition_counts": {
+        "fresh:H_L4": 260,
+        "sequential:H": 260,
+        "sequential:H_L1": 260,
+        "sequential:H_L2": 260,
+        "sequential:H_L3": 260,
+        "sequential:H_L4": 260
+      },
+      "schema_problem_counts": {},
+      "sequential_structure_problems": {},
+      "attempts": {
+        "rows": 1567,
+        "malformed": 0,
+        "http_status": {
+          "200": 1560,
+          "429": 5,
+          "503": 2
+        },
+        "ok_attempt_run_ids_equal_canonical": true
+      },
+      "execution_order": {
+        "cases_in_log": 260,
+        "conflicting_labels": 0,
+        "overall": {
+          "fresh": 130,
+          "sequential": 130
+        },
+        "by_stratum": {
+          "High|do_not_support": {
+            "sequential": 32,
+            "fresh": 33
+          },
+          "High|support": {
+            "sequential": 33,
+            "fresh": 32
+          },
+          "Moderate|do_not_support": {
+            "fresh": 32,
+            "sequential": 33
+          },
+          "Moderate|support": {
+            "fresh": 33,
+            "sequential": 32
+          }
+        }
+      },
+      "results_equal_FINAL_BACKUP": true,
+      "attempts_equal_FINAL_BACKUP": true,
+      "problems": [],
+      "status": "STRUCTURE_VERIFIED"
+    },
+    "gemini_aligned_control_40": {
+      "canonical_file": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/results/aligned_control_results.jsonl",
+      "cohort_sha256": "6d0fbdf6085d4373779bb5755bf3575ef812eecea98529656d3c58a30a3ff540",
+      "cohort_lines_subset_of_260": true,
+      "cases_per_stratum": {
+        "High|do_not_support": 10,
+        "High|support": 10,
+        "Moderate|do_not_support": 10,
+        "Moderate|support": 10
+      },
+      "rows": 200,
+      "malformed_rows": 0,
+      "successful_rows": 200,
+      "expected_successful": 200,
+      "unique_run_ids": 200,
+      "duplicate_run_ids": [],
+      "missing_run_ids": [],
+      "unexpected_run_ids": [],
+      "arm_condition_counts": {
+        "fresh_aligned:H_L4_ALIGNED": 40,
+        "aligned_sequential:H_L1_ALIGNED": 40,
+        "aligned_sequential:H_L2_ALIGNED": 40,
+        "aligned_sequential:H_L3_ALIGNED": 40,
+        "aligned_sequential:H_L4_ALIGNED": 40
+      },
+      "schema_problem_counts": {},
+      "attempts": {
+        "rows": 200,
+        "malformed": 0,
+        "http_status": {
+          "200": 200
+        }
+      },
+      "branch_point_links_verified": "160/160",
+      "execution_order": {
+        "overall": {
+          "fresh": 20,
+          "sequential": 20
+        },
+        "by_stratum": {
+          "High|do_not_support": {
+            "fresh": 5,
+            "sequential": 5
+          },
+          "High|support": {
+            "fresh": 5,
+            "sequential": 5
+          },
+          "Moderate|do_not_support": {
+            "fresh": 5,
+            "sequential": 5
+          },
+          "Moderate|support": {
+            "fresh": 5,
+            "sequential": 5
+          }
+        }
+      },
+      "problems": [],
+      "status": "STRUCTURE_VERIFIED"
+    }
+  }
+}

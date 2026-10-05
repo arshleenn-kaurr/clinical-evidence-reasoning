@@ -1,0 +1,2 @@
+model,n,mean_confidence_H,mean_confidence_H_L4,confidence_shift_H_to_H_L4,ci_lo,ci_hi
+openai/gpt-oss-120b,40,86.05,79.7,-6.35,-8.0,-4.725

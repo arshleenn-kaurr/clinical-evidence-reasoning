@@ -1,0 +1,72 @@
+{
+  "paper": "agenticls",
+  "title": "Stable Decisions Can Hide Evidence Sensitivity in Life-Science Evidence Synthesis",
+  "authors": [
+    "Manav Vohra",
+    "Arshleen Kaur"
+  ],
+  "affiliations": [
+    "Independent Researcher",
+    "Ernest Mario School of Pharmacy",
+    "Rutgers University"
+  ],
+  "workshop": "AgenticLS: Life-Science Agents Workshop, NeurIPS 2026",
+  "year": 2026,
+  "url": null,
+  "doi": null,
+  "pdf_filename": "agenticls-camera-ready.pdf",
+  "pdf_sha256": "1b7311a7f7c563b50dbbd10c59d665b87881b8a3e9c2058c60ff28bcb72758e5",
+  "pdf_size_bytes": 273564,
+  "ingested_at_utc": "2026-10-05T01:59:00+00:00",
+  "authors_detail": [
+    {
+      "name": "Manav Vohra",
+      "affiliation_lines_as_printed": [
+        "Independent Researcher",
+        "Ernest Mario School of Pharmacy",
+        "Rutgers University"
+      ]
+    },
+    {
+      "name": "Arshleen Kaur",
+      "affiliation_lines_as_printed": [
+        "Independent Researcher",
+        "Ernest Mario School of Pharmacy",
+        "Rutgers University"
+      ]
+    }
+  ],
+  "author_order_as_printed": [
+    "Manav Vohra",
+    "Arshleen Kaur"
+  ],
+  "conference": "NeurIPS 2026",
+  "workshop_footer_as_printed": "AgenticLS: Life-Science Agents Workshop, NeurIPS 2026.",
+  "acceptance_or_camera_ready_footer_wording": null,
+  "conference_full_name_printed": null,
+  "pages": 12,
+  "identity_verified_by": "first-page text extraction (title, authors, workshop footer) - not filename",
+  "status": "CAMERA-READY INGESTED / VERIFIED",
+  "permission_to_redistribute_pdf": "NOT ESTABLISHED",
+  "notes": [
+    "Author Note on p.5 states the authors are Doctor of Pharmacy Candidates at Ernest Mario School of Pharmacy, Rutgers University, work conducted independently.",
+    "No DOI, OpenReview, arXiv or proceedings information is printed in the PDF; none recorded."
+  ],
+  "source_pdf_at_ingestion": "~/Downloads/AgenticLS_CameraReady.pdf (local download folder; full local path recorded only in the non-public ingestion log)",
+  "pdf_embedded_metadata": {
+    "Title": "",
+    "Author": "",
+    "Creator": "LaTeX with hyperref",
+    "Producer": "pdfTeX-1.40.29",
+    "CreationDate": "(see PDF)"
+  },
+  "superseded_versions": [
+    {
+      "pdf_sha256": "30e8f4e65cd3a095c787f34caa3bc24963ba9413c6d0524a59b69a60d181285e",
+      "pdf_size_bytes": 273393,
+      "ingested_at_utc": "2026-10-04T22:16:03+00:00",
+      "status": "SUPERSEDED - not current; the PDF itself is not retained in the repository",
+      "reason": "authors corrected the bootstrap-resample statement (Methods, App. D.4) and the Appendix B anchor count (five -> four); see docs/camera_ready_approved_revisions.md"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+cohort,model,contrast,from_decision,to_decision,n,prespecification_status
+replication,gemini-3.6-flash,H->H_L1,do_not_support,do_not_support,128,post_hoc_descriptive
+replication,gemini-3.6-flash,H->H_L1,do_not_support,insufficient,2,post_hoc_descriptive
+replication,gemini-3.6-flash,H->H_L1,support,support,129,post_hoc_descriptive
+replication,gemini-3.6-flash,H->H_L2,do_not_support,do_not_support,129,post_hoc_descriptive
+replication,gemini-3.6-flash,H->H_L2,do_not_support,insufficient,1,post_hoc_descriptive
+replication,gemini-3.6-flash,H->H_L2,support,support,129,post_hoc_descriptive
+replication,gemini-3.6-flash,H->H_L4,do_not_support,do_not_support,129,post_hoc_descriptive
+replication,gemini-3.6-flash,H->H_L4,do_not_support,insufficient,1,post_hoc_descriptive
+replication,gemini-3.6-flash,H->H_L4,support,support,129,post_hoc_descriptive
+gpt_oss_primary,openai/gpt-oss-120b,H->H_L1,do_not_support,do_not_support,20,post_hoc_descriptive
+gpt_oss_primary,openai/gpt-oss-120b,H->H_L1,support,support,20,post_hoc_descriptive
+gpt_oss_primary,openai/gpt-oss-120b,H->H_L2,do_not_support,do_not_support,20,post_hoc_descriptive
+gpt_oss_primary,openai/gpt-oss-120b,H->H_L2,support,support,20,post_hoc_descriptive
+gpt_oss_primary,openai/gpt-oss-120b,H->H_L4,do_not_support,do_not_support,20,post_hoc_descriptive
+gpt_oss_primary,openai/gpt-oss-120b,H->H_L4,support,support,20,post_hoc_descriptive

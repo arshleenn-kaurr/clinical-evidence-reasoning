@@ -1,0 +1,48 @@
+# Conservative ignore list. Raw scientific results (*.jsonl, *.log, backups,
+# checkpoints inside experiments/**/historical_package/) are deliberately NOT
+# ignored. Public-release exclusions are decided in docs/public_artifact_plan.md.
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Environments
+.venv/
+venv/
+.env
+.env.*
+
+# Secrets / API keys
+*.key
+*.pem
+secrets/
+*secret*.txt
+*api_key*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Process / temporary files
+*.pid
+nohup.out
+!experiments/**/historical_package/**/nohup.out
+tmp/
+scratch/
+*.tmp
+
+# Large intermediate caches
+.cache/
+cache/
+
+# Phase 3 validation: disposable scratch copies and environments.
+# Reports, logs, comparisons and regenerated outputs under validation/ ARE kept.
+validation/scratch/
+validation/.venv*/

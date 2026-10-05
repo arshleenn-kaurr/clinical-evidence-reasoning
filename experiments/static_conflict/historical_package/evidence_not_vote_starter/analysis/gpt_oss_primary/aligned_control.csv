@@ -1,0 +1,2 @@
+model,n,accuracy_H_L4,accuracy_H_L4_ALIGNED,aligned_control_delta,ci_lo,ci_hi
+openai/gpt-oss-120b,40,1.0,0.975,-0.025,-0.075,0.0

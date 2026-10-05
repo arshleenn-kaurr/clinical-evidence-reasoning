@@ -1,0 +1,19 @@
+{
+  "cases_per_stratum": 65,
+  "freeze_timestamp_utc": "2026-09-09T09:54:17.480138+00:00",
+  "output": "data/replication_cases.jsonl",
+  "output_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+  "primary_cohort_modified": false,
+  "purpose": "supplementary replication extension",
+  "seed": 2026090903,
+  "selection_uses_model_outputs": false,
+  "source_audited_csv": "data/replication_candidates_audited.csv",
+  "source_audited_csv_sha256": "b6db58e072a57aca07cfefb6c9bf6db162a7f12105fa2f4ace0c9ed55e966e4f",
+  "strata": {
+    "High__do_not_support": 65,
+    "High__support": 65,
+    "Moderate__do_not_support": 65,
+    "Moderate__support": 65
+  },
+  "total_cases": 260
+}

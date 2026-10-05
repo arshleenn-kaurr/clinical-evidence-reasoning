@@ -1,0 +1,41 @@
+# Citation metadata, populated ONLY from the ingested AgenticLS camera-ready PDF.
+# Deliberately omitted until they exist: version, date-released, repository-code, url, doi
+# (no public repository, release or DOI exists yet; none are guessed).
+# The GenAI4Health reference remains a placeholder until its final camera-ready is ingested.
+cff-version: 1.2.0
+message: >-
+  If you use this repository, please cite the associated workshop paper(s)
+  listed under references. Repository-level citation details (release,
+  DOI) will be added once a public release exists.
+title: "clinical-evidence-reasoning"
+type: software
+license: MIT   # code only; see DATA_AND_ARTIFACT_RIGHTS.md for what the code license does not cover
+# Repository-level authors: taken from the verified AgenticLS camera-ready author list.
+# Confirm against the GenAI4Health camera-ready author list once that PDF is ingested.
+authors:
+  - family-names: "Vohra"
+    given-names: "Manav"
+    affiliation: "Independent Researcher; Ernest Mario School of Pharmacy, Rutgers University"
+  - family-names: "Kaur"
+    given-names: "Arshleen"
+    affiliation: "Independent Researcher; Ernest Mario School of Pharmacy, Rutgers University"
+references:
+  - type: conference-paper
+    title: "Stable Decisions Can Hide Evidence Sensitivity in Life-Science Evidence Synthesis"
+    authors:
+      - family-names: "Vohra"
+        given-names: "Manav"
+        affiliation: "Independent Researcher; Ernest Mario School of Pharmacy, Rutgers University"
+      - family-names: "Kaur"
+        given-names: "Arshleen"
+        affiliation: "Independent Researcher; Ernest Mario School of Pharmacy, Rutgers University"
+    year: 2026
+    conference:
+      name: "AgenticLS: Life-Science Agents Workshop, NeurIPS 2026"
+    notes: "Camera-ready PDF SHA256 1b7311a7f7c563b50dbbd10c59d665b87881b8a3e9c2058c60ff28bcb72758e5. See papers/agenticls/."
+  - type: generic
+    title: "Evidence Is Not a Vote: Categorical Stability and Confidence Sensitivity Under Conflicting Clinical Evidence"
+    notes: "GenAI4Health workshop paper (NeurIPS 2026). CAMERA-READY PENDING: title is from the anonymized submission and unverified against the final camera-ready; authors TODO. See papers/genai4health/."
+    authors:
+      - family-names: "TODO"
+        given-names: "TODO"
