@@ -1,6 +1,6 @@
-# Clinical Evidence Reasoning
+# Scientific Evidence Reasoning
 
-Research archive and reproduction pipeline for two accepted NeurIPS 2026 workshop papers studying how large language models weigh clinical evidence: whether categorical decisions and self-reported confidence hold up under conflicting lower-tier evidence, and whether they shift when that evidence arrives incrementally in a persistent conversation rather than all at once.
+Research archive and reproduction pipeline for two accepted NeurIPS 2026 workshop papers studying how large language models weigh scientific evidence: whether categorical decisions and self-reported confidence hold up under conflicting lower-tier evidence, and whether they shift when that evidence arrives incrementally in a persistent conversation rather than all at once.
 
 ## At a glance
 
