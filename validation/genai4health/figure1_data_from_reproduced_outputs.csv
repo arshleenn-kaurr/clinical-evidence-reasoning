@@ -1,0 +1,9 @@
+panel,series,x,numerator,denominator,estimate,lo,hi,direction_counts,source
+A,replication,EDR1,2,259,0.7722007722007722,0.09365428649272986,2.761460762617643,,validation/genai4health/posthoc/binomial_proportions_exact.csv
+A,replication,EDR2,1,259,0.3861003861003861,0.009774737679332906,2.1323236845371207,,validation/genai4health/posthoc/binomial_proportions_exact.csv
+A,replication,EDR4,1,259,0.3861003861003861,0.009774737679332906,2.1323236845371207,,validation/genai4health/posthoc/binomial_proportions_exact.csv
+A,gpt_oss_primary,EDR1,0,40,0.0,0.0,8.809730287880237,,validation/genai4health/posthoc/binomial_proportions_exact.csv
+A,gpt_oss_primary,EDR2,0,40,0.0,0.0,8.809730287880237,,validation/genai4health/posthoc/binomial_proportions_exact.csv
+A,gpt_oss_primary,EDR4,0,40,0.0,0.0,8.809730287880237,,validation/genai4health/posthoc/binomial_proportions_exact.csv
+B,replication,conflict_minus_aligned,,260,-6.507692307692308,-7.073076923076923,-5.946153846153846,224/27/9,validation/genai4health/posthoc/confidence_contrasts_bootstrap.csv; confidence_direction_counts.csv
+B,gpt_oss_primary,conflict_minus_aligned,,40,-5.75,-7.45,-3.6,35/4/1,validation/genai4health/posthoc/confidence_contrasts_bootstrap.csv; confidence_direction_counts.csv

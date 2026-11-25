@@ -1,0 +1,419 @@
+{
+  "comparison": "score_results.py regenerated (scratch) vs archived analysis/<cohort>/",
+  "cohorts": {
+    "gpt_oss_primary": {
+      "files": {
+        "accuracy_by_condition.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_primary/accuracy_by_condition.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/accuracy_by_condition.csv",
+          "reproduced_sha256": "5fa38e95297603b1b973679bef15fe853e585dbeed3e93604dffd4756049ad32",
+          "archived_sha256": "5fa38e95297603b1b973679bef15fe853e585dbeed3e93604dffd4756049ad32",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "aligned_control.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_primary/aligned_control.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/aligned_control.csv",
+          "reproduced_sha256": "8dcdcbf4dd1e4af3c7aa077772b0e0f56386a4e2c185d5394608e34d0b669d94",
+          "archived_sha256": "8dcdcbf4dd1e4af3c7aa077772b0e0f56386a4e2c185d5394608e34d0b669d94",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "confidence_shift.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_primary/confidence_shift.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/confidence_shift.csv",
+          "reproduced_sha256": "afa4d3bc24e4944374f92cfd76d0a85992f65688df14f82febbeee7953b8b61a",
+          "archived_sha256": "afa4d3bc24e4944374f92cfd76d0a85992f65688df14f82febbeee7953b8b61a",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "evidence_dilution_rate.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_primary/evidence_dilution_rate.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/evidence_dilution_rate.csv",
+          "reproduced_sha256": "776151a2aa635d26de62b556370d149792a790982a30f7a804a21dd2a95f0848",
+          "archived_sha256": "776151a2aa635d26de62b556370d149792a790982a30f7a804a21dd2a95f0848",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "flip_threshold.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_primary/flip_threshold.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/flip_threshold.csv",
+          "reproduced_sha256": "14d4cc32e974192cafefb8dd6febbe804c3c51ee2cc266afd7a4b9ee3e0345a5",
+          "archived_sha256": "14d4cc32e974192cafefb8dd6febbe804c3c51ee2cc266afd7a4b9ee3e0345a5",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "merged_scored_results.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_primary/merged_scored_results.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/merged_scored_results.csv",
+          "reproduced_sha256": "26700a9fcb0efd22a4d2bae595e7f1ed835f19f36f204480354845afb7b17e4b",
+          "archived_sha256": "26700a9fcb0efd22a4d2bae595e7f1ed835f19f36f204480354845afb7b17e4b",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "order_sensitivity.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_primary/order_sensitivity.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/order_sensitivity.csv",
+          "reproduced_sha256": "c6ff913a2cc6969db8a172d57695bc63a6ec56e40343d8af25229e0aaacd2f20",
+          "archived_sha256": "c6ff913a2cc6969db8a172d57695bc63a6ec56e40343d8af25229e0aaacd2f20",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "veto_failure_rate.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_primary/veto_failure_rate.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/veto_failure_rate.csv",
+          "reproduced_sha256": "5a713856c0c83d08cbf8cad94105934e3f22656641d9902a8fcb94bfeb7b597d",
+          "archived_sha256": "5a713856c0c83d08cbf8cad94105934e3f22656641d9902a8fcb94bfeb7b597d",
+          "status": "EXACT_MATCH",
+          "differences": []
+        }
+      },
+      "status": "EXACT_MATCH"
+    },
+    "gpt_oss_veto": {
+      "files": {
+        "accuracy_by_condition.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_veto/accuracy_by_condition.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/accuracy_by_condition.csv",
+          "reproduced_sha256": "6c31cf41de5f34d9ad3c8b7d7be16ece88d5548ea8dcdf9a31f165314b09b74f",
+          "archived_sha256": "6c31cf41de5f34d9ad3c8b7d7be16ece88d5548ea8dcdf9a31f165314b09b74f",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "aligned_control.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_veto/aligned_control.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/aligned_control.csv",
+          "reproduced_sha256": "195238fcfae74b18f285c710200e7ea86a91b55ce45abd27912af612c4ce4254",
+          "archived_sha256": "195238fcfae74b18f285c710200e7ea86a91b55ce45abd27912af612c4ce4254",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "confidence_shift.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_veto/confidence_shift.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/confidence_shift.csv",
+          "reproduced_sha256": "f6686a9eac9bc6a23a8b00d3c4ca0694cf0f3b5005726fdf4d7ece07d08eceff",
+          "archived_sha256": "f6686a9eac9bc6a23a8b00d3c4ca0694cf0f3b5005726fdf4d7ece07d08eceff",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "evidence_dilution_rate.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_veto/evidence_dilution_rate.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/evidence_dilution_rate.csv",
+          "reproduced_sha256": "7ac04c2e89f2891713960601ea9d3605a2539557af484c345d00571d2bc2fd8c",
+          "archived_sha256": "7ac04c2e89f2891713960601ea9d3605a2539557af484c345d00571d2bc2fd8c",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "flip_threshold.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_veto/flip_threshold.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/flip_threshold.csv",
+          "reproduced_sha256": "8c5a8e1b32142888c51da8ee3173b68d95297c4af2c4cd3a3ecb081590a8ab5a",
+          "archived_sha256": "8c5a8e1b32142888c51da8ee3173b68d95297c4af2c4cd3a3ecb081590a8ab5a",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "merged_scored_results.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_veto/merged_scored_results.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/merged_scored_results.csv",
+          "reproduced_sha256": "75dbc82ec8e61fa3e23ab18ff0f9fb518a20710ba0adf0a254d134af0325b60d",
+          "archived_sha256": "75dbc82ec8e61fa3e23ab18ff0f9fb518a20710ba0adf0a254d134af0325b60d",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "order_sensitivity.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_veto/order_sensitivity.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/order_sensitivity.csv",
+          "reproduced_sha256": "7df05f07b56be27919e02ded098611c86abc55cf0c2ced09223af867362119f2",
+          "archived_sha256": "7df05f07b56be27919e02ded098611c86abc55cf0c2ced09223af867362119f2",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "veto_failure_rate.csv": {
+          "reproduced": "validation/genai4health/prespecified/gpt_oss_veto/veto_failure_rate.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/veto_failure_rate.csv",
+          "reproduced_sha256": "f95b4e3138c16388b83c29b6a0d4febe493b2a5f1279e26e0785e3b98650eea5",
+          "archived_sha256": "f95b4e3138c16388b83c29b6a0d4febe493b2a5f1279e26e0785e3b98650eea5",
+          "status": "EXACT_MATCH",
+          "differences": []
+        }
+      },
+      "status": "EXACT_MATCH"
+    },
+    "latent_v2_gemini": {
+      "files": {
+        "accuracy_by_condition.csv": {
+          "reproduced": "validation/genai4health/prespecified/latent_v2_gemini/accuracy_by_condition.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/accuracy_by_condition.csv",
+          "reproduced_sha256": "27bae5dc2286b40b8b30abec2084a075cf7d03e53f894d1572e49fb71ddd1079",
+          "archived_sha256": "27bae5dc2286b40b8b30abec2084a075cf7d03e53f894d1572e49fb71ddd1079",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "aligned_control.csv": {
+          "reproduced": "validation/genai4health/prespecified/latent_v2_gemini/aligned_control.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/aligned_control.csv",
+          "reproduced_sha256": "68f17fd963b23dd85eddb8e23673b401ff5631e1d7730cc3eb93bade7091b09a",
+          "archived_sha256": "68f17fd963b23dd85eddb8e23673b401ff5631e1d7730cc3eb93bade7091b09a",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "confidence_shift.csv": {
+          "reproduced": "validation/genai4health/prespecified/latent_v2_gemini/confidence_shift.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/confidence_shift.csv",
+          "reproduced_sha256": "d82307ea4d420ff57570bcfae0a288f3147fcfe936486b01647a5d76afcf268d",
+          "archived_sha256": "d82307ea4d420ff57570bcfae0a288f3147fcfe936486b01647a5d76afcf268d",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "evidence_dilution_rate.csv": {
+          "reproduced": "validation/genai4health/prespecified/latent_v2_gemini/evidence_dilution_rate.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/evidence_dilution_rate.csv",
+          "reproduced_sha256": "68e97556aa0065817097be6ba0346b8b903af3330ffd26b59609c2075e4cf752",
+          "archived_sha256": "68e97556aa0065817097be6ba0346b8b903af3330ffd26b59609c2075e4cf752",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "flip_threshold.csv": {
+          "reproduced": "validation/genai4health/prespecified/latent_v2_gemini/flip_threshold.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/flip_threshold.csv",
+          "reproduced_sha256": "834537e0ec3a268410987884b2ecbe7e61d681c176aae12bc3730f53b858d48d",
+          "archived_sha256": "834537e0ec3a268410987884b2ecbe7e61d681c176aae12bc3730f53b858d48d",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "merged_scored_results.csv": {
+          "reproduced": "validation/genai4health/prespecified/latent_v2_gemini/merged_scored_results.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/merged_scored_results.csv",
+          "reproduced_sha256": "9a73336a3908712b1032f783e1c474de02fda23975e9ee606398368cab94008e",
+          "archived_sha256": "9a73336a3908712b1032f783e1c474de02fda23975e9ee606398368cab94008e",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "order_sensitivity.csv": {
+          "reproduced": "validation/genai4health/prespecified/latent_v2_gemini/order_sensitivity.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/order_sensitivity.csv",
+          "reproduced_sha256": "ed85f7b2e8b6f8a46ba767a18765ef5fdbeb63c5cfabe9401c64dcc93541624b",
+          "archived_sha256": "ed85f7b2e8b6f8a46ba767a18765ef5fdbeb63c5cfabe9401c64dcc93541624b",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "veto_failure_rate.csv": {
+          "reproduced": "validation/genai4health/prespecified/latent_v2_gemini/veto_failure_rate.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/veto_failure_rate.csv",
+          "reproduced_sha256": "4d4413afa1c2809145aa25cdc749d01971feb34dc0f7756f11c985e995e8df29",
+          "archived_sha256": "4d4413afa1c2809145aa25cdc749d01971feb34dc0f7756f11c985e995e8df29",
+          "status": "EXACT_MATCH",
+          "differences": []
+        }
+      },
+      "status": "EXACT_MATCH"
+    },
+    "primary_gemini": {
+      "files": {
+        "accuracy_by_condition.csv": {
+          "reproduced": "validation/genai4health/prespecified/primary_gemini/accuracy_by_condition.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/primary_gemini/accuracy_by_condition.csv",
+          "reproduced_sha256": "f5f7e2a5bf814d3a2a2fa284e7e26963797344787fd9bf420bc6b3951efd90d3",
+          "archived_sha256": "f5f7e2a5bf814d3a2a2fa284e7e26963797344787fd9bf420bc6b3951efd90d3",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "aligned_control.csv": {
+          "reproduced": "validation/genai4health/prespecified/primary_gemini/aligned_control.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/primary_gemini/aligned_control.csv",
+          "reproduced_sha256": "23ab3f47aa4a46633ddc5df0985b731f06bc76ca8c8c869979d603dd241d6eec",
+          "archived_sha256": "23ab3f47aa4a46633ddc5df0985b731f06bc76ca8c8c869979d603dd241d6eec",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "confidence_shift.csv": {
+          "reproduced": "validation/genai4health/prespecified/primary_gemini/confidence_shift.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/primary_gemini/confidence_shift.csv",
+          "reproduced_sha256": "a4ef9f96fde25c65d348aba7cae5abafdcdd49b202d626152951eeea19be2437",
+          "archived_sha256": "a4ef9f96fde25c65d348aba7cae5abafdcdd49b202d626152951eeea19be2437",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "evidence_dilution_rate.csv": {
+          "reproduced": "validation/genai4health/prespecified/primary_gemini/evidence_dilution_rate.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/primary_gemini/evidence_dilution_rate.csv",
+          "reproduced_sha256": "9a10eed624ffd5238261eacf7714bd61bd5f74149457ce4e60c04056366c2f05",
+          "archived_sha256": "9a10eed624ffd5238261eacf7714bd61bd5f74149457ce4e60c04056366c2f05",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "flip_threshold.csv": {
+          "reproduced": "validation/genai4health/prespecified/primary_gemini/flip_threshold.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/primary_gemini/flip_threshold.csv",
+          "reproduced_sha256": "ac71cdf040be84ae613c81a3c66b55e0e26dd99c87707f8a6d3df8f4715cd60e",
+          "archived_sha256": "ac71cdf040be84ae613c81a3c66b55e0e26dd99c87707f8a6d3df8f4715cd60e",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "merged_scored_results.csv": {
+          "reproduced": "validation/genai4health/prespecified/primary_gemini/merged_scored_results.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/primary_gemini/merged_scored_results.csv",
+          "reproduced_sha256": "6add0d818709e0a376b684b7f98e21ee51ef5db8c997ec657e42350b34ef7c3d",
+          "archived_sha256": "6add0d818709e0a376b684b7f98e21ee51ef5db8c997ec657e42350b34ef7c3d",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "order_sensitivity.csv": {
+          "reproduced": "validation/genai4health/prespecified/primary_gemini/order_sensitivity.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/primary_gemini/order_sensitivity.csv",
+          "reproduced_sha256": "ed85f7b2e8b6f8a46ba767a18765ef5fdbeb63c5cfabe9401c64dcc93541624b",
+          "archived_sha256": "ed85f7b2e8b6f8a46ba767a18765ef5fdbeb63c5cfabe9401c64dcc93541624b",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "veto_failure_rate.csv": {
+          "reproduced": "validation/genai4health/prespecified/primary_gemini/veto_failure_rate.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/primary_gemini/veto_failure_rate.csv",
+          "reproduced_sha256": "4d4413afa1c2809145aa25cdc749d01971feb34dc0f7756f11c985e995e8df29",
+          "archived_sha256": "4d4413afa1c2809145aa25cdc749d01971feb34dc0f7756f11c985e995e8df29",
+          "status": "EXACT_MATCH",
+          "differences": []
+        }
+      },
+      "status": "EXACT_MATCH"
+    },
+    "replication_gemini": {
+      "files": {
+        "accuracy_by_condition.csv": {
+          "reproduced": "validation/genai4health/prespecified/replication_gemini/accuracy_by_condition.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/replication_gemini/accuracy_by_condition.csv",
+          "reproduced_sha256": "12e86ab89fe1b06438efc4371f76d08d617196a170a1c40eec5def50b814e35c",
+          "archived_sha256": "12e86ab89fe1b06438efc4371f76d08d617196a170a1c40eec5def50b814e35c",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "aligned_control.csv": {
+          "reproduced": "validation/genai4health/prespecified/replication_gemini/aligned_control.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/replication_gemini/aligned_control.csv",
+          "reproduced_sha256": "530e8adb3fe70db843eebcca32ea57024bc2239e3c57398b7ec2b700c90bb325",
+          "archived_sha256": "530e8adb3fe70db843eebcca32ea57024bc2239e3c57398b7ec2b700c90bb325",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "confidence_shift.csv": {
+          "reproduced": "validation/genai4health/prespecified/replication_gemini/confidence_shift.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/replication_gemini/confidence_shift.csv",
+          "reproduced_sha256": "f816aab17babf47b195b5cb1ccbd4b6a0190d0545795bd98ad575313ea3f888d",
+          "archived_sha256": "f816aab17babf47b195b5cb1ccbd4b6a0190d0545795bd98ad575313ea3f888d",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "evidence_dilution_rate.csv": {
+          "reproduced": "validation/genai4health/prespecified/replication_gemini/evidence_dilution_rate.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/replication_gemini/evidence_dilution_rate.csv",
+          "reproduced_sha256": "76544bab0026a723d99abd8ba29a167c4e81fd2c9e183324c4db0e9be48d78fc",
+          "archived_sha256": "76544bab0026a723d99abd8ba29a167c4e81fd2c9e183324c4db0e9be48d78fc",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "flip_threshold.csv": {
+          "reproduced": "validation/genai4health/prespecified/replication_gemini/flip_threshold.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/replication_gemini/flip_threshold.csv",
+          "reproduced_sha256": "6eb9c0ef13b959b47f500364fdfe231e9582956f498dcd794b3658f6d1d534ee",
+          "archived_sha256": "6eb9c0ef13b959b47f500364fdfe231e9582956f498dcd794b3658f6d1d534ee",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "merged_scored_results.csv": {
+          "reproduced": "validation/genai4health/prespecified/replication_gemini/merged_scored_results.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/replication_gemini/merged_scored_results.csv",
+          "reproduced_sha256": "b9cccbca2376dc260f6ad44a7d53826bc02ec3d142429956685b53cb050a28f7",
+          "archived_sha256": "b9cccbca2376dc260f6ad44a7d53826bc02ec3d142429956685b53cb050a28f7",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "order_sensitivity.csv": {
+          "reproduced": "validation/genai4health/prespecified/replication_gemini/order_sensitivity.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/replication_gemini/order_sensitivity.csv",
+          "reproduced_sha256": "806a435ea25dea6d8fd6f881a3b9ffe9ffa4dabc4b4692cdaa085978b1781ee1",
+          "archived_sha256": "806a435ea25dea6d8fd6f881a3b9ffe9ffa4dabc4b4692cdaa085978b1781ee1",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "veto_failure_rate.csv": {
+          "reproduced": "validation/genai4health/prespecified/replication_gemini/veto_failure_rate.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/replication_gemini/veto_failure_rate.csv",
+          "reproduced_sha256": "4d4413afa1c2809145aa25cdc749d01971feb34dc0f7756f11c985e995e8df29",
+          "archived_sha256": "4d4413afa1c2809145aa25cdc749d01971feb34dc0f7756f11c985e995e8df29",
+          "status": "EXACT_MATCH",
+          "differences": []
+        }
+      },
+      "status": "EXACT_MATCH"
+    },
+    "veto_gemini": {
+      "files": {
+        "accuracy_by_condition.csv": {
+          "reproduced": "validation/genai4health/prespecified/veto_gemini/accuracy_by_condition.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/accuracy_by_condition.csv",
+          "reproduced_sha256": "a81fcc08c019a421615a13c436cc49c9c0c1926a9a2b8b00198beccd3fdb34fa",
+          "archived_sha256": "a81fcc08c019a421615a13c436cc49c9c0c1926a9a2b8b00198beccd3fdb34fa",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "aligned_control.csv": {
+          "reproduced": "validation/genai4health/prespecified/veto_gemini/aligned_control.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/aligned_control.csv",
+          "reproduced_sha256": "d4b713bd15a9cecd0169bb0b75c89c7b269393c2bd17642a914d4bc96a69d774",
+          "archived_sha256": "d4b713bd15a9cecd0169bb0b75c89c7b269393c2bd17642a914d4bc96a69d774",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "confidence_shift.csv": {
+          "reproduced": "validation/genai4health/prespecified/veto_gemini/confidence_shift.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/confidence_shift.csv",
+          "reproduced_sha256": "91b0491041024115059cde9a568ff51a4d0dcc9f5cd3d276279d7e12005483c6",
+          "archived_sha256": "91b0491041024115059cde9a568ff51a4d0dcc9f5cd3d276279d7e12005483c6",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "evidence_dilution_rate.csv": {
+          "reproduced": "validation/genai4health/prespecified/veto_gemini/evidence_dilution_rate.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/evidence_dilution_rate.csv",
+          "reproduced_sha256": "cbc18f9f458d0248d39a960178a9a9b9645bd24248e25027b04060f4e2dde5ea",
+          "archived_sha256": "cbc18f9f458d0248d39a960178a9a9b9645bd24248e25027b04060f4e2dde5ea",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "flip_threshold.csv": {
+          "reproduced": "validation/genai4health/prespecified/veto_gemini/flip_threshold.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/flip_threshold.csv",
+          "reproduced_sha256": "143fbdd425297e12f28960fdd140a81cfa36b29061628ce339d5ac3f2f2f5d7d",
+          "archived_sha256": "143fbdd425297e12f28960fdd140a81cfa36b29061628ce339d5ac3f2f2f5d7d",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "merged_scored_results.csv": {
+          "reproduced": "validation/genai4health/prespecified/veto_gemini/merged_scored_results.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/merged_scored_results.csv",
+          "reproduced_sha256": "d3aa0ceb25e87e1c2503812d9a39fa021ecc5b1809a9bb5bd0c3fe4e6481e52f",
+          "archived_sha256": "d3aa0ceb25e87e1c2503812d9a39fa021ecc5b1809a9bb5bd0c3fe4e6481e52f",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "order_sensitivity.csv": {
+          "reproduced": "validation/genai4health/prespecified/veto_gemini/order_sensitivity.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/order_sensitivity.csv",
+          "reproduced_sha256": "0808fedd998ee983e6dec0c1dc6a5fd54fd845977b57af89a4fe0a6b1264f4d8",
+          "archived_sha256": "0808fedd998ee983e6dec0c1dc6a5fd54fd845977b57af89a4fe0a6b1264f4d8",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "veto_failure_rate.csv": {
+          "reproduced": "validation/genai4health/prespecified/veto_gemini/veto_failure_rate.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/veto_failure_rate.csv",
+          "reproduced_sha256": "729f87a3b37a84781cda8459786152c8ab4817582d27d39a24579133e2bedad3",
+          "archived_sha256": "729f87a3b37a84781cda8459786152c8ab4817582d27d39a24579133e2bedad3",
+          "status": "EXACT_MATCH",
+          "differences": []
+        }
+      },
+      "status": "EXACT_MATCH"
+    }
+  }
+}

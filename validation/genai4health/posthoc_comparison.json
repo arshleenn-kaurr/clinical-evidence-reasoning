@@ -1,0 +1,2573 @@
+{
+  "script": "experiments/static_conflict/historical_package/evidence_not_vote_starter/posthoc_contrasts.py",
+  "recovered_script_sha256": "c4fd856bd56fe0ed28209cfd692f4dc05f0ba3a2f1a3a4266dd8441f37b1f0cf",
+  "manifest_script_sha256": "f388eb835b2444b1a93abd20d868f62be95c1033c2bc6dccd2da0a0c60ce4f8c",
+  "runs": {
+    "current_env_scipy_1.18.1": {
+      "files": {
+        "anonymization_sensitivity.csv": {
+          "reproduced": "validation/genai4health/posthoc/anonymization_sensitivity.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/anonymization_sensitivity.csv",
+          "reproduced_sha256": "8909e91b150be344e097ec17c8a36ae52866721bf7e13fa6f573ac835f165ca6",
+          "archived_sha256": "8909e91b150be344e097ec17c8a36ae52866721bf7e13fa6f573ac835f165ca6",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "binomial_proportions_exact.csv": {
+          "reproduced": "validation/genai4health/posthoc/binomial_proportions_exact.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/binomial_proportions_exact.csv",
+          "reproduced_sha256": "2a451fcd47a4dea134a254329370602b061766b13782e4c52d5f0afc956d051a",
+          "archived_sha256": "2a451fcd47a4dea134a254329370602b061766b13782e4c52d5f0afc956d051a",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "categorical_degradation_summary.csv": {
+          "reproduced": "validation/genai4health/posthoc/categorical_degradation_summary.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/categorical_degradation_summary.csv",
+          "reproduced_sha256": "18014ebeca6bc5e50a34d0d3d18f9d5a5a1f51fcfe66744dabc060e60a33ac3e",
+          "archived_sha256": "18014ebeca6bc5e50a34d0d3d18f9d5a5a1f51fcfe66744dabc060e60a33ac3e",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "categorical_transition_matrix.csv": {
+          "reproduced": "validation/genai4health/posthoc/categorical_transition_matrix.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/categorical_transition_matrix.csv",
+          "reproduced_sha256": "d7032c3086f06f7ba17d317dd64d0edd19120b3bf2bc6f9ae07c5072add5a2e0",
+          "archived_sha256": "d7032c3086f06f7ba17d317dd64d0edd19120b3bf2bc6f9ae07c5072add5a2e0",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "confidence_contrasts_bootstrap.csv": {
+          "reproduced": "validation/genai4health/posthoc/confidence_contrasts_bootstrap.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/confidence_contrasts_bootstrap.csv",
+          "reproduced_sha256": "8ef17aad2520d1d4fbc66947446165a5d7cf4514976542a675331749ea31b526",
+          "archived_sha256": "8ef17aad2520d1d4fbc66947446165a5d7cf4514976542a675331749ea31b526",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "confidence_direction_counts.csv": {
+          "reproduced": "validation/genai4health/posthoc/confidence_direction_counts.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/confidence_direction_counts.csv",
+          "reproduced_sha256": "bf4a94cde4eab06d3514f4fe8feb89d837ec3f306b38315817478142f59b2cd2",
+          "archived_sha256": "bf4a94cde4eab06d3514f4fe8feb89d837ec3f306b38315817478142f59b2cd2",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "manifest.json": {
+          "reproduced": "validation/genai4health/posthoc/manifest.json",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/manifest.json",
+          "reproduced_sha256": "12c51ec65ce7726988c46180cf26f28b1ab5d3a8caf076bd4ac6a3580731e5c2",
+          "archived_sha256": "16cf32f425c42618231ba02129e3d03385a660d5f08d1bb7762bdc87547a2dc5",
+          "status": "MISMATCH",
+          "differences": [
+            {
+              "field": "script_sha256",
+              "archived": "f388eb835b2444b1a93abd20d868f62be95c1033c2bc6dccd2da0a0c60ce4f8c",
+              "reproduced": "c4fd856bd56fe0ed28209cfd692f4dc05f0ba3a2f1a3a4266dd8441f37b1f0cf",
+              "equal": false,
+              "abs_diff": null
+            }
+          ]
+        },
+        "paired_accuracy_mcnemar.csv": {
+          "reproduced": "validation/genai4health/posthoc/paired_accuracy_mcnemar.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/paired_accuracy_mcnemar.csv",
+          "reproduced_sha256": "d607d557b81716a7cdbcbe3d194085a36eca8227646c5eeddb7939bebc360fa9",
+          "archived_sha256": "d607d557b81716a7cdbcbe3d194085a36eca8227646c5eeddb7939bebc360fa9",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "replication_conflict_aligned_by_stratum.csv": {
+          "reproduced": "validation/genai4health/posthoc/replication_conflict_aligned_by_stratum.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/replication_conflict_aligned_by_stratum.csv",
+          "reproduced_sha256": "8fdd3bc0e77685c65efaccccd0baff182dfc4eb84f4a0ce99a9f2945bb026c67",
+          "archived_sha256": "8fdd3bc0e77685c65efaccccd0baff182dfc4eb84f4a0ce99a9f2945bb026c67",
+          "status": "EXACT_MATCH",
+          "differences": []
+        }
+      },
+      "output_csvs_status": "EXACT_MATCH",
+      "manifest_differences": [
+        {
+          "field": "script_sha256",
+          "archived": "f388eb835b2444b1a93abd20d868f62be95c1033c2bc6dccd2da0a0c60ce4f8c",
+          "reproduced": "c4fd856bd56fe0ed28209cfd692f4dc05f0ba3a2f1a3a4266dd8441f37b1f0cf",
+          "equal": false,
+          "abs_diff": null
+        }
+      ]
+    },
+    "sensitivity_env_scipy_1.16.3": {
+      "files": {
+        "anonymization_sensitivity.csv": {
+          "reproduced": "validation/genai4health/posthoc_scipy1.16.3/anonymization_sensitivity.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/anonymization_sensitivity.csv",
+          "reproduced_sha256": "8909e91b150be344e097ec17c8a36ae52866721bf7e13fa6f573ac835f165ca6",
+          "archived_sha256": "8909e91b150be344e097ec17c8a36ae52866721bf7e13fa6f573ac835f165ca6",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "binomial_proportions_exact.csv": {
+          "reproduced": "validation/genai4health/posthoc_scipy1.16.3/binomial_proportions_exact.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/binomial_proportions_exact.csv",
+          "reproduced_sha256": "2a451fcd47a4dea134a254329370602b061766b13782e4c52d5f0afc956d051a",
+          "archived_sha256": "2a451fcd47a4dea134a254329370602b061766b13782e4c52d5f0afc956d051a",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "categorical_degradation_summary.csv": {
+          "reproduced": "validation/genai4health/posthoc_scipy1.16.3/categorical_degradation_summary.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/categorical_degradation_summary.csv",
+          "reproduced_sha256": "18014ebeca6bc5e50a34d0d3d18f9d5a5a1f51fcfe66744dabc060e60a33ac3e",
+          "archived_sha256": "18014ebeca6bc5e50a34d0d3d18f9d5a5a1f51fcfe66744dabc060e60a33ac3e",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "categorical_transition_matrix.csv": {
+          "reproduced": "validation/genai4health/posthoc_scipy1.16.3/categorical_transition_matrix.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/categorical_transition_matrix.csv",
+          "reproduced_sha256": "d7032c3086f06f7ba17d317dd64d0edd19120b3bf2bc6f9ae07c5072add5a2e0",
+          "archived_sha256": "d7032c3086f06f7ba17d317dd64d0edd19120b3bf2bc6f9ae07c5072add5a2e0",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "confidence_contrasts_bootstrap.csv": {
+          "reproduced": "validation/genai4health/posthoc_scipy1.16.3/confidence_contrasts_bootstrap.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/confidence_contrasts_bootstrap.csv",
+          "reproduced_sha256": "8ef17aad2520d1d4fbc66947446165a5d7cf4514976542a675331749ea31b526",
+          "archived_sha256": "8ef17aad2520d1d4fbc66947446165a5d7cf4514976542a675331749ea31b526",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "confidence_direction_counts.csv": {
+          "reproduced": "validation/genai4health/posthoc_scipy1.16.3/confidence_direction_counts.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/confidence_direction_counts.csv",
+          "reproduced_sha256": "bf4a94cde4eab06d3514f4fe8feb89d837ec3f306b38315817478142f59b2cd2",
+          "archived_sha256": "bf4a94cde4eab06d3514f4fe8feb89d837ec3f306b38315817478142f59b2cd2",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "manifest.json": {
+          "reproduced": "validation/genai4health/posthoc_scipy1.16.3/manifest.json",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/manifest.json",
+          "reproduced_sha256": "12c51ec65ce7726988c46180cf26f28b1ab5d3a8caf076bd4ac6a3580731e5c2",
+          "archived_sha256": "16cf32f425c42618231ba02129e3d03385a660d5f08d1bb7762bdc87547a2dc5",
+          "status": "MISMATCH",
+          "differences": [
+            {
+              "field": "script_sha256",
+              "archived": "f388eb835b2444b1a93abd20d868f62be95c1033c2bc6dccd2da0a0c60ce4f8c",
+              "reproduced": "c4fd856bd56fe0ed28209cfd692f4dc05f0ba3a2f1a3a4266dd8441f37b1f0cf",
+              "equal": false,
+              "abs_diff": null
+            }
+          ]
+        },
+        "paired_accuracy_mcnemar.csv": {
+          "reproduced": "validation/genai4health/posthoc_scipy1.16.3/paired_accuracy_mcnemar.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/paired_accuracy_mcnemar.csv",
+          "reproduced_sha256": "d607d557b81716a7cdbcbe3d194085a36eca8227646c5eeddb7939bebc360fa9",
+          "archived_sha256": "d607d557b81716a7cdbcbe3d194085a36eca8227646c5eeddb7939bebc360fa9",
+          "status": "EXACT_MATCH",
+          "differences": []
+        },
+        "replication_conflict_aligned_by_stratum.csv": {
+          "reproduced": "validation/genai4health/posthoc_scipy1.16.3/replication_conflict_aligned_by_stratum.csv",
+          "archived": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/posthoc_contrasts/replication_conflict_aligned_by_stratum.csv",
+          "reproduced_sha256": "8fdd3bc0e77685c65efaccccd0baff182dfc4eb84f4a0ce99a9f2945bb026c67",
+          "archived_sha256": "8fdd3bc0e77685c65efaccccd0baff182dfc4eb84f4a0ce99a9f2945bb026c67",
+          "status": "EXACT_MATCH",
+          "differences": []
+        }
+      },
+      "output_csvs_status": "EXACT_MATCH",
+      "manifest_differences": [
+        {
+          "field": "script_sha256",
+          "archived": "f388eb835b2444b1a93abd20d868f62be95c1033c2bc6dccd2da0a0c60ce4f8c",
+          "reproduced": "c4fd856bd56fe0ed28209cfd692f4dc05f0ba3a2f1a3a4266dd8441f37b1f0cf",
+          "equal": false,
+          "abs_diff": null
+        }
+      ]
+    }
+  },
+  "canonical_results_reference_md": {
+    "file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/canonical_results_reference.md",
+    "sha256": "5ba79e1091fdbd4b8700c9b4eae26426d6f9066cb970a17f58bc23d235b7fc38",
+    "generator": "NOT RECOVERED (no recovered script writes this file)",
+    "n_values_checked": 122,
+    "n_match": 122,
+    "mismatches": [],
+    "checks": [
+      {
+        "section": "1",
+        "key": "primary/accuracy_H",
+        "reference_text": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "reproduced": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "primary/accuracy_H_L1",
+        "reference_text": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "reproduced": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "primary/accuracy_H_L2",
+        "reference_text": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "reproduced": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "primary/accuracy_H_L4",
+        "reference_text": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "reproduced": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "primary/accuracy_H_L4_ALIGNED",
+        "reference_text": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "reproduced": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "primary/accuracy_L4_H",
+        "reference_text": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "reproduced": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "primary/EDR1",
+        "reference_text": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "reproduced": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "primary/EDR2",
+        "reference_text": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "reproduced": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "primary/EDR4",
+        "reference_text": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "reproduced": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "primary/order_disagreement",
+        "reference_text": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "reproduced": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "replication/accuracy_H",
+        "reference_text": [
+          "259",
+          "260",
+          "99.62",
+          "97.88",
+          "99.99"
+        ],
+        "reproduced": [
+          "259",
+          "260",
+          "99.62",
+          "97.88",
+          "99.99"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "replication/accuracy_H_L1",
+        "reference_text": [
+          "257",
+          "260",
+          "98.85",
+          "96.67",
+          "99.76"
+        ],
+        "reproduced": [
+          "257",
+          "260",
+          "98.85",
+          "96.67",
+          "99.76"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "replication/accuracy_H_L2",
+        "reference_text": [
+          "258",
+          "260",
+          "99.23",
+          "97.25",
+          "99.91"
+        ],
+        "reproduced": [
+          "258",
+          "260",
+          "99.23",
+          "97.25",
+          "99.91"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "replication/accuracy_H_L4",
+        "reference_text": [
+          "258",
+          "260",
+          "99.23",
+          "97.25",
+          "99.91"
+        ],
+        "reproduced": [
+          "258",
+          "260",
+          "99.23",
+          "97.25",
+          "99.91"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "replication/accuracy_H_L4_ALIGNED",
+        "reference_text": [
+          "259",
+          "260",
+          "99.62",
+          "97.88",
+          "99.99"
+        ],
+        "reproduced": [
+          "259",
+          "260",
+          "99.62",
+          "97.88",
+          "99.99"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "replication/accuracy_L4_H",
+        "reference_text": [
+          "260",
+          "260",
+          "100.00",
+          "98.59",
+          "100.00"
+        ],
+        "reproduced": [
+          "260",
+          "260",
+          "100.00",
+          "98.59",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "replication/EDR1",
+        "reference_text": [
+          "2",
+          "259",
+          "0.77",
+          "0.09",
+          "2.76"
+        ],
+        "reproduced": [
+          "2",
+          "259",
+          "0.77",
+          "0.09",
+          "2.76"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "replication/EDR2",
+        "reference_text": [
+          "1",
+          "259",
+          "0.39",
+          "0.01",
+          "2.13"
+        ],
+        "reproduced": [
+          "1",
+          "259",
+          "0.39",
+          "0.01",
+          "2.13"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "replication/EDR4",
+        "reference_text": [
+          "1",
+          "259",
+          "0.39",
+          "0.01",
+          "2.13"
+        ],
+        "reproduced": [
+          "1",
+          "259",
+          "0.39",
+          "0.01",
+          "2.13"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "replication/order_disagreement",
+        "reference_text": [
+          "2",
+          "260",
+          "0.77",
+          "0.09",
+          "2.75"
+        ],
+        "reproduced": [
+          "2",
+          "260",
+          "0.77",
+          "0.09",
+          "2.75"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_primary/accuracy_H",
+        "reference_text": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "reproduced": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_primary/accuracy_H_L1",
+        "reference_text": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "reproduced": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_primary/accuracy_H_L2",
+        "reference_text": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "reproduced": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_primary/accuracy_H_L4",
+        "reference_text": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "reproduced": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_primary/accuracy_H_L4_ALIGNED",
+        "reference_text": [
+          "39",
+          "40",
+          "97.50",
+          "86.84",
+          "99.94"
+        ],
+        "reproduced": [
+          "39",
+          "40",
+          "97.50",
+          "86.84",
+          "99.94"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_primary/accuracy_L4_H",
+        "reference_text": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "reproduced": [
+          "40",
+          "40",
+          "100.00",
+          "91.19",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_primary/EDR1",
+        "reference_text": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "reproduced": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_primary/EDR2",
+        "reference_text": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "reproduced": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_primary/EDR4",
+        "reference_text": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "reproduced": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_primary/order_disagreement",
+        "reference_text": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "reproduced": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "latent_v2/accuracy_H",
+        "reference_text": [
+          "38",
+          "40",
+          "95.00",
+          "83.08",
+          "99.39"
+        ],
+        "reproduced": [
+          "38",
+          "40",
+          "95.00",
+          "83.08",
+          "99.39"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "latent_v2/accuracy_H_L1",
+        "reference_text": [
+          "38",
+          "40",
+          "95.00",
+          "83.08",
+          "99.39"
+        ],
+        "reproduced": [
+          "38",
+          "40",
+          "95.00",
+          "83.08",
+          "99.39"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "latent_v2/accuracy_H_L2",
+        "reference_text": [
+          "38",
+          "40",
+          "95.00",
+          "83.08",
+          "99.39"
+        ],
+        "reproduced": [
+          "38",
+          "40",
+          "95.00",
+          "83.08",
+          "99.39"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "latent_v2/accuracy_H_L4",
+        "reference_text": [
+          "39",
+          "40",
+          "97.50",
+          "86.84",
+          "99.94"
+        ],
+        "reproduced": [
+          "39",
+          "40",
+          "97.50",
+          "86.84",
+          "99.94"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "latent_v2/accuracy_H_L4_ALIGNED",
+        "reference_text": [
+          "39",
+          "40",
+          "97.50",
+          "86.84",
+          "99.94"
+        ],
+        "reproduced": [
+          "39",
+          "40",
+          "97.50",
+          "86.84",
+          "99.94"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "latent_v2/accuracy_L4_H",
+        "reference_text": [
+          "39",
+          "40",
+          "97.50",
+          "86.84",
+          "99.94"
+        ],
+        "reproduced": [
+          "39",
+          "40",
+          "97.50",
+          "86.84",
+          "99.94"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "latent_v2/EDR1",
+        "reference_text": [
+          "1",
+          "38",
+          "2.63",
+          "0.07",
+          "13.81"
+        ],
+        "reproduced": [
+          "1",
+          "38",
+          "2.63",
+          "0.07",
+          "13.81"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "latent_v2/EDR2",
+        "reference_text": [
+          "1",
+          "38",
+          "2.63",
+          "0.07",
+          "13.81"
+        ],
+        "reproduced": [
+          "1",
+          "38",
+          "2.63",
+          "0.07",
+          "13.81"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "latent_v2/EDR4",
+        "reference_text": [
+          "0",
+          "38",
+          "0.00",
+          "0.00",
+          "9.25"
+        ],
+        "reproduced": [
+          "0",
+          "38",
+          "0.00",
+          "0.00",
+          "9.25"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "latent_v2/order_disagreement",
+        "reference_text": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "reproduced": [
+          "0",
+          "40",
+          "0.00",
+          "0.00",
+          "8.81"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/accuracy_H",
+        "reference_text": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "reproduced": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/accuracy_H_L1",
+        "reference_text": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "reproduced": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/accuracy_H_L2",
+        "reference_text": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "reproduced": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/accuracy_H_L4",
+        "reference_text": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "reproduced": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/accuracy_H_L4_ALIGNED",
+        "reference_text": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "reproduced": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/accuracy_L4_H",
+        "reference_text": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "reproduced": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/EDR1",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/EDR2",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/EDR4",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/order_disagreement",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/VFR_H",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/VFR_H_L1",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/VFR_H_L2",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/VFR_H_L4",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/VFR_H_L4_ALIGNED",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "veto/VFR_L4_H",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/accuracy_H",
+        "reference_text": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "reproduced": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/accuracy_H_L1",
+        "reference_text": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "reproduced": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/accuracy_H_L2",
+        "reference_text": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "reproduced": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/accuracy_H_L4",
+        "reference_text": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "reproduced": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/accuracy_H_L4_ALIGNED",
+        "reference_text": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "reproduced": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/accuracy_L4_H",
+        "reference_text": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "reproduced": [
+          "15",
+          "15",
+          "100.00",
+          "78.20",
+          "100.00"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/EDR1",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/EDR2",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/EDR4",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/order_disagreement",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/VFR_H",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/VFR_H_L1",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/VFR_H_L2",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/VFR_H_L4",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/VFR_H_L4_ALIGNED",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "1",
+        "key": "gpt_oss_veto/VFR_L4_H",
+        "reference_text": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "reproduced": [
+          "0",
+          "15",
+          "0.00",
+          "0.00",
+          "21.80"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "primary/conflict_minus_H",
+        "reference_text": [
+          "-5.13",
+          "-6.50",
+          "-3.75",
+          "40",
+          "84.50",
+          "89.63",
+          "32",
+          "6",
+          "2",
+          "-5.0"
+        ],
+        "reproduced": [
+          "-5.13",
+          "-6.50",
+          "-3.75",
+          "40",
+          "84.50",
+          "89.63",
+          "32",
+          "6",
+          "2",
+          "-5.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "primary/aligned_minus_H",
+        "reference_text": [
+          "+2.15",
+          "+0.98",
+          "+3.53",
+          "40",
+          "91.78",
+          "89.63",
+          "1",
+          "27",
+          "12",
+          "+0.0"
+        ],
+        "reproduced": [
+          "+2.15",
+          "+0.98",
+          "+3.53",
+          "40",
+          "91.78",
+          "89.63",
+          "1",
+          "27",
+          "12",
+          "+0.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "primary/conflict_minus_aligned",
+        "reference_text": [
+          "-7.28",
+          "-8.23",
+          "-6.30",
+          "40",
+          "84.50",
+          "91.78",
+          "38",
+          "2",
+          "0",
+          "-8.5"
+        ],
+        "reproduced": [
+          "-7.28",
+          "-8.23",
+          "-6.30",
+          "40",
+          "84.50",
+          "91.78",
+          "38",
+          "2",
+          "0",
+          "-8.5"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "replication/conflict_minus_H",
+        "reference_text": [
+          "-4.64",
+          "-5.13",
+          "-4.16",
+          "260",
+          "85.48",
+          "90.12",
+          "181",
+          "74",
+          "5",
+          "-5.0"
+        ],
+        "reproduced": [
+          "-4.64",
+          "-5.13",
+          "-4.16",
+          "260",
+          "85.48",
+          "90.12",
+          "181",
+          "74",
+          "5",
+          "-5.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "replication/aligned_minus_H",
+        "reference_text": [
+          "+1.87",
+          "+1.43",
+          "+2.31",
+          "260",
+          "91.99",
+          "90.12",
+          "11",
+          "159",
+          "90",
+          "+0.0"
+        ],
+        "reproduced": [
+          "+1.87",
+          "+1.43",
+          "+2.31",
+          "260",
+          "91.99",
+          "90.12",
+          "11",
+          "159",
+          "90",
+          "+0.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "replication/conflict_minus_aligned",
+        "reference_text": [
+          "-6.51",
+          "-7.07",
+          "-5.95",
+          "260",
+          "85.48",
+          "91.99",
+          "224",
+          "27",
+          "9",
+          "-5.0"
+        ],
+        "reproduced": [
+          "-6.51",
+          "-7.07",
+          "-5.95",
+          "260",
+          "85.48",
+          "91.99",
+          "224",
+          "27",
+          "9",
+          "-5.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "latent_v2/conflict_minus_H",
+        "reference_text": [
+          "-4.63",
+          "-6.13",
+          "-3.13",
+          "40",
+          "84.38",
+          "89.00",
+          "24",
+          "15",
+          "1",
+          "-5.0"
+        ],
+        "reproduced": [
+          "-4.63",
+          "-6.13",
+          "-3.13",
+          "40",
+          "84.38",
+          "89.00",
+          "24",
+          "15",
+          "1",
+          "-5.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "latent_v2/aligned_minus_H",
+        "reference_text": [
+          "+1.85",
+          "+0.93",
+          "+2.75",
+          "40",
+          "90.85",
+          "89.00",
+          "3",
+          "19",
+          "18",
+          "+0.0"
+        ],
+        "reproduced": [
+          "+1.85",
+          "+0.93",
+          "+2.75",
+          "40",
+          "90.85",
+          "89.00",
+          "3",
+          "19",
+          "18",
+          "+0.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "latent_v2/conflict_minus_aligned",
+        "reference_text": [
+          "-6.48",
+          "-7.83",
+          "-5.10",
+          "40",
+          "84.38",
+          "90.85",
+          "34",
+          "5",
+          "1",
+          "-5.0"
+        ],
+        "reproduced": [
+          "-6.48",
+          "-7.83",
+          "-5.10",
+          "40",
+          "84.38",
+          "90.85",
+          "34",
+          "5",
+          "1",
+          "-5.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "gpt_oss_primary/conflict_minus_H",
+        "reference_text": [
+          "-6.35",
+          "-7.95",
+          "-4.68",
+          "40",
+          "79.70",
+          "86.05",
+          "31",
+          "7",
+          "2",
+          "-5.0"
+        ],
+        "reproduced": [
+          "-6.35",
+          "-7.95",
+          "-4.68",
+          "40",
+          "79.70",
+          "86.05",
+          "31",
+          "7",
+          "2",
+          "-5.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "gpt_oss_primary/aligned_minus_H",
+        "reference_text": [
+          "-0.60",
+          "-3.00",
+          "+1.63",
+          "40",
+          "85.45",
+          "86.05",
+          "17",
+          "10",
+          "13",
+          "+0.0"
+        ],
+        "reproduced": [
+          "-0.60",
+          "-3.00",
+          "+1.63",
+          "40",
+          "85.45",
+          "86.05",
+          "17",
+          "10",
+          "13",
+          "+0.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "gpt_oss_primary/conflict_minus_aligned",
+        "reference_text": [
+          "-5.75",
+          "-7.45",
+          "-3.60",
+          "40",
+          "79.70",
+          "85.45",
+          "35",
+          "4",
+          "1",
+          "-5.0"
+        ],
+        "reproduced": [
+          "-5.75",
+          "-7.45",
+          "-3.60",
+          "40",
+          "79.70",
+          "85.45",
+          "35",
+          "4",
+          "1",
+          "-5.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "veto/conflict_minus_H",
+        "reference_text": [
+          "-1.33",
+          "-2.33",
+          "-0.33",
+          "15",
+          "94.33",
+          "95.67",
+          "4",
+          "11",
+          "0",
+          "+0.0"
+        ],
+        "reproduced": [
+          "-1.33",
+          "-2.33",
+          "-0.33",
+          "15",
+          "94.33",
+          "95.67",
+          "4",
+          "11",
+          "0",
+          "+0.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "veto/aligned_minus_H",
+        "reference_text": [
+          "-0.47",
+          "-1.27",
+          "+0.00",
+          "15",
+          "95.20",
+          "95.67",
+          "2",
+          "13",
+          "0",
+          "+0.0"
+        ],
+        "reproduced": [
+          "-0.47",
+          "-1.27",
+          "+0.00",
+          "15",
+          "95.20",
+          "95.67",
+          "2",
+          "13",
+          "0",
+          "+0.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "veto/conflict_minus_aligned",
+        "reference_text": [
+          "-0.87",
+          "-1.87",
+          "+0.00",
+          "15",
+          "94.33",
+          "95.20",
+          "3",
+          "12",
+          "0",
+          "+0.0"
+        ],
+        "reproduced": [
+          "-0.87",
+          "-1.87",
+          "+0.00",
+          "15",
+          "94.33",
+          "95.20",
+          "3",
+          "12",
+          "0",
+          "+0.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "gpt_oss_veto/conflict_minus_H",
+        "reference_text": [
+          "-6.13",
+          "-8.73",
+          "-3.27",
+          "15",
+          "85.53",
+          "91.67",
+          "13",
+          "1",
+          "1",
+          "-7.0"
+        ],
+        "reproduced": [
+          "-6.13",
+          "-8.73",
+          "-3.27",
+          "15",
+          "85.53",
+          "91.67",
+          "13",
+          "1",
+          "1",
+          "-7.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "gpt_oss_veto/aligned_minus_H",
+        "reference_text": [
+          "-3.00",
+          "-5.80",
+          "+0.27",
+          "15",
+          "88.67",
+          "91.67",
+          "10",
+          "3",
+          "2",
+          "-5.0"
+        ],
+        "reproduced": [
+          "-3.00",
+          "-5.80",
+          "+0.27",
+          "15",
+          "88.67",
+          "91.67",
+          "10",
+          "3",
+          "2",
+          "-5.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "2",
+        "key": "gpt_oss_veto/conflict_minus_aligned",
+        "reference_text": [
+          "-3.13",
+          "-5.00",
+          "-1.33",
+          "15",
+          "85.53",
+          "88.67",
+          "9",
+          "5",
+          "1",
+          "-3.0"
+        ],
+        "reproduced": [
+          "-3.13",
+          "-5.00",
+          "-1.33",
+          "15",
+          "85.53",
+          "88.67",
+          "9",
+          "5",
+          "1",
+          "-3.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "3",
+        "key": "Overall",
+        "reference_text": [
+          "260",
+          "-6.51",
+          "-7.07",
+          "-5.95",
+          "224",
+          "27",
+          "9",
+          "-5.0"
+        ],
+        "reproduced": [
+          "260",
+          "-6.51",
+          "-7.07",
+          "-5.95",
+          "224",
+          "27",
+          "9",
+          "-5.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "3",
+        "key": "High / support",
+        "reference_text": [
+          "65",
+          "-6.65",
+          "-7.68",
+          "-5.54",
+          "57",
+          "4",
+          "4",
+          "-7.0"
+        ],
+        "reproduced": [
+          "65",
+          "-6.65",
+          "-7.68",
+          "-5.54",
+          "57",
+          "4",
+          "4",
+          "-7.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "3",
+        "key": "High / do_not_support",
+        "reference_text": [
+          "65",
+          "-3.49",
+          "-4.23",
+          "-2.69",
+          "47",
+          "16",
+          "2",
+          "-5.0"
+        ],
+        "reproduced": [
+          "65",
+          "-3.49",
+          "-4.23",
+          "-2.69",
+          "47",
+          "16",
+          "2",
+          "-5.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "3",
+        "key": "Moderate / support",
+        "reference_text": [
+          "65",
+          "-8.63",
+          "-9.85",
+          "-7.37",
+          "60",
+          "3",
+          "2",
+          "-10.0"
+        ],
+        "reproduced": [
+          "65",
+          "-8.63",
+          "-9.85",
+          "-7.37",
+          "60",
+          "3",
+          "2",
+          "-10.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "3",
+        "key": "Moderate / do_not_support",
+        "reference_text": [
+          "65",
+          "-7.26",
+          "-8.29",
+          "-6.23",
+          "60",
+          "4",
+          "1",
+          "-5.0"
+        ],
+        "reproduced": [
+          "65",
+          "-7.26",
+          "-8.29",
+          "-6.23",
+          "60",
+          "4",
+          "1",
+          "-5.0"
+        ],
+        "match": true
+      },
+      {
+        "section": "4",
+        "key": "replication/H->H_L1",
+        "reference_text": [
+          "259",
+          "2",
+          "2",
+          "0",
+          "0"
+        ],
+        "reproduced": [
+          "259",
+          "2",
+          "2",
+          "0",
+          "0"
+        ],
+        "match": true
+      },
+      {
+        "section": "4",
+        "key": "replication/H->H_L2",
+        "reference_text": [
+          "259",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        "reproduced": [
+          "259",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        "match": true
+      },
+      {
+        "section": "4",
+        "key": "replication/H->H_L4",
+        "reference_text": [
+          "259",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        "reproduced": [
+          "259",
+          "1",
+          "1",
+          "0",
+          "0"
+        ],
+        "match": true
+      },
+      {
+        "section": "4",
+        "key": "gpt_oss_primary/H->H_L1",
+        "reference_text": [
+          "40",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "reproduced": [
+          "40",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "match": true
+      },
+      {
+        "section": "4",
+        "key": "gpt_oss_primary/H->H_L2",
+        "reference_text": [
+          "40",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "reproduced": [
+          "40",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "match": true
+      },
+      {
+        "section": "4",
+        "key": "gpt_oss_primary/H->H_L4",
+        "reference_text": [
+          "40",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "reproduced": [
+          "40",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "match": true
+      },
+      {
+        "section": "5",
+        "key": "primary/H_L4_ALIGNED_vs_H_L4",
+        "reference_text": "1.000",
+        "reproduced": "1.000",
+        "match": true
+      },
+      {
+        "section": "5",
+        "key": "primary/L4_H_vs_H_L4",
+        "reference_text": "1.000",
+        "reproduced": "1.000",
+        "match": true
+      },
+      {
+        "section": "5",
+        "key": "replication/H_L4_ALIGNED_vs_H_L4",
+        "reference_text": "1.000",
+        "reproduced": "1.000",
+        "match": true
+      },
+      {
+        "section": "5",
+        "key": "replication/L4_H_vs_H_L4",
+        "reference_text": "0.500",
+        "reproduced": "0.500",
+        "match": true
+      },
+      {
+        "section": "5",
+        "key": "latent_v2/H_L4_ALIGNED_vs_H_L4",
+        "reference_text": "1.000",
+        "reproduced": "1.000",
+        "match": true
+      },
+      {
+        "section": "5",
+        "key": "latent_v2/L4_H_vs_H_L4",
+        "reference_text": "1.000",
+        "reproduced": "1.000",
+        "match": true
+      },
+      {
+        "section": "5",
+        "key": "veto/H_L4_ALIGNED_vs_H_L4",
+        "reference_text": "1.000",
+        "reproduced": "1.000",
+        "match": true
+      },
+      {
+        "section": "5",
+        "key": "veto/L4_H_vs_H_L4",
+        "reference_text": "1.000",
+        "reproduced": "1.000",
+        "match": true
+      },
+      {
+        "section": "5",
+        "key": "gpt_oss_primary/H_L4_ALIGNED_vs_H_L4",
+        "reference_text": "1.000",
+        "reproduced": "1.000",
+        "match": true
+      },
+      {
+        "section": "5",
+        "key": "gpt_oss_primary/L4_H_vs_H_L4",
+        "reference_text": "1.000",
+        "reproduced": "1.000",
+        "match": true
+      },
+      {
+        "section": "5",
+        "key": "gpt_oss_veto/H_L4_ALIGNED_vs_H_L4",
+        "reference_text": "1.000",
+        "reproduced": "1.000",
+        "match": true
+      },
+      {
+        "section": "5",
+        "key": "gpt_oss_veto/L4_H_vs_H_L4",
+        "reference_text": "1.000",
+        "reproduced": "1.000",
+        "match": true
+      },
+      {
+        "section": "6",
+        "key": "all cases",
+        "reference_text": [
+          "260",
+          "-6.51",
+          "-7.07",
+          "-5.95"
+        ],
+        "reproduced": [
+          "260",
+          "-6.51",
+          "-7.07",
+          "-5.95"
+        ],
+        "match": true
+      },
+      {
+        "section": "6",
+        "key": "excluding intervention-identifying questions",
+        "reference_text": [
+          "251",
+          "-6.44",
+          "-7.02",
+          "-5.87"
+        ],
+        "reproduced": [
+          "251",
+          "-6.44",
+          "-7.02",
+          "-5.87"
+        ],
+        "match": true
+      },
+      {
+        "section": "6",
+        "key": "intervention-identifying questions only",
+        "reference_text": [
+          "9",
+          "-8.33",
+          "-11.11",
+          "-6.11"
+        ],
+        "reproduced": [
+          "9",
+          "-8.33",
+          "-11.11",
+          "-6.11"
+        ],
+        "match": true
+      },
+      {
+        "section": "6",
+        "key": "excluded case ids",
+        "reference_text": [
+          "9",
+          "R0037;R0041;R0048;R0094;R0122;R0139;R0140;R0158;R0262"
+        ],
+        "reproduced": [
+          "9",
+          "R0037;R0041;R0048;R0094;R0122;R0139;R0140;R0158;R0262"
+        ],
+        "match": true
+      },
+      {
+        "section": "7",
+        "key": "primary",
+        "reference_text": [
+          "40",
+          {
+            ">4": 40
+          }
+        ],
+        "reproduced": [
+          "40",
+          {
+            ">4": 40
+          }
+        ],
+        "match": true
+      },
+      {
+        "section": "7",
+        "key": "replication",
+        "reference_text": [
+          "259",
+          {
+            ">4": 257,
+            "1": 2
+          }
+        ],
+        "reproduced": [
+          "259",
+          {
+            ">4": 257,
+            "1": 2
+          }
+        ],
+        "match": true
+      },
+      {
+        "section": "7",
+        "key": "latent_v2",
+        "reference_text": [
+          "38",
+          {
+            ">4": 36,
+            "1": 1,
+            "2": 1
+          }
+        ],
+        "reproduced": [
+          "38",
+          {
+            ">4": 36,
+            "1": 1,
+            "2": 1
+          }
+        ],
+        "match": true
+      },
+      {
+        "section": "7",
+        "key": "veto",
+        "reference_text": [
+          "15",
+          {
+            ">4": 15
+          }
+        ],
+        "reproduced": [
+          "15",
+          {
+            ">4": 15
+          }
+        ],
+        "match": true
+      },
+      {
+        "section": "7",
+        "key": "gpt_oss_primary",
+        "reference_text": [
+          "40",
+          {
+            ">4": 40
+          }
+        ],
+        "reproduced": [
+          "40",
+          {
+            ">4": 40
+          }
+        ],
+        "match": true
+      }
+    ]
+  }
+}

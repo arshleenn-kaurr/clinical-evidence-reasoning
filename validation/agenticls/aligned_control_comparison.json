@@ -1,0 +1,334 @@
+{
+  "reproduced": "validation/agenticls/aligned_control_analysis.json",
+  "archived": "experiments/persistent_context/gemini_aligned_control_40/historical_package/agenticls_aligned_persistent_control/results/aligned_control_analysis.json",
+  "reproduced_sha256": "394b35b9f6b02727d8f7b553ff9c690cfca2c9cf0ba3138c99220857d0ec07a4",
+  "archived_sha256": "394b35b9f6b02727d8f7b553ff9c690cfca2c9cf0ba3138c99220857d0ec07a4",
+  "status": "EXACT_MATCH",
+  "differences": [],
+  "n_fields_compared": 46,
+  "n_fields_equal": 46,
+  "fields": [
+    {
+      "field": "aligned_terminal.bootstrap_95_ci[0]",
+      "archived": -3.2,
+      "reproduced": -3.2,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "aligned_terminal.bootstrap_95_ci[1]",
+      "archived": -0.675,
+      "reproduced": -0.675,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "aligned_terminal.categorical_agreement_n",
+      "archived": 40,
+      "reproduced": 40,
+      "equal": true,
+      "abs_diff": 0
+    },
+    {
+      "field": "aligned_terminal.direction_counts.equal",
+      "archived": 25,
+      "reproduced": 25,
+      "equal": true,
+      "abs_diff": 0
+    },
+    {
+      "field": "aligned_terminal.direction_counts.higher",
+      "archived": 3,
+      "reproduced": 3,
+      "equal": true,
+      "abs_diff": 0
+    },
+    {
+      "field": "aligned_terminal.direction_counts.lower",
+      "archived": 12,
+      "reproduced": 12,
+      "equal": true,
+      "abs_diff": 0
+    },
+    {
+      "field": "aligned_terminal.e0_in_both_n",
+      "archived": 40,
+      "reproduced": 40,
+      "equal": true,
+      "abs_diff": 0
+    },
+    {
+      "field": "aligned_terminal.fresh_mean",
+      "archived": 92.375,
+      "reproduced": 92.375,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "aligned_terminal.median",
+      "archived": 0.0,
+      "reproduced": 0.0,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "aligned_terminal.seq_minus_fresh_mean",
+      "archived": -1.85,
+      "reproduced": -1.85,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "aligned_terminal.sequential_mean",
+      "archived": 90.525,
+      "reproduced": 90.525,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "bootstrap_n",
+      "archived": 10000,
+      "reproduced": 10000,
+      "equal": true,
+      "abs_diff": 0
+    },
+    {
+      "field": "bootstrap_seed",
+      "archived": 2026092301,
+      "reproduced": 2026092301,
+      "equal": true,
+      "abs_diff": 0
+    },
+    {
+      "field": "n",
+      "archived": 40,
+      "reproduced": 40,
+      "equal": true,
+      "abs_diff": 0
+    },
+    {
+      "field": "polarity_by_persistence_interaction.bootstrap_95_ci[0]",
+      "archived": -12.0,
+      "reproduced": -12.0,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "polarity_by_persistence_interaction.bootstrap_95_ci[1]",
+      "archived": -7.725,
+      "reproduced": -7.725,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "polarity_by_persistence_interaction.definition",
+      "archived": "(conflict persistent-fresh) - (aligned persistent-fresh)",
+      "reproduced": "(conflict persistent-fresh) - (aligned persistent-fresh)",
+      "equal": true,
+      "abs_diff": null
+    },
+    {
+      "field": "polarity_by_persistence_interaction.mean",
+      "archived": -10.0,
+      "reproduced": -10.0,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "polarity_by_persistence_interaction.median",
+      "archived": -10.0,
+      "reproduced": -10.0,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "polarity_by_persistence_interaction.negative_n",
+      "archived": 37,
+      "reproduced": 37,
+      "equal": true,
+      "abs_diff": 0
+    },
+    {
+      "field": "polarity_by_persistence_interaction.positive_n",
+      "archived": 2,
+      "reproduced": 2,
+      "equal": true,
+      "abs_diff": 0
+    },
+    {
+      "field": "polarity_by_persistence_interaction.zero_n",
+      "archived": 1,
+      "reproduced": 1,
+      "equal": true,
+      "abs_diff": 0
+    },
+    {
+      "field": "same_40_existing_conflict_terminal.bootstrap_95_ci[0]",
+      "archived": -13.725,
+      "reproduced": -13.725,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "same_40_existing_conflict_terminal.bootstrap_95_ci[1]",
+      "archived": -9.925,
+      "reproduced": -9.925,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "same_40_existing_conflict_terminal.direction_counts.equal",
+      "archived": 1,
+      "reproduced": 1,
+      "equal": true,
+      "abs_diff": 0
+    },
+    {
+      "field": "same_40_existing_conflict_terminal.direction_counts.higher",
+      "archived": 1,
+      "reproduced": 1,
+      "equal": true,
+      "abs_diff": 0
+    },
+    {
+      "field": "same_40_existing_conflict_terminal.direction_counts.lower",
+      "archived": 38,
+      "reproduced": 38,
+      "equal": true,
+      "abs_diff": 0
+    },
+    {
+      "field": "same_40_existing_conflict_terminal.fresh_mean",
+      "archived": 86.05,
+      "reproduced": 86.05,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "same_40_existing_conflict_terminal.median",
+      "archived": -10.0,
+      "reproduced": -10.0,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "same_40_existing_conflict_terminal.seq_minus_fresh_mean",
+      "archived": -11.85,
+      "reproduced": -11.85,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "same_40_existing_conflict_terminal.sequential_mean",
+      "archived": 74.2,
+      "reproduced": 74.2,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "trajectory_means.aligned[0]",
+      "archived": 89.875,
+      "reproduced": 89.875,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "trajectory_means.aligned[1]",
+      "archived": 90.45,
+      "reproduced": 90.45,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "trajectory_means.aligned[2]",
+      "archived": 90.825,
+      "reproduced": 90.825,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "trajectory_means.aligned[3]",
+      "archived": 90.7,
+      "reproduced": 90.7,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "trajectory_means.aligned[4]",
+      "archived": 90.525,
+      "reproduced": 90.525,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "trajectory_means.conflict[0]",
+      "archived": 89.875,
+      "reproduced": 89.875,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "trajectory_means.conflict[1]",
+      "archived": 85.0,
+      "reproduced": 85.0,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "trajectory_means.conflict[2]",
+      "archived": 80.575,
+      "reproduced": 80.575,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "trajectory_means.conflict[3]",
+      "archived": 77.275,
+      "reproduced": 77.275,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "trajectory_means.conflict[4]",
+      "archived": 74.2,
+      "reproduced": 74.2,
+      "equal": true,
+      "abs_diff": 0.0
+    },
+    {
+      "field": "trajectory_means.states[0]",
+      "archived": "H",
+      "reproduced": "H",
+      "equal": true,
+      "abs_diff": null
+    },
+    {
+      "field": "trajectory_means.states[1]",
+      "archived": "H+L1",
+      "reproduced": "H+L1",
+      "equal": true,
+      "abs_diff": null
+    },
+    {
+      "field": "trajectory_means.states[2]",
+      "archived": "H+L2",
+      "reproduced": "H+L2",
+      "equal": true,
+      "abs_diff": null
+    },
+    {
+      "field": "trajectory_means.states[3]",
+      "archived": "H+L3",
+      "reproduced": "H+L3",
+      "equal": true,
+      "abs_diff": null
+    },
+    {
+      "field": "trajectory_means.states[4]",
+      "archived": "H+L4",
+      "reproduced": "H+L4",
+      "equal": true,
+      "abs_diff": null
+    }
+  ]
+}
