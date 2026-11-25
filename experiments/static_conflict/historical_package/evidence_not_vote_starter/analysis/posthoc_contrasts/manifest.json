@@ -1,0 +1,53 @@
+{
+  "bootstrap_seed": 68020260909,
+  "determinism_note": "Per-case vectors are sorted by case_id before resampling so that interval endpoints do not depend on merge order.",
+  "inputs": {
+    "data/final_main_cases.jsonl": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+    "data/final_veto_cases.jsonl": "e6f02e2db4e90765d5c7b08d5d2776f9c123465504a7f895e7b0c7546d190ac1",
+    "data/replication_cases.jsonl": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+    "results/final_main_gemini_3_6_flash.jsonl": "6390567553c5d7a2f90acf7a54f732378d2f97af5307de080ec2a64edd025a56",
+    "results/final_main_gpt_oss_120b_CLEAN.jsonl": "481ffd95dd3fe298ae54f18fa07ae8f612b0af630e00a736092b746eca543ce7",
+    "results/final_veto_gemini_3_6_flash.jsonl": "50d69fef4c615831660639ce1a8d577db9b6a496c1b22e61ee76da6a3e81b8c8",
+    "results/final_veto_gpt_oss_120b_CLEAN.jsonl": "387453c4681df1ec07dd3f04c5e4a403ca8f10ac895594ac128ec560c9719f02",
+    "results/latent_v2_main_gemini_3_6_flash_CLEAN.jsonl": "b49c2a15b7b36f13d4eb2982137943451d69428910544bcff650b5c5ff75f3c7",
+    "results/replication_gemini_3_6_flash_CLEAN.jsonl": "dedd0d56ba0b9970d3cdfa4e4d2485506580af3b506984ef78c5fb7c93708a40"
+  },
+  "n_bootstrap": 10000,
+  "outputs": {
+    "anonymization_sensitivity.csv": {
+      "prespecification_status": "post_hoc",
+      "sha256": "8909e91b150be344e097ec17c8a36ae52866721bf7e13fa6f573ac835f165ca6"
+    },
+    "binomial_proportions_exact.csv": {
+      "prespecification_status": "post_hoc",
+      "sha256": "2a451fcd47a4dea134a254329370602b061766b13782e4c52d5f0afc956d051a"
+    },
+    "categorical_degradation_summary.csv": {
+      "prespecification_status": "post_hoc_descriptive",
+      "sha256": "18014ebeca6bc5e50a34d0d3d18f9d5a5a1f51fcfe66744dabc060e60a33ac3e"
+    },
+    "categorical_transition_matrix.csv": {
+      "prespecification_status": "post_hoc_descriptive",
+      "sha256": "d7032c3086f06f7ba17d317dd64d0edd19120b3bf2bc6f9ae07c5072add5a2e0"
+    },
+    "confidence_contrasts_bootstrap.csv": {
+      "prespecification_status": "post_hoc",
+      "sha256": "8ef17aad2520d1d4fbc66947446165a5d7cf4514976542a675331749ea31b526"
+    },
+    "confidence_direction_counts.csv": {
+      "prespecification_status": "post_hoc_descriptive",
+      "sha256": "bf4a94cde4eab06d3514f4fe8feb89d837ec3f306b38315817478142f59b2cd2"
+    },
+    "paired_accuracy_mcnemar.csv": {
+      "prespecification_status": "post_hoc",
+      "sha256": "d607d557b81716a7cdbcbe3d194085a36eca8227646c5eeddb7939bebc360fa9"
+    },
+    "replication_conflict_aligned_by_stratum.csv": {
+      "prespecification_status": "post_hoc",
+      "sha256": "8fdd3bc0e77685c65efaccccd0baff182dfc4eb84f4a0ce99a9f2945bb026c67"
+    }
+  },
+  "prespecification_status": "POST-HOC. analysis_contract.md v0 prespecifies EDR_4 as the primary endpoint and lists 'confidence shift' (H -> H_L4) and 'aligned-control delta' (accuracy) as secondary endpoints. The conflict-vs-aligned CONFIDENCE contrast is not a contract endpoint. Exact binomial intervals replace the degenerate percentile-bootstrap intervals emitted by score_results.py for binary proportions. The gpt_oss_primary rows are a post-hoc SECOND-MODEL SENSITIVITY ANALYSIS on the frozen 40-case primary cohort and frozen prompts, run after the Gemini results were known; they are not an independent cohort replication and add no new clinical cases. The veto and gpt_oss_veto cohorts are the SAME 15 AHA guideline cases evaluated by two models: they are 15 cases observed twice, not 30 independent cases. Veto failure rates and their exact intervals are reported per model and must not be pooled across models.",
+  "script": "posthoc_contrasts.py",
+  "script_sha256": "f388eb835b2444b1a93abd20d868f62be95c1033c2bc6dccd2da0a0c60ce4f8c"
+}

@@ -1,0 +1,4 @@
+model,condition,n_weak,eligible_H_correct_cases,EDR,ci_lo,ci_hi
+openai/gpt-oss-120b,H_L1,1,15,0.0,0.0,0.0
+openai/gpt-oss-120b,H_L2,2,15,0.0,0.0,0.0
+openai/gpt-oss-120b,H_L4,4,15,0.0,0.0,0.0

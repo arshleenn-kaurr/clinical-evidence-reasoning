@@ -1,0 +1,139 @@
+{
+  "_status": "DRAFT manifest generated during migration 2026-10-04 from recovered files; null = not recoverable from files",
+  "experiments": [
+    {
+      "experiment_id": "static_gemini_latent_v2_40",
+      "paper_relationship": "GenAI4Health (latent-v2 sensitivity)",
+      "prespecification": "SENSITIVITY",
+      "analysis_status": "archived outputs present; NOT re-run during migration",
+      "model": "gemini-3.6-flash",
+      "provider": "Google Gemini API (generateContent)",
+      "temperature": 0,
+      "reasoning_setting": "no explicit thinking configuration in run_gemini.py (provider default)",
+      "cohort_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_cases.jsonl",
+      "cohort_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "n_cases": 40,
+      "conditions": [
+        "H",
+        "H_L1",
+        "H_L2",
+        "H_L4",
+        "H_L4_ALIGNED",
+        "L4_H"
+      ],
+      "expected_successful_calls": 240,
+      "raw_attempt_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/latent_v2_main_gemini_3_6_flash_RAW.jsonl",
+      "canonical_result_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/latent_v2_main_gemini_3_6_flash_CLEAN.jsonl",
+      "runner_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/run_gemini.py",
+      "runner_sha256": "69a8cd98115738e05048583fc122171a645e8a47e01463caddfdffa509f9b40d",
+      "protocol_file": [
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/README.md",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis_contract.md",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/audit_protocol.md"
+      ],
+      "prompt_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/latent_v2_main_prompts.jsonl",
+      "analysis_files": [
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/score_results.py",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/make_latent_v2.py",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/posthoc_contrasts.py"
+      ],
+      "execution_date_if_known": null,
+      "notes": "Recovered: 240 ok; RAW == CLEAN. Lock: data/latent_v2_evaluation_lock.sha256 (verifies).",
+      "historical_hashes": {
+        "frozen_inputs": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_cases.jsonl": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/latent_v2_main_prompts.jsonl": "5a45882e35649bfef8da7673f3f265aab49521489c707f6db18d7d0acf6cf287"
+        },
+        "runner": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/run_gemini.py": "69a8cd98115738e05048583fc122171a645e8a47e01463caddfdffa509f9b40d"
+        },
+        "canonical_results": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/latent_v2_main_gemini_3_6_flash_CLEAN.jsonl": "b49c2a15b7b36f13d4eb2982137943451d69428910544bcff650b5c5ff75f3c7"
+        },
+        "analysis_scripts": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/score_results.py": "630c193dd261e10ce04363854693b74b757792f52ccb31cc061cff07bf865d6f",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/posthoc_contrasts.py": "c4fd856bd56fe0ed28209cfd692f4dc05f0ba3a2f1a3a4266dd8441f37b1f0cf"
+        },
+        "archived_analysis_outputs": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/accuracy_by_condition.csv": "27bae5dc2286b40b8b30abec2084a075cf7d03e53f894d1572e49fb71ddd1079",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/aligned_control.csv": "68f17fd963b23dd85eddb8e23673b401ff5631e1d7730cc3eb93bade7091b09a",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/confidence_shift.csv": "d82307ea4d420ff57570bcfae0a288f3147fcfe936486b01647a5d76afcf268d",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/evidence_dilution_rate.csv": "68e97556aa0065817097be6ba0346b8b903af3330ffd26b59609c2075e4cf752",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/flip_threshold.csv": "834537e0ec3a268410987884b2ecbe7e61d681c176aae12bc3730f53b858d48d",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/merged_scored_results.csv": "9a73336a3908712b1032f783e1c474de02fda23975e9ee606398368cab94008e",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/order_sensitivity.csv": "ed85f7b2e8b6f8a46ba767a18765ef5fdbeb63c5cfabe9401c64dcc93541624b",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_v2_gemini/veto_failure_rate.csv": "4d4413afa1c2809145aa25cdc749d01971feb34dc0f7756f11c985e995e8df29"
+        }
+      },
+      "phase3_reproduction": {
+        "environment": {
+          "python": "3.14.8 (CPython, macOS 27.0.1 arm64)",
+          "main_env": "numpy 2.5.3, pandas 3.0.6, scipy 1.18.1",
+          "posthoc_sensitivity_env": "numpy 2.5.3, pandas 3.0.6, scipy 1.16.3",
+          "agenticls_env": "standard library only",
+          "date_utc": "2026-10-04",
+          "note": "Current reproduction environment; NOT the historical execution environment (see docs/environment_validation.md)."
+        },
+        "commands_log": "validation/logs/step4_prespecified.log; validation/logs/step5_posthoc.log",
+        "reproduced_outputs": {
+          "validation/genai4health/prespecified/latent_v2_gemini/accuracy_by_condition.csv": "27bae5dc2286b40b8b30abec2084a075cf7d03e53f894d1572e49fb71ddd1079",
+          "validation/genai4health/prespecified/latent_v2_gemini/aligned_control.csv": "68f17fd963b23dd85eddb8e23673b401ff5631e1d7730cc3eb93bade7091b09a",
+          "validation/genai4health/prespecified/latent_v2_gemini/confidence_shift.csv": "d82307ea4d420ff57570bcfae0a288f3147fcfe936486b01647a5d76afcf268d",
+          "validation/genai4health/prespecified/latent_v2_gemini/evidence_dilution_rate.csv": "68e97556aa0065817097be6ba0346b8b903af3330ffd26b59609c2075e4cf752",
+          "validation/genai4health/prespecified/latent_v2_gemini/flip_threshold.csv": "834537e0ec3a268410987884b2ecbe7e61d681c176aae12bc3730f53b858d48d",
+          "validation/genai4health/prespecified/latent_v2_gemini/merged_scored_results.csv": "9a73336a3908712b1032f783e1c474de02fda23975e9ee606398368cab94008e",
+          "validation/genai4health/prespecified/latent_v2_gemini/order_sensitivity.csv": "ed85f7b2e8b6f8a46ba767a18765ef5fdbeb63c5cfabe9401c64dcc93541624b",
+          "validation/genai4health/prespecified/latent_v2_gemini/veto_failure_rate.csv": "4d4413afa1c2809145aa25cdc749d01971feb34dc0f7756f11c985e995e8df29"
+        },
+        "prespecified_status": "EXACT_MATCH",
+        "posthoc_status": "CSVs NUMERIC_MATCH (scipy 1.18.1); EXACT_MATCH (scipy 1.16.3)",
+        "status": "ANALYSIS_REPRODUCED"
+      }
+    },
+    {
+      "experiment_id": "static_gemini_latent_v1_40",
+      "paper_relationship": "SUPERSEDED / EXCLUDED FROM REPORTED ANALYSES (GenAI4Health). Per the accepted-paper record: quality metadata remained visible, confidence intervals were inadvertently removed from some reconstructed anchors, and it was not used as evidence in the reported manuscript. Superseded by latent-v2 (static_gemini_latent_v2_40).",
+      "prespecification": "SENSITIVITY",
+      "analysis_status": "archived outputs present; NOT re-run during migration",
+      "model": "gemini-3.6-flash",
+      "provider": "Google Gemini API (generateContent)",
+      "temperature": 0,
+      "reasoning_setting": "no explicit thinking configuration in run_gemini.py (provider default)",
+      "cohort_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_cases.jsonl",
+      "cohort_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "n_cases": 40,
+      "conditions": [
+        "H",
+        "H_L1",
+        "H_L2",
+        "H_L4",
+        "H_L4_ALIGNED",
+        "L4_H"
+      ],
+      "expected_successful_calls": 240,
+      "raw_attempt_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/latent_main_gemini_3_6_flash_RAW.jsonl",
+      "canonical_result_file": null,
+      "runner_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/run_gemini.py",
+      "runner_sha256": "69a8cd98115738e05048583fc122171a645e8a47e01463caddfdffa509f9b40d",
+      "protocol_file": [
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/README.md",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis_contract.md",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/audit_protocol.md"
+      ],
+      "prompt_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/latent_main_prompts.jsonl",
+      "analysis_files": [
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/score_results.py",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/make_latent_ablation.py",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/latent_gemini/"
+      ],
+      "execution_date_if_known": null,
+      "notes": "Recovered; 240 ok; no CLEAN file. Lock: data/latent_ablation_lock.sha256 (verifies). STATUS: SUPERSEDED / EXCLUDED FROM REPORTED ANALYSES (see paper_relationship). Retained for historical provenance; not deleted; not further analyzed. PUBLIC RELEASE DEFAULT: ARCHIVAL_ONLY.",
+      "phase3_reproduction": {
+        "status": "NOT_TESTED_IN_PHASE3"
+      },
+      "status": "SUPERSEDED / EXCLUDED FROM REPORTED ANALYSES",
+      "public_release_default": "ARCHIVAL_ONLY"
+    }
+  ]
+}

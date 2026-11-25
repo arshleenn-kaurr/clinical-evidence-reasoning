@@ -1,0 +1,2 @@
+model,n,order_sensitivity,ci_lo,ci_hi
+gemini-3.6-flash,260,0.007692307692307693,0.0,0.019230769230769232

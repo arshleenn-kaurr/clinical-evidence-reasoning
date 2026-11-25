@@ -1,0 +1,90 @@
+{
+  "_status": "DRAFT manifest generated during migration 2026-10-04 from recovered files; null = not recoverable from files",
+  "experiment_id": "static_gemini_veto_15",
+  "paper_relationship": "GenAI4Health (guideline/veto boundary)",
+  "prespecification": "BOUNDARY",
+  "analysis_status": "archived outputs present; NOT re-run during migration",
+  "model": "gemini-3.6-flash",
+  "provider": "Google Gemini API (generateContent)",
+  "temperature": 0,
+  "reasoning_setting": "no explicit thinking configuration in run_gemini.py (provider default)",
+  "cohort_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_veto_cases.jsonl",
+  "cohort_sha256": "e6f02e2db4e90765d5c7b08d5d2776f9c123465504a7f895e7b0c7546d190ac1",
+  "n_cases": 15,
+  "conditions": [
+    "H",
+    "H_L1",
+    "H_L2",
+    "H_L4",
+    "H_L4_ALIGNED",
+    "L4_H"
+  ],
+  "expected_successful_calls": 90,
+  "raw_attempt_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_veto_gemini_3_6_flash.jsonl",
+  "canonical_result_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_veto_gemini_3_6_flash.jsonl",
+  "runner_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/run_gemini.py",
+  "runner_sha256": "69a8cd98115738e05048583fc122171a645e8a47e01463caddfdffa509f9b40d",
+  "protocol_file": [
+    "experiments/static_conflict/historical_package/evidence_not_vote_starter/README.md",
+    "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis_contract.md",
+    "experiments/static_conflict/historical_package/evidence_not_vote_starter/audit_protocol.md"
+  ],
+  "prompt_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_veto_prompts.jsonl",
+  "analysis_files": [
+    "experiments/static_conflict/historical_package/evidence_not_vote_starter/score_results.py",
+    "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/",
+    "experiments/static_conflict/historical_package/evidence_not_vote_starter/posthoc_contrasts.py"
+  ],
+  "execution_date_if_known": null,
+  "notes": "Recovered: 90/90 ok. AHA COR III cases (harm 4 / no_benefit 11). No separate RAW/CLEAN.",
+  "historical_hashes": {
+    "frozen_inputs": {
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_veto_cases.jsonl": "e6f02e2db4e90765d5c7b08d5d2776f9c123465504a7f895e7b0c7546d190ac1",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_veto_prompts.jsonl": "1501c8341fa6a4f3b684a90b0cca8a7f4925b9f09b51c6c1ab5e1aec23cf46a6"
+    },
+    "runner": {
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/run_gemini.py": "69a8cd98115738e05048583fc122171a645e8a47e01463caddfdffa509f9b40d"
+    },
+    "canonical_results": {
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_veto_gemini_3_6_flash.jsonl": "50d69fef4c615831660639ce1a8d577db9b6a496c1b22e61ee76da6a3e81b8c8"
+    },
+    "analysis_scripts": {
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/score_results.py": "630c193dd261e10ce04363854693b74b757792f52ccb31cc061cff07bf865d6f",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/posthoc_contrasts.py": "c4fd856bd56fe0ed28209cfd692f4dc05f0ba3a2f1a3a4266dd8441f37b1f0cf"
+    },
+    "archived_analysis_outputs": {
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/accuracy_by_condition.csv": "a81fcc08c019a421615a13c436cc49c9c0c1926a9a2b8b00198beccd3fdb34fa",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/aligned_control.csv": "d4b713bd15a9cecd0169bb0b75c89c7b269393c2bd17642a914d4bc96a69d774",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/confidence_shift.csv": "91b0491041024115059cde9a568ff51a4d0dcc9f5cd3d276279d7e12005483c6",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/evidence_dilution_rate.csv": "cbc18f9f458d0248d39a960178a9a9b9645bd24248e25027b04060f4e2dde5ea",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/flip_threshold.csv": "143fbdd425297e12f28960fdd140a81cfa36b29061628ce339d5ac3f2f2f5d7d",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/merged_scored_results.csv": "d3aa0ceb25e87e1c2503812d9a39fa021ecc5b1809a9bb5bd0c3fe4e6481e52f",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/order_sensitivity.csv": "0808fedd998ee983e6dec0c1dc6a5fd54fd845977b57af89a4fe0a6b1264f4d8",
+      "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/veto_gemini/veto_failure_rate.csv": "729f87a3b37a84781cda8459786152c8ab4817582d27d39a24579133e2bedad3"
+    }
+  },
+  "phase3_reproduction": {
+    "environment": {
+      "python": "3.14.8 (CPython, macOS 27.0.1 arm64)",
+      "main_env": "numpy 2.5.3, pandas 3.0.6, scipy 1.18.1",
+      "posthoc_sensitivity_env": "numpy 2.5.3, pandas 3.0.6, scipy 1.16.3",
+      "agenticls_env": "standard library only",
+      "date_utc": "2026-10-04",
+      "note": "Current reproduction environment; NOT the historical execution environment (see docs/environment_validation.md)."
+    },
+    "commands_log": "validation/logs/step4_prespecified.log; validation/logs/step5_posthoc.log",
+    "reproduced_outputs": {
+      "validation/genai4health/prespecified/veto_gemini/accuracy_by_condition.csv": "a81fcc08c019a421615a13c436cc49c9c0c1926a9a2b8b00198beccd3fdb34fa",
+      "validation/genai4health/prespecified/veto_gemini/aligned_control.csv": "d4b713bd15a9cecd0169bb0b75c89c7b269393c2bd17642a914d4bc96a69d774",
+      "validation/genai4health/prespecified/veto_gemini/confidence_shift.csv": "91b0491041024115059cde9a568ff51a4d0dcc9f5cd3d276279d7e12005483c6",
+      "validation/genai4health/prespecified/veto_gemini/evidence_dilution_rate.csv": "cbc18f9f458d0248d39a960178a9a9b9645bd24248e25027b04060f4e2dde5ea",
+      "validation/genai4health/prespecified/veto_gemini/flip_threshold.csv": "143fbdd425297e12f28960fdd140a81cfa36b29061628ce339d5ac3f2f2f5d7d",
+      "validation/genai4health/prespecified/veto_gemini/merged_scored_results.csv": "d3aa0ceb25e87e1c2503812d9a39fa021ecc5b1809a9bb5bd0c3fe4e6481e52f",
+      "validation/genai4health/prespecified/veto_gemini/order_sensitivity.csv": "0808fedd998ee983e6dec0c1dc6a5fd54fd845977b57af89a4fe0a6b1264f4d8",
+      "validation/genai4health/prespecified/veto_gemini/veto_failure_rate.csv": "729f87a3b37a84781cda8459786152c8ab4817582d27d39a24579133e2bedad3"
+    },
+    "prespecified_status": "EXACT_MATCH",
+    "posthoc_status": "CSVs NUMERIC_MATCH (scipy 1.18.1); EXACT_MATCH (scipy 1.16.3)",
+    "status": "ANALYSIS_REPRODUCED"
+  }
+}

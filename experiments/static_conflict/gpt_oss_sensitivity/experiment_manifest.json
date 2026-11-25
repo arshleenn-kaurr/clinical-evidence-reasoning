@@ -1,0 +1,183 @@
+{
+  "_status": "DRAFT manifest generated during migration 2026-10-04 from recovered files; null = not recoverable from files",
+  "experiments": [
+    {
+      "experiment_id": "static_gpt_oss_primary_40",
+      "paper_relationship": "GenAI4Health (second-model sensitivity)",
+      "prespecification": "SENSITIVITY (post-hoc per posthoc manifest)",
+      "analysis_status": "archived outputs present; NOT re-run during migration",
+      "model": "openai/gpt-oss-120b",
+      "provider": "Groq",
+      "temperature": 0,
+      "reasoning_setting": "reasoning_effort=medium (run_groq.py)",
+      "cohort_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_cases.jsonl",
+      "cohort_sha256": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+      "n_cases": 40,
+      "conditions": [
+        "H",
+        "H_L1",
+        "H_L2",
+        "H_L4",
+        "H_L4_ALIGNED",
+        "L4_H"
+      ],
+      "expected_successful_calls": 240,
+      "raw_attempt_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_main_gpt_oss_120b_RAW.jsonl",
+      "canonical_result_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_main_gpt_oss_120b_CLEAN.jsonl",
+      "runner_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/run_groq.py",
+      "runner_sha256": "a23206a042e1908538ec495213aacaf6709e047969a960328bca44ed7d8ec5a0",
+      "protocol_file": [
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/README.md",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis_contract.md",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/audit_protocol.md"
+      ],
+      "prompt_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_prompts.jsonl",
+      "analysis_files": [
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/score_results.py",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/posthoc_contrasts.py"
+      ],
+      "execution_date_if_known": null,
+      "notes": "Recovered: 240 ok; RAW == CLEAN byte-identical (no failed attempts retained). Same frozen cohort/prompts as Gemini primary.",
+      "historical_hashes": {
+        "frozen_inputs": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_cases.jsonl": "a13625b97a82a5e290b43a34da1048c7d34d5bff4fd40b61f31bd83f9ce7db3e",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_main_prompts.jsonl": "055484c9c92ddc081692b90f86e7956b477455b1af9954fb7e12dbf1b577e091"
+        },
+        "runner": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/run_groq.py": "a23206a042e1908538ec495213aacaf6709e047969a960328bca44ed7d8ec5a0"
+        },
+        "canonical_results": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_main_gpt_oss_120b_CLEAN.jsonl": "481ffd95dd3fe298ae54f18fa07ae8f612b0af630e00a736092b746eca543ce7"
+        },
+        "analysis_scripts": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/score_results.py": "630c193dd261e10ce04363854693b74b757792f52ccb31cc061cff07bf865d6f",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/posthoc_contrasts.py": "c4fd856bd56fe0ed28209cfd692f4dc05f0ba3a2f1a3a4266dd8441f37b1f0cf"
+        },
+        "archived_analysis_outputs": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/accuracy_by_condition.csv": "5fa38e95297603b1b973679bef15fe853e585dbeed3e93604dffd4756049ad32",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/aligned_control.csv": "8dcdcbf4dd1e4af3c7aa077772b0e0f56386a4e2c185d5394608e34d0b669d94",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/confidence_shift.csv": "afa4d3bc24e4944374f92cfd76d0a85992f65688df14f82febbeee7953b8b61a",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/evidence_dilution_rate.csv": "776151a2aa635d26de62b556370d149792a790982a30f7a804a21dd2a95f0848",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/flip_threshold.csv": "14d4cc32e974192cafefb8dd6febbe804c3c51ee2cc266afd7a4b9ee3e0345a5",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/merged_scored_results.csv": "26700a9fcb0efd22a4d2bae595e7f1ed835f19f36f204480354845afb7b17e4b",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/order_sensitivity.csv": "c6ff913a2cc6969db8a172d57695bc63a6ec56e40343d8af25229e0aaacd2f20",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_primary/veto_failure_rate.csv": "5a713856c0c83d08cbf8cad94105934e3f22656641d9902a8fcb94bfeb7b597d"
+        }
+      },
+      "phase3_reproduction": {
+        "environment": {
+          "python": "3.14.8 (CPython, macOS 27.0.1 arm64)",
+          "main_env": "numpy 2.5.3, pandas 3.0.6, scipy 1.18.1",
+          "posthoc_sensitivity_env": "numpy 2.5.3, pandas 3.0.6, scipy 1.16.3",
+          "agenticls_env": "standard library only",
+          "date_utc": "2026-10-04",
+          "note": "Current reproduction environment; NOT the historical execution environment (see docs/environment_validation.md)."
+        },
+        "commands_log": "validation/logs/step4_prespecified.log; validation/logs/step5_posthoc.log",
+        "reproduced_outputs": {
+          "validation/genai4health/prespecified/gpt_oss_primary/accuracy_by_condition.csv": "5fa38e95297603b1b973679bef15fe853e585dbeed3e93604dffd4756049ad32",
+          "validation/genai4health/prespecified/gpt_oss_primary/aligned_control.csv": "8dcdcbf4dd1e4af3c7aa077772b0e0f56386a4e2c185d5394608e34d0b669d94",
+          "validation/genai4health/prespecified/gpt_oss_primary/confidence_shift.csv": "afa4d3bc24e4944374f92cfd76d0a85992f65688df14f82febbeee7953b8b61a",
+          "validation/genai4health/prespecified/gpt_oss_primary/evidence_dilution_rate.csv": "776151a2aa635d26de62b556370d149792a790982a30f7a804a21dd2a95f0848",
+          "validation/genai4health/prespecified/gpt_oss_primary/flip_threshold.csv": "14d4cc32e974192cafefb8dd6febbe804c3c51ee2cc266afd7a4b9ee3e0345a5",
+          "validation/genai4health/prespecified/gpt_oss_primary/merged_scored_results.csv": "26700a9fcb0efd22a4d2bae595e7f1ed835f19f36f204480354845afb7b17e4b",
+          "validation/genai4health/prespecified/gpt_oss_primary/order_sensitivity.csv": "c6ff913a2cc6969db8a172d57695bc63a6ec56e40343d8af25229e0aaacd2f20",
+          "validation/genai4health/prespecified/gpt_oss_primary/veto_failure_rate.csv": "5a713856c0c83d08cbf8cad94105934e3f22656641d9902a8fcb94bfeb7b597d"
+        },
+        "prespecified_status": "EXACT_MATCH",
+        "posthoc_status": "CSVs NUMERIC_MATCH (scipy 1.18.1); EXACT_MATCH (scipy 1.16.3)",
+        "status": "ANALYSIS_REPRODUCED"
+      }
+    },
+    {
+      "experiment_id": "static_gpt_oss_veto_15",
+      "paper_relationship": "GenAI4Health (second-model sensitivity, veto)",
+      "prespecification": "SENSITIVITY",
+      "analysis_status": "archived outputs present; NOT re-run during migration",
+      "model": "openai/gpt-oss-120b",
+      "provider": "Groq",
+      "temperature": 0,
+      "reasoning_setting": "reasoning_effort=medium (run_groq.py)",
+      "cohort_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_veto_cases.jsonl",
+      "cohort_sha256": "e6f02e2db4e90765d5c7b08d5d2776f9c123465504a7f895e7b0c7546d190ac1",
+      "n_cases": 15,
+      "conditions": [
+        "H",
+        "H_L1",
+        "H_L2",
+        "H_L4",
+        "H_L4_ALIGNED",
+        "L4_H"
+      ],
+      "expected_successful_calls": 90,
+      "raw_attempt_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_veto_gpt_oss_120b_RAW.jsonl",
+      "canonical_result_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_veto_gpt_oss_120b_CLEAN.jsonl",
+      "runner_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/run_groq.py",
+      "runner_sha256": "a23206a042e1908538ec495213aacaf6709e047969a960328bca44ed7d8ec5a0",
+      "protocol_file": [
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/README.md",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis_contract.md",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/audit_protocol.md"
+      ],
+      "prompt_file": "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_veto_prompts.jsonl",
+      "analysis_files": [
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/score_results.py",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/",
+        "experiments/static_conflict/historical_package/evidence_not_vote_starter/posthoc_contrasts.py"
+      ],
+      "execution_date_if_known": null,
+      "notes": "Recovered: 90 ok; RAW == CLEAN. Same 15 cases as Gemini veto (not independent cases).",
+      "historical_hashes": {
+        "frozen_inputs": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_veto_cases.jsonl": "e6f02e2db4e90765d5c7b08d5d2776f9c123465504a7f895e7b0c7546d190ac1",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/data/final_veto_prompts.jsonl": "1501c8341fa6a4f3b684a90b0cca8a7f4925b9f09b51c6c1ab5e1aec23cf46a6"
+        },
+        "runner": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/run_groq.py": "a23206a042e1908538ec495213aacaf6709e047969a960328bca44ed7d8ec5a0"
+        },
+        "canonical_results": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/results/final_veto_gpt_oss_120b_CLEAN.jsonl": "387453c4681df1ec07dd3f04c5e4a403ca8f10ac895594ac128ec560c9719f02"
+        },
+        "analysis_scripts": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/score_results.py": "630c193dd261e10ce04363854693b74b757792f52ccb31cc061cff07bf865d6f",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/posthoc_contrasts.py": "c4fd856bd56fe0ed28209cfd692f4dc05f0ba3a2f1a3a4266dd8441f37b1f0cf"
+        },
+        "archived_analysis_outputs": {
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/accuracy_by_condition.csv": "6c31cf41de5f34d9ad3c8b7d7be16ece88d5548ea8dcdf9a31f165314b09b74f",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/aligned_control.csv": "195238fcfae74b18f285c710200e7ea86a91b55ce45abd27912af612c4ce4254",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/confidence_shift.csv": "f6686a9eac9bc6a23a8b00d3c4ca0694cf0f3b5005726fdf4d7ece07d08eceff",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/evidence_dilution_rate.csv": "7ac04c2e89f2891713960601ea9d3605a2539557af484c345d00571d2bc2fd8c",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/flip_threshold.csv": "8c5a8e1b32142888c51da8ee3173b68d95297c4af2c4cd3a3ecb081590a8ab5a",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/merged_scored_results.csv": "75dbc82ec8e61fa3e23ab18ff0f9fb518a20710ba0adf0a254d134af0325b60d",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/order_sensitivity.csv": "7df05f07b56be27919e02ded098611c86abc55cf0c2ced09223af867362119f2",
+          "experiments/static_conflict/historical_package/evidence_not_vote_starter/analysis/gpt_oss_veto/veto_failure_rate.csv": "f95b4e3138c16388b83c29b6a0d4febe493b2a5f1279e26e0785e3b98650eea5"
+        }
+      },
+      "phase3_reproduction": {
+        "environment": {
+          "python": "3.14.8 (CPython, macOS 27.0.1 arm64)",
+          "main_env": "numpy 2.5.3, pandas 3.0.6, scipy 1.18.1",
+          "posthoc_sensitivity_env": "numpy 2.5.3, pandas 3.0.6, scipy 1.16.3",
+          "agenticls_env": "standard library only",
+          "date_utc": "2026-10-04",
+          "note": "Current reproduction environment; NOT the historical execution environment (see docs/environment_validation.md)."
+        },
+        "commands_log": "validation/logs/step4_prespecified.log; validation/logs/step5_posthoc.log",
+        "reproduced_outputs": {
+          "validation/genai4health/prespecified/gpt_oss_veto/accuracy_by_condition.csv": "6c31cf41de5f34d9ad3c8b7d7be16ece88d5548ea8dcdf9a31f165314b09b74f",
+          "validation/genai4health/prespecified/gpt_oss_veto/aligned_control.csv": "195238fcfae74b18f285c710200e7ea86a91b55ce45abd27912af612c4ce4254",
+          "validation/genai4health/prespecified/gpt_oss_veto/confidence_shift.csv": "f6686a9eac9bc6a23a8b00d3c4ca0694cf0f3b5005726fdf4d7ece07d08eceff",
+          "validation/genai4health/prespecified/gpt_oss_veto/evidence_dilution_rate.csv": "7ac04c2e89f2891713960601ea9d3605a2539557af484c345d00571d2bc2fd8c",
+          "validation/genai4health/prespecified/gpt_oss_veto/flip_threshold.csv": "8c5a8e1b32142888c51da8ee3173b68d95297c4af2c4cd3a3ecb081590a8ab5a",
+          "validation/genai4health/prespecified/gpt_oss_veto/merged_scored_results.csv": "75dbc82ec8e61fa3e23ab18ff0f9fb518a20710ba0adf0a254d134af0325b60d",
+          "validation/genai4health/prespecified/gpt_oss_veto/order_sensitivity.csv": "7df05f07b56be27919e02ded098611c86abc55cf0c2ced09223af867362119f2",
+          "validation/genai4health/prespecified/gpt_oss_veto/veto_failure_rate.csv": "f95b4e3138c16388b83c29b6a0d4febe493b2a5f1279e26e0785e3b98650eea5"
+        },
+        "prespecified_status": "EXACT_MATCH",
+        "posthoc_status": "CSVs NUMERIC_MATCH (scipy 1.18.1); EXACT_MATCH (scipy 1.16.3)",
+        "status": "ANALYSIS_REPRODUCED"
+      }
+    }
+  ]
+}

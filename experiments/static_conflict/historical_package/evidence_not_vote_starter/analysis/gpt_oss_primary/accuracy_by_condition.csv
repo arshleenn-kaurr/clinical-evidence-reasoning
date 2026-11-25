@@ -1,0 +1,7 @@
+model,condition,n,accuracy,ci_lo,ci_hi
+openai/gpt-oss-120b,H,40,1.0,1.0,1.0
+openai/gpt-oss-120b,H_L1,40,1.0,1.0,1.0
+openai/gpt-oss-120b,H_L2,40,1.0,1.0,1.0
+openai/gpt-oss-120b,H_L4,40,1.0,1.0,1.0
+openai/gpt-oss-120b,H_L4_ALIGNED,40,0.975,0.925,1.0
+openai/gpt-oss-120b,L4_H,40,1.0,1.0,1.0

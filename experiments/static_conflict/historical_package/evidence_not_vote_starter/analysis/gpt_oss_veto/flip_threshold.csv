@@ -1,0 +1,16 @@
+model,case_id,H_correct,flip_threshold,flipped_by_4
+openai/gpt-oss-120b,V0041,1,>4,0
+openai/gpt-oss-120b,V0024,1,>4,0
+openai/gpt-oss-120b,V0046,1,>4,0
+openai/gpt-oss-120b,V0018,1,>4,0
+openai/gpt-oss-120b,V0030,1,>4,0
+openai/gpt-oss-120b,V0026,1,>4,0
+openai/gpt-oss-120b,V0045,1,>4,0
+openai/gpt-oss-120b,V0012,1,>4,0
+openai/gpt-oss-120b,V0023,1,>4,0
+openai/gpt-oss-120b,V0050,1,>4,0
+openai/gpt-oss-120b,V0016,1,>4,0
+openai/gpt-oss-120b,V0008,1,>4,0
+openai/gpt-oss-120b,V0034,1,>4,0
+openai/gpt-oss-120b,V0005,1,>4,0
+openai/gpt-oss-120b,V0002,1,>4,0

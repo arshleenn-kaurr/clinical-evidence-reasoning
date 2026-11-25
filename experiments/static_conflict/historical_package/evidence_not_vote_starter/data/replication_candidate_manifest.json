@@ -1,0 +1,12 @@
+{
+  "purpose": "supplementary replication extension",
+  "selection_time_relative_to_results": "defined before aggregate primary results were inspected",
+  "seed": 2026090902,
+  "candidate_count_per_stratum": 85,
+  "total_candidates": 340,
+  "raw_medal_sha256": "983ba600ba1b4bfea382d2f6ba33f588905fd7de73489511f464f903c67e25fc",
+  "original_candidate_pool_sha256": "1423f5bea111abe81a10e79dadde3c865228263da50f220a4abbfc71f827b719",
+  "replication_candidates_sha256": "cfa0957d68bee5879e60e173b1721d8b577f1393bc2309bea96b8cecaba79779",
+  "selection_uses_model_outputs": false,
+  "original_candidate_pool_excluded_entirely": true
+}

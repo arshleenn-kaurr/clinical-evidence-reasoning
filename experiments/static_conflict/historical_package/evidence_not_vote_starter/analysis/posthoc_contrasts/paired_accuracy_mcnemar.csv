@@ -1,0 +1,13 @@
+cohort,model,comparison,n,acc_a,acc_b,n_correct_H_L4_ALIGNED_only,n_correct_H_L4_only,mcnemar_exact_p,n_correct_L4_H_only
+primary,gemini-3.6-flash,H_L4_ALIGNED_vs_H_L4,40,1.0,1.0,0.0,0,1.0,
+primary,gemini-3.6-flash,L4_H_vs_H_L4,40,1.0,1.0,,0,1.0,0.0
+replication,gemini-3.6-flash,H_L4_ALIGNED_vs_H_L4,260,0.9961538461538462,0.9923076923076923,1.0,0,1.0,
+replication,gemini-3.6-flash,L4_H_vs_H_L4,260,1.0,0.9923076923076923,,0,0.5,2.0
+latent_v2,gemini-3.6-flash,H_L4_ALIGNED_vs_H_L4,40,0.975,0.975,1.0,1,1.0,
+latent_v2,gemini-3.6-flash,L4_H_vs_H_L4,40,0.975,0.975,,0,1.0,0.0
+veto,gemini-3.6-flash,H_L4_ALIGNED_vs_H_L4,15,1.0,1.0,0.0,0,1.0,
+veto,gemini-3.6-flash,L4_H_vs_H_L4,15,1.0,1.0,,0,1.0,0.0
+gpt_oss_primary,openai/gpt-oss-120b,H_L4_ALIGNED_vs_H_L4,40,0.975,1.0,0.0,1,1.0,
+gpt_oss_primary,openai/gpt-oss-120b,L4_H_vs_H_L4,40,1.0,1.0,,0,1.0,0.0
+gpt_oss_veto,openai/gpt-oss-120b,H_L4_ALIGNED_vs_H_L4,15,1.0,1.0,0.0,0,1.0,
+gpt_oss_veto,openai/gpt-oss-120b,L4_H_vs_H_L4,15,1.0,1.0,,0,1.0,0.0

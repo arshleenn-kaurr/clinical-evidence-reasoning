@@ -1,0 +1,16 @@
+model,case_id,H_correct,flip_threshold,flipped_by_4
+gemini-3.6-flash,V0041,1,>4,0
+gemini-3.6-flash,V0024,1,>4,0
+gemini-3.6-flash,V0046,1,>4,0
+gemini-3.6-flash,V0018,1,>4,0
+gemini-3.6-flash,V0030,1,>4,0
+gemini-3.6-flash,V0026,1,>4,0
+gemini-3.6-flash,V0045,1,>4,0
+gemini-3.6-flash,V0012,1,>4,0
+gemini-3.6-flash,V0023,1,>4,0
+gemini-3.6-flash,V0050,1,>4,0
+gemini-3.6-flash,V0016,1,>4,0
+gemini-3.6-flash,V0008,1,>4,0
+gemini-3.6-flash,V0034,1,>4,0
+gemini-3.6-flash,V0005,1,>4,0
+gemini-3.6-flash,V0002,1,>4,0
