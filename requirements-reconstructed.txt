@@ -1,0 +1,11 @@
+# RECONSTRUCTED / RELEASE TOOLING — optional, only for scripts/reconstructed/.
+#
+# Not required to verify the accepted-paper science (that only needs
+# requirements-reproduction.txt). This pins the plotting library used by
+# scripts/reconstructed/plot_genai4health_figure1.py to redraw Figure 1's
+# panels from reproduced data (the original plotting code was not
+# recovered; see docs/figure1_reconstruction.md). The archived figure's PDF
+# metadata records "Matplotlib v3.10.9" as its Creator; this pin is a
+# current, available version and is NOT a claim that it matches that
+# historical version.
+matplotlib==3.11.2

@@ -1,0 +1,4 @@
+# OPTIONAL, archive-mode only: needed by scripts/audit_camera_ready_numbers.py to read the ingested PDF.
+# Not part of the pinned reproduction environment (requirements-reproduction.lock.txt); install into a throwaway venv.
+# The audit also needs numpy (already pinned in the reproduction environment).
+pypdf==6.19.0

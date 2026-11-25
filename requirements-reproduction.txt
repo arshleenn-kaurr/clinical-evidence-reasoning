@@ -1,0 +1,20 @@
+# RELEASE TOOLING: pinned reproduction dependencies for clinical-evidence-reasoning.
+#
+# These are the packages actually imported by the recovered/accepted-paper
+# analysis code and by this repo's Phase 3/4 validation tooling:
+#   - score_results.py            -> numpy, pandas
+#   - posthoc_contrasts.py        -> numpy, pandas, scipy
+#   - analyze_sequential_gemini.py, analyze_aligned_control.py -> stdlib only
+#   - prepare_cases.py (case preparation, not re-run)          -> datasets
+#   - scripts/phase3_*.py, scripts/validate_accepted_papers.py -> numpy, pandas, scipy
+#   - tests/ (pytest)
+#
+# scipy is pinned to 1.16.3 because Phase 3 demonstrated that version
+# reproduces all 8 archived post-hoc CSVs byte-for-byte (scipy >= 1.17
+# changes scipy.stats.beta.ppf by ~1 ULP, which is a NUMERIC_MATCH, not
+# EXACT_MATCH). See docs/reproduction_environment.md.
+numpy==2.5.3
+pandas==3.0.6
+scipy==1.16.3
+datasets==4.4.1
+pytest==9.0.1
