@@ -1,0 +1,72 @@
+{
+  "n": 40,
+  "bootstrap_n": 10000,
+  "bootstrap_seed": 2026092301,
+  "aligned_terminal": {
+    "sequential_mean": 90.525,
+    "fresh_mean": 92.375,
+    "seq_minus_fresh_mean": -1.85,
+    "median": 0.0,
+    "bootstrap_95_ci": [
+      -3.2,
+      -0.675
+    ],
+    "direction_counts": {
+      "lower": 12,
+      "equal": 25,
+      "higher": 3
+    },
+    "categorical_agreement_n": 40,
+    "e0_in_both_n": 40
+  },
+  "same_40_existing_conflict_terminal": {
+    "sequential_mean": 74.2,
+    "fresh_mean": 86.05,
+    "seq_minus_fresh_mean": -11.85,
+    "median": -10.0,
+    "bootstrap_95_ci": [
+      -13.725,
+      -9.925
+    ],
+    "direction_counts": {
+      "lower": 38,
+      "equal": 1,
+      "higher": 1
+    }
+  },
+  "polarity_by_persistence_interaction": {
+    "definition": "(conflict persistent-fresh) - (aligned persistent-fresh)",
+    "mean": -10.0,
+    "median": -10.0,
+    "bootstrap_95_ci": [
+      -12.0,
+      -7.725
+    ],
+    "negative_n": 37,
+    "zero_n": 1,
+    "positive_n": 2
+  },
+  "trajectory_means": {
+    "states": [
+      "H",
+      "H+L1",
+      "H+L2",
+      "H+L3",
+      "H+L4"
+    ],
+    "aligned": [
+      89.875,
+      90.45,
+      90.825,
+      90.7,
+      90.525
+    ],
+    "conflict": [
+      89.875,
+      85.0,
+      80.575,
+      77.275,
+      74.2
+    ]
+  }
+}

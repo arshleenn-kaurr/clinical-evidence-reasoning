@@ -1,0 +1,82 @@
+{
+  "_status": "DRAFT manifest generated during migration 2026-10-04 from recovered files; null = not recoverable from files",
+  "experiment_id": "agenticls_gemini_persistent_260",
+  "paper_relationship": "AgenticLS (accepted)",
+  "prespecification": "PRESPECIFIED (frozen before aggregate results; protocol calls it a post-hoc extension of the frozen static benchmark)",
+  "analysis_status": "archived analysis output present (results/gemini_260_analysis.json); NOT re-run during migration",
+  "model": "gemini-3.6-flash",
+  "provider": "Google Gemini API (generateContent)",
+  "temperature": "not sent (runner records sampling_parameters_sent=none; historical static benchmark used 0)",
+  "reasoning_setting": "provider default; no explicit thinking parameter",
+  "cohort_file": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/replication_cases_verified.jsonl",
+  "cohort_sha256": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a",
+  "n_cases": 260,
+  "conditions": {
+    "sequential": [
+      "H",
+      "H_L1",
+      "H_L2",
+      "H_L3",
+      "H_L4"
+    ],
+    "fresh": [
+      "H_L4"
+    ]
+  },
+  "expected_successful_calls": 1560,
+  "raw_attempt_file": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/results/gemini_260_attempts.jsonl",
+  "canonical_result_file": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/results/gemini_260_results.jsonl",
+  "runner_file": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/run_sequential_gemini.py",
+  "runner_sha256": "320d1a8b3690e119ea80748cb026499213fa881cecc1f27c842b9821450800e4",
+  "protocol_file": "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/PROTOCOL_FREEZE_GEMINI.md",
+  "prompt_file": null,
+  "analysis_files": [
+    "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/analyze_sequential_gemini.py",
+    "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/results/gemini_260_analysis.json"
+  ],
+  "freeze_manifests": [
+    "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/SHA256SUMS.txt",
+    "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/results/GEMINI_260_RAW_SHA256.txt"
+  ],
+  "execution_date_if_known": "2026-09-22 (row timestamps 04:01:34Z to 06:10:06Z)",
+  "notes": "Verified structurally: 1,560 ok results (unique run_ids); attempts 1,567 = 1,560 HTTP 200 + 5 HTTP 429 + 2 HTTP 503; arm-first 130 fresh / 130 sequential (33/32 within strata, from terminal log). Prompts are constructed inside the runner (per-row prompt_sha256); no separate prompt file. *_FINAL_BACKUP files byte-identical to results/attempts.",
+  "historical_hashes": {
+    "frozen_inputs": {
+      "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/replication_cases_verified.jsonl": "b3bc2dd11b4d1e3b50b83ade39f093fc4d014f8b22652b506c37282a2c6a818a"
+    },
+    "runner": {
+      "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/run_sequential_gemini.py": "320d1a8b3690e119ea80748cb026499213fa881cecc1f27c842b9821450800e4"
+    },
+    "protocol": {
+      "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/PROTOCOL_FREEZE_GEMINI.md": "2bf08a3d6975face4499b4da0538cba36887c2d13db70d3d6eaf246ab500e3df"
+    },
+    "canonical_results": {
+      "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/results/gemini_260_results.jsonl": "614e32cf5d5f29831aea14b208d5414fb4bd5097c0c29bc06fd2b8612c8af816"
+    },
+    "raw_attempts": {
+      "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/results/gemini_260_attempts.jsonl": "956e1eaf1810d0a26d21f3b6f14633a111a41e07fd1944ba299eb711775c033f"
+    },
+    "analysis_scripts": {
+      "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/analyze_sequential_gemini.py": "d4292c13f8165b7756261541b84ddfe105282843fb4820c9ecf94e8ef093e90e"
+    },
+    "archived_analysis_outputs": {
+      "experiments/persistent_context/gemini_persistent_260/historical_package/agenticls_gemini_sequential/results/gemini_260_analysis.json": "5382aa697856174769651e127155af71923903d4e0bef1fc5ad53d479619367a"
+    }
+  },
+  "phase3_reproduction": {
+    "environment": {
+      "python": "3.14.8 (CPython, macOS 27.0.1 arm64)",
+      "main_env": "numpy 2.5.3, pandas 3.0.6, scipy 1.18.1",
+      "posthoc_sensitivity_env": "numpy 2.5.3, pandas 3.0.6, scipy 1.16.3",
+      "agenticls_env": "standard library only",
+      "date_utc": "2026-10-04",
+      "note": "Current reproduction environment; NOT the historical execution environment (see docs/environment_validation.md)."
+    },
+    "commands_log": "validation/logs/step6_7_agenticls.log",
+    "reproduced_outputs": {
+      "validation/agenticls/gemini_260_analysis.json": "5382aa697856174769651e127155af71923903d4e0bef1fc5ad53d479619367a"
+    },
+    "comparison": "EXACT_MATCH (159/159 fields)",
+    "status": "ANALYSIS_REPRODUCED"
+  }
+}
