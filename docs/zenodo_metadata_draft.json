@@ -1,0 +1,38 @@
+{
+  "_status": "DRAFT - NOT UPLOADED. Contains only verified metadata. Deliberately omitted until they exist/are decided: doi, publication_date, license, repository URL, related_identifiers (no paper DOI/URL was printed in the camera-ready).",
+  "_todo": [
+    "license: code license is MIT (see LICENSE), covering code only; the Zenodo license/access_right fields are deliberately still unset until the deposit contents and data-rights decisions are final; no deposit is authorized now",
+    "creators: confirm repository-level author list; taken from the verified AgenticLS camera-ready author order; confirm against GenAI4Health camera-ready once ingested",
+    "publication_date: set by Zenodo/at actual release; not guessed",
+    "orcid: not supplied; omitted",
+    "access_right / license: TODO - depends on the code-license and data-rights decisions; not set",
+    "version: '1.0.0' is the PROPOSED tag name (docs/release_strategy.md); no tag exists"
+  ],
+  "metadata": {
+    "upload_type": "software",
+    "title": "clinical-evidence-reasoning: reproducibility archive for clinical evidence reasoning under conflicting and persistent context",
+    "creators": [
+      {
+        "name": "Vohra, Manav",
+        "affiliation": "Independent Researcher; Ernest Mario School of Pharmacy, Rutgers University"
+      },
+      {
+        "name": "Kaur, Arshleen",
+        "affiliation": "Independent Researcher; Ernest Mario School of Pharmacy, Rutgers University"
+      }
+    ],
+    "description": "Reproducibility archive and tooling for two NeurIPS 2026 workshop papers on how language models weigh conflicting and incrementally delivered clinical evidence: (1) \"Stable Decisions Can Hide Evidence Sensitivity in Life-Science Evidence Synthesis\" (AgenticLS: Life-Science Agents Workshop, NeurIPS 2026) and (2) \"Evidence Is Not a Vote: Categorical Stability and Confidence Sensitivity Under Conflicting Clinical Evidence\" (GenAI4Health workshop, NeurIPS 2026; title as in the anonymized submission, camera-ready pending). Includes frozen runners and analysis code, reported analysis outputs, provenance manifests, validation tooling and tests. Restricted source-derived data, provider model outputs and paper PDFs are not included. Known provenance limitation: the archived post-hoc analysis manifest records an earlier script hash that is no longer available; the recovered script regenerates all archived post-hoc outputs byte-for-byte under the verified reproduction environment (SciPy 1.16.3).",
+    "keywords": [
+      "clinical language models",
+      "evidence synthesis",
+      "conflicting evidence",
+      "persistent context",
+      "confidence",
+      "reproducibility",
+      "life-science agents",
+      "LLM evaluation"
+    ],
+    "version": "1.0.0",
+    "language": "eng"
+  }
+}

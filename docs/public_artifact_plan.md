@@ -1,0 +1,13 @@
+# Public artifact plan (proposal, not yet applied)
+
+The local repo keeps everything as archival provenance. A public release could expose a smaller set. Nothing has been removed; this is a decision list for the authors.
+
+| Tier | Contents |
+|---|---|
+| **PUBLIC_CORE** | Protocols/contracts/freeze docs (`P/README.md`, `analysis_contract.md`, `audit_protocol.md`, `prompt_template.md`, `response_schema.json`, `G/PROTOCOL_FREEZE_GEMINI.md`, `A/PROTOCOL_FREEZE_ALIGNED_CONTROL.md`); all freeze manifests and `.sha256` locks; runners and analysis code as archived (`run_gemini.py`, `run_groq.py`, `make_conditions.py`, `score_results.py`, `posthoc_contrasts.py`, `run_sequential_gemini.py`, `analyze_sequential_gemini.py`, `run_aligned_control_gemini.py`, `analyze_aligned_control.py`, and helpers); canonical results (`*_CLEAN.jsonl`, `final_main/veto_gemini_3_6_flash.jsonl`, `gemini_260_results.jsonl`, `aligned_control_results.jsonl`); attempt logs for accepted experiments (`replication_…_RAW.jsonl`, `gemini_260_attempts.jsonl`, `aligned_control_attempts.jsonl`); archived analysis outputs (`analysis/*/`, `canonical_results_reference.md`, `gemini_260_analysis.json`, `aligned_control_analysis.json`); figure 1; repo docs/scripts. **Frozen cohorts and prompts are core but subject to LICENSE_REVIEW.** |
+| **PUBLIC_OPTIONAL** | Dev/smoke cohorts and outputs; dry-run previews; terminal logs (`gemini_260_terminal.log`, `aligned_control_terminal.log`: needed to show order balance); dominant-evidence analysis; candidate/audit CSVs (after licence review); `merged_scored_results.csv`. |
+| **ARCHIVAL_ONLY** | Checkpoints, `*_FINAL_BACKUP`, `*_PRE_RESUME_BACKUP`, `groq_interim_snapshot/`, code backups (`*.orig`, `*.pre_*`), byte-duplicate result files (unsuffixed == RAW), `nohup.out`, **latent v1 — STATUS: SUPERSEDED / EXCLUDED FROM REPORTED ANALYSES** (not a license question; it was not used as evidence in the reported manuscript — see `experiments/static_conflict/latent_v2/README.md`), the entire Groq extension until it is complete and canonicalized. |
+| **LICENSE_REVIEW** | Raw MEDAL sources (`QA-systematic-review.jsonl`, `recommendation-aha-guideline-clean.jsonl`); every file embedding Cochrane/AHA-derived text (cohorts, prompts, candidate CSVs); provider output redistribution (Gemini, Groq). |
+| **SCRATCH/IGNORE** | `__pycache__/`, `.DS_Store`, `.pid`, duplicate zips (already not copied; covered by `.gitignore`). |
+
+A practical approach is to keep this repo private as the archive, and publish a release branch or second repo assembled from PUBLIC_CORE, with a manifest mapping each public file back to its archival sha256.
